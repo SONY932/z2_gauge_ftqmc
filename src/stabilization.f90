@@ -192,39 +192,18 @@ contains
         enddo
         matUDV = invULUR + VRVL
         if (wrap_debug_enabled) call debug_stab_green_matrix('stab_green_before', nt, matUDV)
+        if (nt <= Ltrot/2) then
+! 左半区段稳定性更差，直接使用大矩阵公式确保数值稳定
+            call stab_green_big(Prop)
+            Gr = Gr_tmp%Gr00
+            return
+        else
 ! if ntau >Ltrot/2, decompose matUDV^dagger
-        if (nt > Ltrot/2) matUDV = dconjg(transpose(matUDV))
+            matUDV = dconjg(transpose(matUDV))
 ! matUDV * P  = U D V
-        IPVT = 0
-        call QDRP_decompose(matUDV, DUP, IPVT, TAU, WORK, Lwork)
-        if (wrap_debug_enabled) call debug_stab_green_diag('stab_green_after', nt, DUP)
-        if (nt < Ltrot/2 + 1) then ! ntau < Ltrot/2
-! UR U D V P^dagger UL G = 1 => 
-! G=UL^dagger * P * V^-1 * D^-1 * U^dagger * UR^dagger; multiply from right to left
-            temp = dconjg(transpose(Prop%UUR))
-! compute U^dagger * UR^dagger; output in temp 
-! workspace query for ZUNMQR (left, conj-transpose)
-            call ZUNMQR('L', 'C', Ndim, Ndim, Ndim, matUDV, Ndim, TAU, temp, Ndim, WQ2, -1, info)
-            Lreq = nint(real(WQ2))
-            if (.not. allocated(WORK)) then
-                allocate(WORK(Lreq))
-            elseif (size(WORK) < Lreq) then
-                deallocate(WORK)
-                allocate(WORK(Lreq))
-            endif
-            call ZUNMQR('L', 'C', Ndim, Ndim, Ndim, matUDV, Ndim, TAU, temp, Ndim, WORK, Lreq, info)
-! compute D^-1 * (U^dagger * UR^dagger)
-            do nl = 1, Ndim
-                temp(nl, :) = temp(nl, :) / DUP(nl)
-            enddo
-! compute V^-1 * (D^-1 * U^dagger * UR^dagger) by solving V * X = D^-1 * U^dagger * UR^dagger; output in temp
-            call ZTRSM('L', 'U', 'N', 'N', Ndim, Ndim, Z_one, matUDV(1,1), Ndim, temp(1,1), Ndim)
-! apply permutation matrix : P * (V^-1*D^-1*U^dagger*UR^dagger); rearrange rows
-            call ZLAPMR(.false., Ndim, Ndim, temp(1,1), Ndim, IPVT(1))
-! compute UL^dagger * tmp = UL^dagger * (P * V^-1*D^-1*U^dagger*UR^dagger)
-! output Gr
-            call ZGEMM('C', 'N', Ndim, Ndim, Ndim, Z_one, Prop%UUL(1,1), Ndim, temp(1,1), Ndim, dcmplx(0.d0, 0.d0), Gr(1,1), Ndim)
-        elseif(nt > Ltrot/2) then ! ntau >Ltrot/2          
+            IPVT = 0
+            call QDRP_decompose(matUDV, DUP, IPVT, TAU, WORK, Lwork)
+            if (wrap_debug_enabled) call debug_stab_green_diag('stab_green_after', nt, DUP)
 ! matUDV^dagger * P = U D V
 ! G=UL^dagger *  U * D^-1 * V * P^-1 * UR^dagger; multiply from left to right
             temp = dconjg(transpose(Prop%UUL))
@@ -250,8 +229,6 @@ contains
 ! (UL^dagger * U * D^-1 * V * P^-1) * UR^dagger = G
 ! output Gr
             call ZGEMM('N', 'C', Ndim, Ndim, Ndim, Z_one, temp(1, 1), Ndim, Prop%UUR(1, 1), Ndim, dcmplx(0.d0, 0.d0), Gr(1, 1), Ndim)
-        else
-            write(6,*) "illegal imaginary input in stabgreen, nt =", nt
         endif
         deallocate(WORK)
         return
