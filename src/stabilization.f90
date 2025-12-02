@@ -214,8 +214,14 @@ contains
             endif
             call ZUNMQR('L', 'C', Ndim, Ndim, Ndim, matUDV, Ndim, TAU, temp, Ndim, WORK, Lreq, info)
 ! compute D^-1 * (U^dagger * UR^dagger)
+! 保护：避免除以过小的DUP值导致数值溢出
             do nl = 1, Ndim
-                temp(nl, :) = temp(nl, :) / DUP(nl)
+                if (abs(DUP(nl)) > 1.d-200) then
+                    temp(nl, :) = temp(nl, :) / DUP(nl)
+                else
+                    ! 如果DUP太小，说明矩阵接近奇异，设置temp为0
+                    temp(nl, :) = dcmplx(0.d0, 0.d0)
+                endif
             enddo
 ! compute V^-1 * (D^-1 * U^dagger * UR^dagger) by solving V * X = D^-1 * U^dagger * UR^dagger; output in temp
             call ZTRSM('L', 'U', 'N', 'N', Ndim, Ndim, Z_one, matUDV(1,1), Ndim, temp(1,1), Ndim)
@@ -240,8 +246,14 @@ contains
             endif
             call ZUNMQR('R', 'N', Ndim, Ndim, Ndim, matUDV, Ndim, TAU, temp, Ndim, WORK, Lreq, info)
 ! (UL^dagger * U) * D^-1
+! 保护：避免除以过小的DUP值导致数值溢出
             do nr = 1, Ndim
-                temp(:, nr) = temp(:, nr)/ DUP(nr)
+                if (abs(DUP(nr)) > 1.d-200) then
+                    temp(:, nr) = temp(:, nr)/ DUP(nr)
+                else
+                    ! 如果DUP太小，说明矩阵接近奇异，设置temp为0
+                    temp(:, nr) = dcmplx(0.d0, 0.d0)
+                endif
             enddo
 ! compute (UL^dagger * U * D^-1) * V by solving X * V^dagger = UL^dagger * U * D^-1 * V
             call ZTRSM('R', 'U', 'C', 'N', Ndim, Ndim, Z_one, matUDV(1, 1), Ndim, temp(1, 1), Ndim)
