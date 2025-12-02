@@ -125,12 +125,12 @@ contains
     end subroutine apply_half_trotter_R
 
     subroutine apply_trotter_layer_L(Gr, Latt, Bonds, Gauge, nt, nflag_in)
-! 对等时 Green 矩阵执行一次"左乘"的对称二阶 Trotter 层
-! 即 Mat <- B_gauge * Mat
-! 为了与 apply_trotter_layer_R 产生相同的 B_gauge，顺序应该与 _R 相同
-! 但由于左乘的特性（后面的先乘），实际应用顺序需要反转
-! B_gauge = O_x2 * O_x1 * O_y2 * O_y1 * O_y1 * O_y2 * O_x1 * O_x2
-! 左乘应用顺序：x2, x1, y2, y1, y1, y2, x1, x2（与右乘相同）
+! 对等时 Green 矩阵执行一次"右乘"的对称二阶 Trotter 层
+! 注意：由于函数名混乱，apply_group_L 实际执行右乘！
+! 为了产生与 apply_trotter_layer_R 相同的 B_gauge，需要使用**反向**顺序
+! apply_trotter_layer_R 使用：2x, 1x, 2y, 1y, 1y, 2y, 1x, 2x（左乘顺序）
+! 对于右乘，后应用的算符在左边，所以应该反向应用：2x, 1x, 2y, 1y, 1y, 2y, 1x, 2x
+! 这样产生 Mat * (O_x2 * O_x1 * ... * O_x2) = Mat * B_gauge
         complex(kind=8), intent(inout) :: Gr(:, :)
         class(SquareLattice), intent(in) :: Latt
         class(BondList), intent(in) :: Bonds
@@ -141,30 +141,15 @@ contains
         real(kind=8), parameter :: half = 0.5d0
         nflag = 1
         if (present(nflag_in)) nflag = nflag_in
-! 对于 nflag=-1（逆向），需要反转顺序
-        if (nflag == 1) then
-! 正向：Mat <- B_gauge * Mat
-! 应用顺序：x2, x1, y2, y1, y1, y2, x1, x2
-            call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 2, 'x', nflag, half)
-            call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 1, 'x', nflag, half)
-            call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 2, 'y', nflag, half)
-            call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 1, 'y', nflag, half)
-            call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 1, 'y', nflag, half)
-            call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 2, 'y', nflag, half)
-            call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 1, 'x', nflag, half)
-            call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 2, 'x', nflag, half)
-        else
-! 逆向：Mat <- B_gauge^{-1} * Mat
-! 应用顺序反转：x2, x1, y2, y1, y1, y2, x1, x2（每个用 nflag=-1）
-            call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 2, 'x', nflag, half)
-            call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 1, 'x', nflag, half)
-            call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 2, 'y', nflag, half)
-            call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 1, 'y', nflag, half)
-            call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 1, 'y', nflag, half)
-            call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 2, 'y', nflag, half)
-            call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 1, 'x', nflag, half)
-            call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 2, 'x', nflag, half)
-        endif
+! 反向顺序以匹配 apply_trotter_layer_R 产生的 B_gauge
+        call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 2, 'x', nflag, half)
+        call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 1, 'x', nflag, half)
+        call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 2, 'y', nflag, half)
+        call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 1, 'y', nflag, half)
+        call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 1, 'y', nflag, half)
+        call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 2, 'y', nflag, half)
+        call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 1, 'x', nflag, half)
+        call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 2, 'x', nflag, half)
         if (debug_sigma_log_enabled) call debug_log_sigma('after_apply_trotter_L', nt, Gr)
         return
     end subroutine apply_trotter_layer_L

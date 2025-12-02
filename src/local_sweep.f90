@@ -105,7 +105,7 @@ contains
     end subroutine propagate_left_step
 
     subroutine propagate_right_step(this, PropU, PropD, Latt, Bonds, Gauge, nt, iseed)
-! 右扫传播：G(nt+1) = B(nt) * G(nt) * B(nt)^{-1}
+! 右扫传播：G(nt+1) = B(nt+1) * G(nt) * B(nt+1)^{-1}
 ! 其中 B = B_gauge * exp(-μ)
         class(LocalSweep), intent(inout) :: this
         class(Propagator), intent(inout) :: PropU, PropD
@@ -118,9 +118,8 @@ contains
 ! 暂时禁用 σ 更新以测试纯传播
 ! call sweep_sigma_dir(...)
 
-! 完整传播
+! 完整传播 + UUR 累积
         call right_step_after_sigma_post_mu(PropU, PropD, Latt, Bonds, Gauge, nt)
-! UUR 累积
         call right_step_finalize(PropU, PropD, Latt, Bonds, Gauge, nt)
         return
     end subroutine propagate_right_step
