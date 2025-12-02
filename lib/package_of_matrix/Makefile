@@ -1,5 +1,5 @@
-FC=ifort
-FLAGS= -c -O3 -w  
+FC=gfortran
+FLAGS= -c -O3 -w -ffree-line-length-none -fallow-argument-mismatch
 
 all:
 	(cd MyEis;make FC=$(FC) FLAGS="$(FLAGS)") ;\
