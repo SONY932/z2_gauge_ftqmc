@@ -77,14 +77,19 @@ contains
         real(kind=8), dimension(2*Ndim) :: RWORK
         complex(kind=8) :: WQ
         integer :: info, i, j
-        real(kind=8) :: X, eps
+        real(kind=8) :: X, eps, mat_norm
 ! Query optimal amount of memory
         call ZGEQP3(Ndim, Ndim, Mat, Ndim, IPVT, TAU, WQ, -1, RWORK, info)
         Lwork = nint(real(WQ)); allocate(WORK(Lwork))
 ! QR decomposition of Mat with full column pivoting, Mat * P = Q * R
         call ZGEQP3(Ndim, Ndim, Mat, Ndim, IPVT, TAU, WORK, Lwork, RWORK, info)
 ! separate off D
-        eps = 1d-300
+! Use a more reasonable threshold based on matrix norm and machine epsilon
+        mat_norm = 0.d0
+        do i = 1, Ndim
+            mat_norm = max(mat_norm, abs(Mat(i, i)))
+        enddo
+        eps = max(1.d-15 * mat_norm, 1.d-200)
         do i = 1, Ndim
             X = max(abs(Mat(i, i)), eps); D(i) = dcmplx(X, 0.d0) ! protected diagonal entry
             do j = i, Ndim
@@ -214,8 +219,13 @@ contains
             endif
             call ZUNMQR('L', 'C', Ndim, Ndim, Ndim, matUDV, Ndim, TAU, temp, Ndim, WORK, Lreq, info)
 ! compute D^-1 * (U^dagger * UR^dagger)
+! Protect against division by very small DUP values
             do nl = 1, Ndim
-                temp(nl, :) = temp(nl, :) / DUP(nl)
+                if (abs(DUP(nl)) > 1.d-200) then
+                    temp(nl, :) = temp(nl, :) / DUP(nl)
+                else
+                    temp(nl, :) = dcmplx(0.d0, 0.d0)
+                endif
             enddo
 ! compute V^-1 * (D^-1 * U^dagger * UR^dagger) by solving V * X = D^-1 * U^dagger * UR^dagger; output in temp
             call ZTRSM('L', 'U', 'N', 'N', Ndim, Ndim, Z_one, matUDV(1,1), Ndim, temp(1,1), Ndim)
@@ -240,8 +250,13 @@ contains
             endif
             call ZUNMQR('R', 'N', Ndim, Ndim, Ndim, matUDV, Ndim, TAU, temp, Ndim, WORK, Lreq, info)
 ! (UL^dagger * U) * D^-1
+! Protect against division by very small DUP values
             do nr = 1, Ndim
-                temp(:, nr) = temp(:, nr)/ DUP(nr)
+                if (abs(DUP(nr)) > 1.d-200) then
+                    temp(:, nr) = temp(:, nr)/ DUP(nr)
+                else
+                    temp(:, nr) = dcmplx(0.d0, 0.d0)
+                endif
             enddo
 ! compute (UL^dagger * U * D^-1) * V by solving X * V^dagger = UL^dagger * U * D^-1 * V
             call ZTRSM('R', 'U', 'C', 'N', Ndim, Ndim, Z_one, matUDV(1, 1), Ndim, temp(1, 1), Ndim)
@@ -303,10 +318,17 @@ contains
             enddo
         enddo
         call mmult(mat_right, invbigU, mat_big)
+! Protect against division by very small bigD values
         do nr = 1, 2*Ndim
-            do nl = 1, 2*Ndim
-                mat_left(nl, nr) = mat_left(nl, nr) / bigD(nr)
-            enddo
+            if (abs(bigD(nr)) > 1.d-200) then
+                do nl = 1, 2*Ndim
+                    mat_left(nl, nr) = mat_left(nl, nr) / bigD(nr)
+                enddo
+            else
+                do nl = 1, 2*Ndim
+                    mat_left(nl, nr) = dcmplx(0.d0, 0.d0)
+                enddo
+            endif
         enddo
         call mmult(Gr_tot, mat_left, mat_right)
 ! output time-sliced Green function
