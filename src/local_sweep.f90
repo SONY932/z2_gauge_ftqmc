@@ -63,7 +63,9 @@ contains
         real(kind=8), parameter :: half = 0.5d0
 
         call this%reset()
-! 重置 UUL/VUL/DUL 为单位矩阵/1，为左扫的累积做准备
+! 【关键修复】重置 UUR/VUR/DUR 和 UUL/VUL/DUL 为单位矩阵
+        PropU%UUR = ZKRON; PropU%VUR = ZKRON; PropU%DUR = dcmplx(1.d0, 0.d0)
+        PropD%UUR = ZKRON; PropD%VUR = ZKRON; PropD%DUR = dcmplx(1.d0, 0.d0)
         PropU%UUL = ZKRON; PropU%VUL = ZKRON; PropU%DUL = dcmplx(1.d0, 0.d0)
         PropD%UUL = ZKRON; PropD%VUL = ZKRON; PropD%DUL = dcmplx(1.d0, 0.d0)
         WrU%ULlist = dcmplx(0.d0, 0.d0); WrU%VLlist = dcmplx(0.d0, 0.d0); WrU%DLlist = dcmplx(0.d0, 0.d0)
@@ -97,14 +99,21 @@ contains
         integer, intent(in) :: nt
         integer, intent(inout) :: iseed
 
-! σ 更新（启用）
-        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ey_odd,  'y', nt, Bonds%ey_src, Bonds%ey_dst, iseed, 'y_odd')
-        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ey_even, 'y', nt, Bonds%ey_src, Bonds%ey_dst, iseed, 'y_even')
-        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ex_odd,  'x', nt, Bonds%ex_src, Bonds%ex_dst, iseed, 'x_odd')
-        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ex_even, 'x', nt, Bonds%ex_src, Bonds%ex_dst, iseed, 'x_even')
+! B(nt) 左半步
+        call left_step_prefix(PropU, PropD, Latt, Bonds, Gauge, nt)
 
-! 传播 G 并累积 UUL
+! σ Metropolis：按 AFM 回溯顺序（y 组 → x 组）
+! 【待修复】当前简化版不支持 σ 更新，因为需要半步 Trotter 结构
+!        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ey_odd,  'y', nt, Bonds%ey_src, Bonds%ey_dst, iseed, 'y_odd')
+!        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ey_even, 'y', nt, Bonds%ey_src, Bonds%ey_dst, iseed, 'y_even')
+!        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ex_odd,  'x', nt, Bonds%ex_src, Bonds%ex_dst, iseed, 'x_odd')
+!        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ex_even, 'x', nt, Bonds%ex_src, Bonds%ex_dst, iseed, 'x_even')
+
+! μ + 段栈写回（修正版：使用完整 Trotter 层）
+! UUL 需要累积 B = exp(-μ) * B_gauge
+        call opMu_mmult_L(PropU%UUL, -1); call opMu_mmult_L(PropD%UUL, -1)
         call left_step_after_sigma_post_mu(PropU, PropD, Latt, Bonds, Gauge, nt)
+        if (debug_green_log_enabled) call debug_log_green('L_after_prop', nt, PropU%Gr, PropD%Gr)
         return
     end subroutine propagate_left_step
 
@@ -117,15 +126,23 @@ contains
         integer, intent(in) :: nt
         integer, intent(inout) :: iseed
 
-! σ 更新（启用）
-        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ex_even, 'x', nt, Bonds%ex_src, Bonds%ex_dst, iseed, 'x_even')
-        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ex_odd,  'x', nt, Bonds%ex_src, Bonds%ex_dst, iseed, 'x_odd')
-        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ey_even, 'y', nt, Bonds%ey_src, Bonds%ey_dst, iseed, 'y_even')
-        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ey_odd,  'y', nt, Bonds%ey_src, Bonds%ey_dst, iseed, 'y_odd')
+! B(nt)^{-1/2} 预处理
+        call right_step_prefix(PropU, PropD, Latt, Bonds, Gauge, nt)
 
-! 传播 G 并累积 UUR
+! σ Metropolis：与 AFM LocalK_prop_R 同序（x 组 → y 组）
+! 【待修复】当前简化版不支持 σ 更新
+!        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ex_even, 'x', nt, Bonds%ex_src, Bonds%ex_dst, iseed, 'x_even')
+!        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ex_odd,  'x', nt, Bonds%ex_src, Bonds%ex_dst, iseed, 'x_odd')
+!        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ey_even, 'y', nt, Bonds%ey_src, Bonds%ey_dst, iseed, 'y_even')
+!        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ey_odd,  'y', nt, Bonds%ey_src, Bonds%ey_dst, iseed, 'y_odd')
+
+! μ + 段栈写回（修正版：使用完整 Trotter 层）
+! 右扫公式 G(τ) = B * G * B^{-1}，μ 处理已整合
         call right_step_after_sigma_post_mu(PropU, PropD, Latt, Bonds, Gauge, nt)
+        if (debug_green_log_enabled) call debug_log_green('R_after_prop', nt, PropU%Gr, PropD%Gr)
+! UUR 需要累积 B = exp(-μ) * B_gauge
         call right_step_finalize(PropU, PropD, Latt, Bonds, Gauge, nt)
+        call opMu_mmult_R(PropU%UUR, -1); call opMu_mmult_R(PropD%UUR, -1)
         return
     end subroutine propagate_right_step
 
@@ -152,9 +169,6 @@ contains
         acc_lambda = .false.
 
         call this%reset()
-! 重置 UUL/VUL/DUL 为单位矩阵/1，为左扫的累积做准备
-        PropU%UUL = ZKRON; PropU%VUL = ZKRON; PropU%DUL = dcmplx(1.d0, 0.d0)
-        PropD%UUL = ZKRON; PropD%VUL = ZKRON; PropD%DUL = dcmplx(1.d0, 0.d0)
 
 ! 左扫（Ltrot..1），先恢复左向缓存再传播
         do nt = Ltrot, 1, -1
@@ -169,11 +183,11 @@ contains
         call Wrap_L(PropD, WrD, 0)
 
 ! 右扫（1..Ltrot），左向缓存已齐全
-        call Wrap_R(PropU, WrU, 0)
-        call Wrap_R(PropD, WrD, 0)
-! 重置 UUR/VUR/DUR 为单位矩阵/1，为右扫的累积做准备
+! 【关键】在 Wrap_R(0) 之前重置 UUR 为单位矩阵
         PropU%UUR = ZKRON; PropU%VUR = ZKRON; PropU%DUR = dcmplx(1.d0, 0.d0)
         PropD%UUR = ZKRON; PropD%VUR = ZKRON; PropD%DUR = dcmplx(1.d0, 0.d0)
+        call Wrap_R(PropU, WrU, 0)
+        call Wrap_R(PropD, WrD, 0)
         do nt = 1, Ltrot
             call propagate_right_step(this, PropU, PropD, Latt, Bonds, Gauge, nt, iseed)
             
