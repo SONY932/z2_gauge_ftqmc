@@ -1,852 +1,1716 @@
-Wrap_R_before_stabUR        5   3.411791E-07   9.918737E-01
- Wrap_R_after_stabUR        5   2.130437E-09   9.987745E-01
-Wrap_R_after_stabGre        5   1.742795E-08   7.099816E-01
-Wrap_R_before_stabUR        5   3.411791E-07   9.918737E-01
- Wrap_R_after_stabUR        5   2.130437E-09   9.987745E-01
-Wrap_R_before_stabUR        5   3.676716E-06   9.853514E-01
- Wrap_R_after_stabUR        5   1.940519E-10   9.987805E-01
-Wrap_R_after_stabGre        5   1.742795E-08   7.099816E-01
-Wrap_R_after_stabGre        5   4.580755E-08   7.103541E-01
-Wrap_R_before_stabUR        5   3.676716E-06   9.853514E-01
- Wrap_R_after_stabUR        5   1.940519E-10   9.987805E-01
-Wrap_R_before_stabUR       10   2.347317E-06   9.925731E-01
-Wrap_R_after_stabGre        5   4.580755E-08   7.103541E-01
- Wrap_R_after_stabUR       10   2.605769E-08   9.951016E-01
-Wrap_R_after_stabGre       10   1.631590E-07   7.102516E-01
-Wrap_R_before_stabUR       10   2.347317E-06   9.925731E-01
- Wrap_R_after_stabUR       10   2.605769E-08   9.951016E-01
-Wrap_R_before_stabUR       10   2.435806E-06   9.838846E-01
-Wrap_R_after_stabGre       10   1.631590E-07   7.102516E-01
- Wrap_R_after_stabUR       10   7.668301E-07   9.955461E-01
-Wrap_R_after_stabGre       10   2.064952E-07   7.098351E-01
-Wrap_R_before_stabUR       10   2.435806E-06   9.838846E-01
- Wrap_R_after_stabUR       10   7.668301E-07   9.955461E-01
-Wrap_R_before_stabUR       15   1.337342E-06   9.928484E-01
- Wrap_R_after_stabUR       15   1.344297E-06   9.931199E-01
-Wrap_R_after_stabGre       10   2.064952E-07   7.098351E-01
-Wrap_R_after_stabGre       15   4.792833E-06   7.106313E-01
-Wrap_R_before_stabUR       15   1.337342E-06   9.928484E-01
- Wrap_R_after_stabUR       15   1.344297E-06   9.931199E-01
-Wrap_R_before_stabUR       15   3.345655E-07   9.881470E-01
-Wrap_R_after_stabGre       15   4.792833E-06   7.106313E-01
- Wrap_R_after_stabUR       15   1.554887E-06   9.965032E-01
-Wrap_R_after_stabGre       15   1.891430E-06   7.113628E-01
-Wrap_R_before_stabUR       15   3.345655E-07   9.881470E-01
- Wrap_R_after_stabUR       15   1.554887E-06   9.965032E-01
-Wrap_R_before_stabUR       20   1.617356E-06   9.895475E-01
- Wrap_R_after_stabUR       20   1.930253E-06   9.872269E-01
-Wrap_R_after_stabGre       15   1.891430E-06   7.113628E-01
-Wrap_R_after_stabGre       20   6.825520E-06   7.114598E-01
-Wrap_R_before_stabUR       20   1.617356E-06   9.895475E-01
- Wrap_R_after_stabUR       20   1.930253E-06   9.872269E-01
-Wrap_R_after_stabGre       20   6.825520E-06   7.114598E-01
-Wrap_R_before_stabUR       20   1.029351E-07   9.929506E-01
- Wrap_R_after_stabUR       20   4.504185E-06   9.905393E-01
-Wrap_R_after_stabGre       20   1.519195E-06   7.154519E-01
-Wrap_R_before_stabUR       20   1.029351E-07   9.929506E-01
- Wrap_R_after_stabUR       20   4.504185E-06   9.905393E-01
-Wrap_R_before_stabUR       25   4.357894E-07   9.913062E-01
- Wrap_R_after_stabUR       25   2.047976E-06   9.850761E-01
-Wrap_R_after_stabGre       20   1.519195E-06   7.154519E-01
-Wrap_R_after_stabGre       25   4.585204E-07   7.110355E-01
-Wrap_R_before_stabUR       25   4.357894E-07   9.913062E-01
- Wrap_R_after_stabUR       25   2.047976E-06   9.850761E-01
-Wrap_R_before_stabUR       25   4.684709E-07   9.932372E-01
-Wrap_R_after_stabGre       25   4.585204E-07   7.110355E-01
- Wrap_R_after_stabUR       25   1.851928E-05   9.865059E-01
-Wrap_R_after_stabGre       25   1.467819E-06   7.136198E-01
-Wrap_R_before_stabUR       25   4.684709E-07   9.932372E-01
- Wrap_R_after_stabUR       25   1.851928E-05   9.865059E-01
-Wrap_R_before_stabUR       30   1.460878E-07   9.899363E-01
- Wrap_R_after_stabUR       30   8.035717E-06   9.841099E-01
-Wrap_R_after_stabGre       25   1.467819E-06   7.136198E-01
-Wrap_R_after_stabGre       30   3.371744E-06   7.096251E-01
-Wrap_R_before_stabUR       30   1.460878E-07   9.899363E-01
- Wrap_R_after_stabUR       30   8.035717E-06   9.841099E-01
-Wrap_R_before_stabUR       30   5.810209E-08   9.933001E-01
-Wrap_R_after_stabGre       30   3.371744E-06   7.096251E-01
- Wrap_R_after_stabUR       30   6.220479E-06   9.848402E-01
-Wrap_R_after_stabGre       30   1.784367E-05   7.135979E-01
-Wrap_R_before_stabUR       30   5.810209E-08   9.933001E-01
- Wrap_R_after_stabUR       30   6.220479E-06   9.848402E-01
-Wrap_R_before_stabUR       35   1.049105E-06   9.885572E-01
- Wrap_R_after_stabUR       35   1.672424E-05   9.817293E-01
-Wrap_R_after_stabGre       30   1.784367E-05   7.135979E-01
-Wrap_R_after_stabGre       35   2.008145E-06   7.129957E-01
-Wrap_R_before_stabUR       35   1.049105E-06   9.885572E-01
- Wrap_R_after_stabUR       35   1.672424E-05   9.817293E-01
-Wrap_R_after_stabGre       35   2.008145E-06   7.129957E-01
-Wrap_R_before_stabUR       35   3.161952E-07   9.960398E-01
- Wrap_R_after_stabUR       35   1.185895E-05   9.790870E-01
-Wrap_R_after_stabGre       35   3.614850E-06   7.140611E-01
-Wrap_R_before_stabUR       35   3.161952E-07   9.960398E-01
- Wrap_R_after_stabUR       35   1.185895E-05   9.790870E-01
-Wrap_R_before_stabUR       40   5.440745E-08   9.961906E-01
- Wrap_R_after_stabUR       40   2.149538E-06   9.784367E-01
-Wrap_R_after_stabGre       35   3.614850E-06   7.140611E-01
-Wrap_R_after_stabGre       40   2.744590E-06   7.120088E-01
-Wrap_R_before_stabUR       40   5.440745E-08   9.961906E-01
- Wrap_R_after_stabUR       40   2.149538E-06   9.784367E-01
-Wrap_R_after_stabGre       40   2.744590E-06   7.120088E-01
-Wrap_R_before_stabUR       40   2.166809E-08   9.934694E-01
- Wrap_R_after_stabUR       40   1.320651E-05   9.737342E-01
-Wrap_R_after_stabGre       40   1.131013E-05   7.158574E-01
-Wrap_R_before_stabUR       40   2.166809E-08   9.934694E-01
- Wrap_R_after_stabUR       40   1.320651E-05   9.737342E-01
-Wrap_R_before_stabUR       45   7.311994E-08   9.985358E-01
- Wrap_R_after_stabUR       45   2.116897E-05   9.781005E-01
-Wrap_R_after_stabGre       40   1.131013E-05   7.158574E-01
-Wrap_R_after_stabGre       45   2.273130E-07   7.136276E-01
-Wrap_R_before_stabUR       45   7.311994E-08   9.985358E-01
- Wrap_R_after_stabUR       45   2.116897E-05   9.781005E-01
-Wrap_R_after_stabGre       45   2.273130E-07   7.136276E-01
-Wrap_R_before_stabUR       45   9.038986E-09   9.941531E-01
- Wrap_R_after_stabUR       45   2.901918E-05   9.739082E-01
-Wrap_R_after_stabGre       45   1.840584E-05   7.181989E-01
-Wrap_R_before_stabUR       45   9.038986E-09   9.941531E-01
- Wrap_R_after_stabUR       45   2.901918E-05   9.739082E-01
- Wrap_R_after_stabUR       50   2.523919E-05   9.746347E-01
-Wrap_R_after_stabGre       45   1.840584E-05   7.181989E-01
-Wrap_R_after_stabGre       50   4.119784E-06   7.131815E-01
-Wrap_R_before_stabUR       50   1.352928E-09   9.987317E-01
- Wrap_R_after_stabUR       50   2.523919E-05   9.746347E-01
-Wrap_R_after_stabGre       50   4.119784E-06   7.131815E-01
-Wrap_R_before_stabUR       50   2.731849E-08   9.976558E-01
- Wrap_R_after_stabUR       50   3.709913E-05   9.804090E-01
-Wrap_R_after_stabGre       50   2.069864E-06   7.202274E-01
-Wrap_R_before_stabUR       50   2.731849E-08   9.976558E-01
-Wrap_R_before_stabUR       55   1.069553E-09   9.987766E-01
- Wrap_R_after_stabUR       50   3.709913E-05   9.804090E-01
- Wrap_R_after_stabUR       55   1.310297E-04   9.746346E-01
-Wrap_R_after_stabGre       50   2.069864E-06   7.202274E-01
-Wrap_R_after_stabGre       55   7.383385E-06   7.129885E-01
-Wrap_R_before_stabUR       55   1.069553E-09   9.987766E-01
- Wrap_R_after_stabUR       55   1.310297E-04   9.746346E-01
-Wrap_R_after_stabGre       55   7.383385E-06   7.129885E-01
-Wrap_R_before_stabUR       55   3.939754E-10   9.987785E-01
- Wrap_R_after_stabUR       55   7.092954E-05   9.663990E-01
-Wrap_R_after_stabGre       55   4.538296E-06   7.190202E-01
-Wrap_R_before_stabUR       55   3.939754E-10   9.987785E-01
+Wrap_R_before_stabUR        5   1.820412E-06   9.801220E-01
+ Wrap_R_after_stabUR        5   2.649619E-10   9.987550E-01
+Wrap_R_after_stabGre        5   2.473361E-08   7.100462E-01
+Wrap_R_before_stabUR        5   1.820412E-06   9.801220E-01
+ Wrap_R_after_stabUR        5   2.649619E-10   9.987550E-01
+Wrap_R_after_stabGre        5   2.473361E-08   7.100462E-01
+Wrap_R_before_stabUR       10   1.789736E-06   9.896727E-01
+ Wrap_R_after_stabUR       10   7.144185E-07   9.955297E-01
+Wrap_R_after_stabGre       10   4.114111E-06   7.101208E-01
+Wrap_R_before_stabUR       10   1.789736E-06   9.896727E-01
+ Wrap_R_after_stabUR       10   7.144185E-07   9.955297E-01
+Wrap_R_after_stabGre       10   4.114111E-06   7.101208E-01
+Wrap_R_before_stabUR       15   3.598572E-06   9.965237E-01
+ Wrap_R_after_stabUR       15   7.433720E-07   9.915299E-01
+Wrap_R_after_stabGre       15   1.087935E-06   7.099964E-01
+Wrap_R_before_stabUR       15   3.598572E-06   9.965237E-01
+ Wrap_R_after_stabUR       15   7.433720E-07   9.915299E-01
+Wrap_R_after_stabGre       15   1.087935E-06   7.099964E-01
+Wrap_R_before_stabUR       20   1.377397E-06   9.958673E-01
+ Wrap_R_after_stabUR       20   1.571774E-07   9.894494E-01
+Wrap_R_after_stabGre       20   4.030901E-07   7.101008E-01
+Wrap_R_before_stabUR       20   1.377397E-06   9.958673E-01
+ Wrap_R_after_stabUR       20   1.571774E-07   9.894494E-01
+Wrap_R_after_stabGre       20   4.030901E-07   7.101008E-01
+Wrap_R_before_stabUR       25   2.742668E-06   9.966402E-01
+ Wrap_R_after_stabUR       25   1.020135E-05   9.879911E-01
+Wrap_R_after_stabGre       25   4.421335E-06   7.124716E-01
+Wrap_R_before_stabUR       25   2.742668E-06   9.966402E-01
+ Wrap_R_after_stabUR       25   1.020135E-05   9.879911E-01
+Wrap_R_after_stabGre       25   4.421335E-06   7.124716E-01
+Wrap_R_before_stabUR       30   1.793219E-07   9.941034E-01
+ Wrap_R_after_stabUR       30   5.544708E-06   9.870399E-01
+Wrap_R_after_stabGre       30   3.018399E-06   7.134309E-01
+Wrap_R_before_stabUR       30   1.793219E-07   9.941034E-01
+ Wrap_R_after_stabUR       30   5.544708E-06   9.870399E-01
+Wrap_R_after_stabGre       30   3.018399E-06   7.134309E-01
+Wrap_R_before_stabUR       35   2.138021E-07   9.963066E-01
+ Wrap_R_after_stabUR       35   1.041728E-05   9.849008E-01
+Wrap_R_after_stabGre       35   1.184294E-05   7.157547E-01
+Wrap_R_before_stabUR       35   2.138021E-07   9.963066E-01
+ Wrap_R_after_stabUR       35   1.041728E-05   9.849008E-01
+Wrap_R_after_stabGre       35   1.184294E-05   7.157547E-01
+Wrap_R_before_stabUR       40   7.153566E-08   9.985124E-01
+ Wrap_R_after_stabUR       40   2.142894E-05   9.687722E-01
+Wrap_R_after_stabGre       40   4.954712E-06   7.174467E-01
+Wrap_R_before_stabUR       40   7.153566E-08   9.985124E-01
+ Wrap_R_after_stabUR       40   2.142894E-05   9.687722E-01
+Wrap_R_after_stabGre       40   4.954712E-06   7.174467E-01
+Wrap_R_before_stabUR       45   1.638159E-07   9.936349E-01
+ Wrap_R_after_stabUR       45   5.383469E-05   9.720211E-01
+Wrap_R_after_stabGre       45   2.374344E-06   7.178821E-01
+Wrap_R_before_stabUR       45   1.638159E-07   9.936349E-01
+ Wrap_R_after_stabUR       45   5.383469E-05   9.720211E-01
+Wrap_R_after_stabGre       45   2.374344E-06   7.178821E-01
+Wrap_R_before_stabUR       50   1.736735E-08   9.929778E-01
+ Wrap_R_after_stabUR       50   1.348371E-05   9.695240E-01
+Wrap_R_after_stabGre       50   1.839604E-06   7.174393E-01
+Wrap_R_before_stabUR       50   1.736735E-08   9.929778E-01
+ Wrap_R_after_stabUR       50   1.348371E-05   9.695240E-01
+Wrap_R_after_stabGre       50   1.839604E-06   7.174393E-01
+Wrap_R_before_stabUR       55   2.691059E-09   9.987788E-01
+ Wrap_R_after_stabUR       55   4.049599E-05   9.689110E-01
+Wrap_R_after_stabGre       55   1.251569E-05   7.170437E-01
+Wrap_R_before_stabUR       55   2.691059E-09   9.987788E-01
+ Wrap_R_after_stabUR       55   4.049599E-05   9.689110E-01
+Wrap_R_after_stabGre       55   1.251569E-05   7.170437E-01
 Wrap_R_before_stabUR       60   0.000000E+00   1.000000E+00
- Wrap_R_after_stabUR       55   7.092954E-05   9.663990E-01
- Wrap_R_after_stabUR       60   2.227004E-05   9.701811E-01
-Wrap_R_after_stabGre       55   4.538296E-06   7.190202E-01
+ Wrap_R_after_stabUR       60   3.997866E-06   9.614674E-01
+Wrap_R_after_stabGre       60   1.531906E-05   7.169537E-01
 Wrap_R_before_stabUR       60   0.000000E+00   1.000000E+00
- Wrap_R_after_stabUR       60   2.227004E-05   9.701811E-01
-Wrap_R_after_stabGre       60   2.567072E-06   7.143961E-01
+ Wrap_R_after_stabUR       60   3.997866E-06   9.614674E-01
+Wrap_R_after_stabGre       60   1.531906E-05   7.169537E-01
+Wrap_R_before_stabUR       15   3.598572E-06   9.965237E-01
+ Wrap_R_after_stabUR       15   3.997866E-06   9.614674E-01
+Wrap_R_after_stabGre       15   2.341184E-06   8.278639E-01
+Wrap_R_before_stabUR       15   3.598572E-06   9.965237E-01
+ Wrap_R_after_stabUR       15   3.997866E-06   9.614674E-01
+Wrap_R_after_stabGre       15   2.341184E-06   8.278639E-01
 Wrap_R_before_stabUR       60   0.000000E+00   1.000000E+00
- Wrap_R_after_stabUR       60   1.726277E-05   9.651344E-01
-Wrap_R_after_stabGre       60   3.944694E-06   7.192881E-01
+ Wrap_R_after_stabUR       60   3.997866E-06   9.614674E-01
+Wrap_R_after_stabGre       60   1.531906E-05   7.169537E-01
 Wrap_R_before_stabUR       60   0.000000E+00   1.000000E+00
- Wrap_R_after_stabUR       60   1.726277E-05   9.651344E-01
-Wrap_R_after_stabGre       60   3.944694E-06   7.192881E-01
-Wrap_R_before_stabUR        5   3.411791E-07   9.918737E-01
- Wrap_R_after_stabUR        5   1.407342E-05   9.585910E-01
-Wrap_R_after_stabGre        5   1.918385E-06   8.559873E-01
-Wrap_R_before_stabUR        5   3.411791E-07   9.918737E-01
- Wrap_R_after_stabUR        5   1.407342E-05   9.585910E-01
-Wrap_R_after_stabGre        5   1.918385E-06   8.559873E-01
-Wrap_R_before_stabUR       10   2.347317E-06   9.925731E-01
- Wrap_R_after_stabUR       10   6.150095E-05   9.587747E-01
-Wrap_R_before_stabUR        5   3.676716E-06   9.853514E-01
- Wrap_R_after_stabUR        5   6.355932E-06   9.593675E-01
-Wrap_R_after_stabGre       10   2.099388E-06   8.565427E-01
-Wrap_R_before_stabUR       10   2.347317E-06   9.925731E-01
-Wrap_R_after_stabGre        5   6.290581E-06   8.590510E-01
- Wrap_R_after_stabUR       10   6.150095E-05   9.587747E-01
-Wrap_R_before_stabUR        5   3.676716E-06   9.853514E-01
- Wrap_R_after_stabUR        5   6.355932E-06   9.593675E-01
-Wrap_R_after_stabGre       10   2.099388E-06   8.565427E-01
-Wrap_R_after_stabGre        5   6.290581E-06   8.590510E-01
-Wrap_R_before_stabUR       15   1.337342E-06   9.928484E-01
- Wrap_R_after_stabUR       15   2.278199E-05   9.588098E-01
-Wrap_R_before_stabUR       10   2.435806E-06   9.838846E-01
- Wrap_R_after_stabUR       10   1.083601E-04   9.629774E-01
-Wrap_R_after_stabGre       15   6.314620E-06   8.557231E-01
-Wrap_R_before_stabUR       15   1.337342E-06   9.928484E-01
-Wrap_R_after_stabGre       10   1.323286E-05   8.615480E-01
- Wrap_R_after_stabUR       15   2.278199E-05   9.588098E-01
-Wrap_R_before_stabUR       10   2.435806E-06   9.838846E-01
- Wrap_R_after_stabUR       10   1.083601E-04   9.629774E-01
-Wrap_R_after_stabGre       15   6.314620E-06   8.557231E-01
-Wrap_R_after_stabGre       10   1.323286E-05   8.615480E-01
-Wrap_R_before_stabUR       20   1.617356E-06   9.895475E-01
- Wrap_R_after_stabUR       20   4.128167E-05   9.565833E-01
-Wrap_R_before_stabUR       15   3.345655E-07   9.881470E-01
- Wrap_R_after_stabUR       15   1.337620E-05   9.541309E-01
-Wrap_R_after_stabGre       20   2.201967E-05   8.560218E-01
-Wrap_R_before_stabUR       20   1.617356E-06   9.895475E-01
-Wrap_R_after_stabGre       15   1.447020E-06   8.596423E-01
- Wrap_R_after_stabUR       20   4.128167E-05   9.565833E-01
-Wrap_R_before_stabUR       15   3.345655E-07   9.881470E-01
- Wrap_R_after_stabUR       15   1.337620E-05   9.541309E-01
-Wrap_R_after_stabGre       20   2.201967E-05   8.560218E-01
-Wrap_R_after_stabGre       15   1.447020E-06   8.596423E-01
-Wrap_R_before_stabUR       25   4.357894E-07   9.913062E-01
- Wrap_R_after_stabUR       25   4.677520E-05   9.569755E-01
-Wrap_R_before_stabUR       20   1.029351E-07   9.929506E-01
- Wrap_R_after_stabUR       20   1.490549E-05   9.519482E-01
-Wrap_R_after_stabGre       25   1.216771E-05   8.577487E-01
-Wrap_R_before_stabUR       25   4.357894E-07   9.913062E-01
-Wrap_R_after_stabGre       20   3.251132E-06   8.628545E-01
- Wrap_R_after_stabUR       25   4.677520E-05   9.569755E-01
-Wrap_R_before_stabUR       20   1.029351E-07   9.929506E-01
- Wrap_R_after_stabUR       20   1.490549E-05   9.519482E-01
-Wrap_R_after_stabGre       25   1.216771E-05   8.577487E-01
-Wrap_R_after_stabGre       20   3.251132E-06   8.628545E-01
-Wrap_R_before_stabUR       30   1.460878E-07   9.899363E-01
- Wrap_R_after_stabUR       30   2.486836E-05   9.511850E-01
-Wrap_R_before_stabUR       25   4.684709E-07   9.932372E-01
- Wrap_R_after_stabUR       25   6.387068E-06   9.430682E-01
-Wrap_R_after_stabGre       30   1.001721E-05   8.602352E-01
-Wrap_R_before_stabUR       30   1.460878E-07   9.899363E-01
- Wrap_R_after_stabUR       30   2.486836E-05   9.511850E-01
-Wrap_R_after_stabGre       25   1.565589E-05   8.609870E-01
-Wrap_R_before_stabUR       25   4.684709E-07   9.932372E-01
- Wrap_R_after_stabUR       25   6.387068E-06   9.430682E-01
-Wrap_R_after_stabGre       30   1.001721E-05   8.602352E-01
-Wrap_R_after_stabGre       25   1.565589E-05   8.609870E-01
-Wrap_R_before_stabUR       35   1.049105E-06   9.885572E-01
- Wrap_R_after_stabUR       35   6.625537E-06   9.464753E-01
-Wrap_R_before_stabUR       30   5.810209E-08   9.933001E-01
- Wrap_R_after_stabUR       30   4.849820E-05   9.351606E-01
-Wrap_R_after_stabGre       35   2.770823E-07   8.621205E-01
-Wrap_R_before_stabUR       35   1.049105E-06   9.885572E-01
- Wrap_R_after_stabUR       35   6.625537E-06   9.464753E-01
-Wrap_R_after_stabGre       30   5.510469E-06   8.636280E-01
-Wrap_R_before_stabUR       30   5.810209E-08   9.933001E-01
- Wrap_R_after_stabUR       30   4.849820E-05   9.351606E-01
-Wrap_R_after_stabGre       30   5.510469E-06   8.636280E-01
-Wrap_R_before_stabUR       40   5.440745E-08   9.961906E-01
- Wrap_R_after_stabUR       40   1.358525E-04   9.470182E-01
-Wrap_R_before_stabUR       35   3.161952E-07   9.960398E-01
-Wrap_R_after_stabGre       40   3.605684E-07   8.626359E-01
- Wrap_R_after_stabUR       35   3.749630E-05   9.280409E-01
-Wrap_R_before_stabUR       40   5.440745E-08   9.961906E-01
- Wrap_R_after_stabUR       40   1.358525E-04   9.470182E-01
-Wrap_R_after_stabGre       35   5.232086E-06   8.617028E-01
-Wrap_R_before_stabUR       35   3.161952E-07   9.960398E-01
-Wrap_R_after_stabGre       40   3.605684E-07   8.626359E-01
- Wrap_R_after_stabUR       35   3.749630E-05   9.280409E-01
-Wrap_R_after_stabGre       35   5.232086E-06   8.617028E-01
-Wrap_R_before_stabUR       45   7.311994E-08   9.985358E-01
- Wrap_R_after_stabUR       45   1.904719E-05   9.470834E-01
-Wrap_R_before_stabUR       40   2.166809E-08   9.934694E-01
-Wrap_R_after_stabGre       45   2.725612E-07   8.619843E-01
- Wrap_R_after_stabUR       40   1.225539E-04   9.403354E-01
-Wrap_R_before_stabUR       45   7.311994E-08   9.985358E-01
- Wrap_R_after_stabUR       45   1.904719E-05   9.470834E-01
-Wrap_R_after_stabGre       40   3.177628E-06   8.632159E-01
-Wrap_R_before_stabUR       40   2.166809E-08   9.934694E-01
-Wrap_R_after_stabGre       45   2.725612E-07   8.619843E-01
- Wrap_R_after_stabUR       40   1.225539E-04   9.403354E-01
-Wrap_R_after_stabGre       40   3.177628E-06   8.632159E-01
-Wrap_R_before_stabUR       50   1.352928E-09   9.987317E-01
- Wrap_R_after_stabUR       50   2.846159E-05   9.349339E-01
-Wrap_R_before_stabUR       45   9.038986E-09   9.941531E-01
-Wrap_R_after_stabGre       50   4.285167E-06   8.618916E-01
- Wrap_R_after_stabUR       45   1.270679E-04   9.307314E-01
-Wrap_R_before_stabUR       50   1.352928E-09   9.987317E-01
- Wrap_R_after_stabUR       50   2.846159E-05   9.349339E-01
-Wrap_R_after_stabGre       45   1.699974E-05   8.616682E-01
-Wrap_R_before_stabUR       45   9.038986E-09   9.941531E-01
-Wrap_R_after_stabGre       50   4.285167E-06   8.618916E-01
- Wrap_R_after_stabUR       45   1.270679E-04   9.307314E-01
-Wrap_R_after_stabGre       45   1.699974E-05   8.616682E-01
-Wrap_R_before_stabUR       55   1.069553E-09   9.987766E-01
- Wrap_R_after_stabUR       55   5.017885E-05   9.351160E-01
-Wrap_R_before_stabUR       50   2.731849E-08   9.976558E-01
-Wrap_R_after_stabGre       55   3.946644E-06   8.605534E-01
- Wrap_R_after_stabUR       50   1.417020E-04   9.346358E-01
-Wrap_R_before_stabUR       55   1.069553E-09   9.987766E-01
- Wrap_R_after_stabUR       55   5.017885E-05   9.351160E-01
-Wrap_R_after_stabGre       50   4.601857E-06   8.605544E-01
-Wrap_R_before_stabUR       50   2.731849E-08   9.976558E-01
-Wrap_R_after_stabGre       55   3.946644E-06   8.605534E-01
- Wrap_R_after_stabUR       50   1.417020E-04   9.346358E-01
-Wrap_R_after_stabGre       50   4.601857E-06   8.605544E-01
+ Wrap_R_after_stabUR       60   3.997866E-06   9.614674E-01
+Wrap_R_after_stabGre       60   1.531906E-05   7.169537E-01
 Wrap_R_before_stabUR       60   0.000000E+00   1.000000E+00
- Wrap_R_after_stabUR       60   1.100894E-04   9.358209E-01
-Wrap_R_before_stabUR       55   3.939754E-10   9.987785E-01
-Wrap_R_after_stabGre       60   1.078412E-05   8.625893E-01
+ Wrap_R_after_stabUR       60   3.997866E-06   9.614674E-01
+Wrap_R_after_stabGre       60   1.531906E-05   7.169537E-01
 Wrap_R_before_stabUR       60   0.000000E+00   1.000000E+00
- Wrap_R_after_stabUR       55   5.720257E-05   9.218743E-01
- Wrap_R_after_stabUR       60   1.100894E-04   9.358209E-01
-Wrap_R_after_stabGre       55   1.751650E-05   8.578132E-01
-Wrap_R_after_stabGre       60   1.078412E-05   8.625893E-01
-Wrap_R_before_stabUR       55   3.939754E-10   9.987785E-01
- Wrap_R_after_stabUR       55   5.720257E-05   9.218743E-01
-Wrap_R_after_stabGre       55   1.751650E-05   8.578132E-01
+ Wrap_R_after_stabUR       60   3.997866E-06   9.614674E-01
+Wrap_R_after_stabGre       60   1.531906E-05   7.169537E-01
+Wrap_R_before_stabUR       15   3.598572E-06   9.965237E-01
+ Wrap_R_after_stabUR       15   3.997866E-06   9.614674E-01
+Wrap_R_after_stabGre       15   2.341184E-06   8.278639E-01
+Wrap_R_before_stabUR       15   3.598572E-06   9.965237E-01
+ Wrap_R_after_stabUR       15   3.997866E-06   9.614674E-01
+Wrap_R_after_stabGre       15   2.341184E-06   8.278639E-01
+Wrap_R_before_stabUR        5   1.930024E-05   9.660662E-01
+ Wrap_R_after_stabUR        5   5.180164E-05   9.266027E-01
+Wrap_R_after_stabGre        5   1.495146E-06   9.631085E-01
+Wrap_R_before_stabUR        5   1.930024E-05   9.660662E-01
+ Wrap_R_after_stabUR        5   5.180164E-05   9.266027E-01
+Wrap_R_after_stabGre        5   1.495146E-06   9.631085E-01
+Wrap_R_before_stabUR       10   1.466605E-05   9.827334E-01
+ Wrap_R_after_stabUR       10   8.902748E-06   9.232810E-01
+Wrap_R_after_stabGre       10   4.630966E-06   9.618966E-01
+Wrap_R_before_stabUR       10   1.466605E-05   9.827334E-01
+ Wrap_R_after_stabUR       10   8.902748E-06   9.232810E-01
+Wrap_R_after_stabGre       10   4.630966E-06   9.618966E-01
+Wrap_R_before_stabUR       15   1.313316E-05   9.906108E-01
+ Wrap_R_after_stabUR       15   3.673297E-05   9.283561E-01
+Wrap_R_after_stabGre       15   4.561054E-06   9.628469E-01
+Wrap_R_before_stabUR       15   1.313316E-05   9.906108E-01
+ Wrap_R_after_stabUR       15   3.673297E-05   9.283561E-01
+Wrap_R_after_stabGre       15   4.561054E-06   9.628469E-01
+Wrap_R_before_stabUR       20   1.326037E-05   9.908146E-01
+ Wrap_R_after_stabUR       20   3.711584E-05   9.251866E-01
+Wrap_R_after_stabGre       20   1.423268E-05   9.624049E-01
+Wrap_R_before_stabUR       20   1.326037E-05   9.908146E-01
+ Wrap_R_after_stabUR       20   3.711584E-05   9.251866E-01
+Wrap_R_after_stabGre       20   1.423268E-05   9.624049E-01
+Wrap_R_before_stabUR       25   6.596516E-06   9.921039E-01
+ Wrap_R_after_stabUR       25   1.816188E-04   9.204877E-01
+Wrap_R_after_stabGre       25   1.242868E-06   9.622652E-01
+Wrap_R_before_stabUR       25   6.596516E-06   9.921039E-01
+ Wrap_R_after_stabUR       25   1.816188E-04   9.204877E-01
+Wrap_R_after_stabGre       25   1.242868E-06   9.622652E-01
+Wrap_R_before_stabUR       30   4.684022E-06   9.833198E-01
+ Wrap_R_after_stabUR       30   8.232845E-05   9.019012E-01
+Wrap_R_after_stabGre       30   2.131209E-06   9.626726E-01
+Wrap_R_before_stabUR       30   4.684022E-06   9.833198E-01
+ Wrap_R_after_stabUR       30   8.232845E-05   9.019012E-01
+Wrap_R_after_stabGre       30   2.131209E-06   9.626726E-01
+Wrap_R_before_stabUR       35   8.881190E-07   9.873279E-01
+ Wrap_R_after_stabUR       35   3.553671E-05   8.995170E-01
+Wrap_R_after_stabGre       35   1.119043E-06   9.628297E-01
+Wrap_R_before_stabUR       35   8.881190E-07   9.873279E-01
+ Wrap_R_after_stabUR       35   3.553671E-05   8.995170E-01
+Wrap_R_after_stabGre       35   1.119043E-06   9.628297E-01
+Wrap_R_before_stabUR       40   2.130051E-06   9.861102E-01
+ Wrap_R_after_stabUR       40   8.942862E-05   8.938866E-01
+Wrap_R_after_stabGre       40   1.273680E-06   9.632104E-01
+Wrap_R_before_stabUR       40   2.130051E-06   9.861102E-01
+ Wrap_R_after_stabUR       40   8.942862E-05   8.938866E-01
+Wrap_R_after_stabGre       40   1.273680E-06   9.632104E-01
+Wrap_R_before_stabUR       45   5.952935E-07   9.730569E-01
+ Wrap_R_after_stabUR       45   2.445397E-06   8.984564E-01
+Wrap_R_after_stabGre       45   3.913301E-06   9.623569E-01
+Wrap_R_before_stabUR       45   5.952935E-07   9.730569E-01
+ Wrap_R_after_stabUR       45   2.445397E-06   8.984564E-01
+Wrap_R_after_stabGre       45   3.913301E-06   9.623569E-01
+Wrap_R_before_stabUR       50   6.118750E-07   9.896792E-01
+ Wrap_R_after_stabUR       50   5.267451E-05   8.912844E-01
+Wrap_R_after_stabGre       50   2.379589E-06   9.637353E-01
+Wrap_R_before_stabUR       50   6.118750E-07   9.896792E-01
+ Wrap_R_after_stabUR       50   5.267451E-05   8.912844E-01
+Wrap_R_after_stabGre       50   2.379589E-06   9.637353E-01
+Wrap_R_before_stabUR       55   2.703727E-06   9.946201E-01
+ Wrap_R_after_stabUR       55   1.724828E-05   8.876306E-01
+Wrap_R_after_stabGre       55   1.071099E-05   9.640941E-01
+Wrap_R_before_stabUR       55   2.703727E-06   9.946201E-01
+ Wrap_R_after_stabUR       55   1.724828E-05   8.876306E-01
+Wrap_R_after_stabGre       55   1.071099E-05   9.640941E-01
+Wrap_R_before_stabUR       60   3.598572E-06   9.965237E-01
+ Wrap_R_after_stabUR       60   3.671027E-05   8.881293E-01
+Wrap_R_after_stabGre       60   1.003015E-05   9.633038E-01
+Wrap_R_before_stabUR       60   3.598572E-06   9.965237E-01
+ Wrap_R_after_stabUR       60   3.671027E-05   8.881293E-01
+Wrap_R_after_stabGre       60   1.003015E-05   9.633038E-01
+Wrap_R_before_stabUR       10   1.466605E-05   9.827334E-01
+ Wrap_R_after_stabUR       10   3.671027E-05   8.881293E-01
+Wrap_R_after_stabGre       10   4.252396E-06   9.814541E-01
+Wrap_R_before_stabUR       10   1.466605E-05   9.827334E-01
+ Wrap_R_after_stabUR       10   3.671027E-05   8.881293E-01
+Wrap_R_after_stabGre       10   4.252396E-06   9.814541E-01
+Wrap_R_before_stabUR       40   2.130051E-06   9.861102E-01
+ Wrap_R_after_stabUR       40   3.671027E-05   8.881293E-01
+Wrap_R_after_stabGre       40   2.585632E-06   9.728887E-01
+Wrap_R_before_stabUR       40   2.130051E-06   9.861102E-01
+ Wrap_R_after_stabUR       40   3.671027E-05   8.881293E-01
+Wrap_R_after_stabGre       40   2.585632E-06   9.728887E-01
+Wrap_R_before_stabUR        5   9.413323E-06   9.498093E-01
+ Wrap_R_after_stabUR        5   7.897875E-05   8.237565E-01
+Wrap_R_after_stabGre        5   4.097164E-07   9.947617E-01
+Wrap_R_before_stabUR        5   9.413323E-06   9.498093E-01
+ Wrap_R_after_stabUR        5   7.897875E-05   8.237565E-01
+Wrap_R_after_stabGre        5   4.097164E-07   9.947617E-01
+Wrap_R_before_stabUR       10   1.625264E-05   9.718936E-01
+ Wrap_R_after_stabUR       10   9.709833E-06   8.095271E-01
+Wrap_R_after_stabGre       10   7.915796E-07   9.950009E-01
+Wrap_R_before_stabUR       10   1.625264E-05   9.718936E-01
+ Wrap_R_after_stabUR       10   9.709833E-06   8.095271E-01
+Wrap_R_after_stabGre       10   7.915796E-07   9.950009E-01
+Wrap_R_before_stabUR       15   1.741298E-06   9.771287E-01
+ Wrap_R_after_stabUR       15   1.303427E-05   7.952375E-01
+Wrap_R_after_stabGre       15   6.096418E-06   9.951907E-01
+Wrap_R_before_stabUR       15   1.741298E-06   9.771287E-01
+ Wrap_R_after_stabUR       15   1.303427E-05   7.952375E-01
+Wrap_R_after_stabGre       15   6.096418E-06   9.951907E-01
+Wrap_R_before_stabUR       20   3.747056E-05   9.786771E-01
+ Wrap_R_after_stabUR       20   3.899848E-04   8.016072E-01
+Wrap_R_after_stabGre       20   6.737307E-08   9.951690E-01
+Wrap_R_before_stabUR       20   3.747056E-05   9.786771E-01
+ Wrap_R_after_stabUR       20   3.899848E-04   8.016072E-01
+Wrap_R_after_stabGre       20   6.737307E-08   9.951690E-01
+Wrap_R_before_stabUR       25   4.332500E-06   9.835085E-01
+ Wrap_R_after_stabUR       25   5.979276E-05   8.181852E-01
+Wrap_R_after_stabGre       25   1.568798E-06   9.948927E-01
+Wrap_R_before_stabUR       25   4.332500E-06   9.835085E-01
+ Wrap_R_after_stabUR       25   5.979276E-05   8.181852E-01
+Wrap_R_after_stabGre       25   1.568798E-06   9.948927E-01
+Wrap_R_before_stabUR       30   3.546112E-07   9.712731E-01
+ Wrap_R_after_stabUR       30   5.518147E-05   8.082614E-01
+Wrap_R_after_stabGre       30   5.981662E-07   9.951373E-01
+Wrap_R_before_stabUR       30   3.546112E-07   9.712731E-01
+ Wrap_R_after_stabUR       30   5.518147E-05   8.082614E-01
+Wrap_R_after_stabGre       30   5.981662E-07   9.951373E-01
+Wrap_R_before_stabUR       35   6.942345E-06   9.672516E-01
+ Wrap_R_after_stabUR       35   4.823561E-05   8.053187E-01
+Wrap_R_after_stabGre       35   2.334783E-07   9.953254E-01
+Wrap_R_before_stabUR       35   6.942345E-06   9.672516E-01
+ Wrap_R_after_stabUR       35   4.823561E-05   8.053187E-01
+Wrap_R_after_stabGre       35   2.334783E-07   9.953254E-01
+Wrap_R_before_stabUR       40   5.596657E-06   9.832257E-01
+ Wrap_R_after_stabUR       40   3.802163E-06   8.159834E-01
+Wrap_R_after_stabGre       40   2.301463E-06   9.954624E-01
+Wrap_R_before_stabUR       40   5.596657E-06   9.832257E-01
+ Wrap_R_after_stabUR       40   3.802163E-06   8.159834E-01
+Wrap_R_after_stabGre       40   2.301463E-06   9.954624E-01
+Wrap_R_before_stabUR       45   2.292962E-06   9.693094E-01
+ Wrap_R_after_stabUR       45   1.277557E-04   8.301023E-01
+Wrap_R_after_stabGre       45   9.055335E-07   9.958561E-01
+Wrap_R_before_stabUR       45   2.292962E-06   9.693094E-01
+ Wrap_R_after_stabUR       45   1.277557E-04   8.301023E-01
+Wrap_R_after_stabGre       45   9.055335E-07   9.958561E-01
+Wrap_R_before_stabUR       50   7.890491E-06   9.718312E-01
+ Wrap_R_after_stabUR       50   5.075148E-05   8.169413E-01
+Wrap_R_after_stabGre       50   1.557158E-06   9.958770E-01
+Wrap_R_before_stabUR       50   7.890491E-06   9.718312E-01
+ Wrap_R_after_stabUR       50   5.075148E-05   8.169413E-01
+Wrap_R_after_stabGre       50   1.557158E-06   9.958770E-01
+Wrap_R_before_stabUR       55   1.692163E-05   9.829814E-01
+ Wrap_R_after_stabUR       55   1.964603E-04   8.224330E-01
+Wrap_R_after_stabGre       55   9.016570E-07   9.958570E-01
+Wrap_R_before_stabUR       55   1.692163E-05   9.829814E-01
+ Wrap_R_after_stabUR       55   1.964603E-04   8.224330E-01
+Wrap_R_after_stabGre       55   9.016570E-07   9.958570E-01
+Wrap_R_before_stabUR       60   2.130051E-06   9.861102E-01
+ Wrap_R_after_stabUR       60   1.470676E-04   8.279419E-01
+Wrap_R_after_stabGre       60   7.346960E-07   9.958476E-01
+Wrap_R_before_stabUR       60   2.130051E-06   9.861102E-01
+ Wrap_R_after_stabUR       60   1.470676E-04   8.279419E-01
+Wrap_R_after_stabGre       60   7.346960E-07   9.958476E-01
+Wrap_R_before_stabUR       30   3.546112E-07   9.712731E-01
+ Wrap_R_after_stabUR       30   1.470676E-04   8.279419E-01
+Wrap_R_after_stabGre       30   2.175704E-07   9.971399E-01
+Wrap_R_before_stabUR       30   3.546112E-07   9.712731E-01
+ Wrap_R_after_stabUR       30   1.470676E-04   8.279419E-01
+Wrap_R_after_stabGre       30   2.175704E-07   9.971399E-01
+Wrap_R_before_stabUR        5   3.894698E-05   9.291091E-01
+ Wrap_R_after_stabUR        5   1.843500E-04   7.672822E-01
+Wrap_R_after_stabGre        5   2.637175E-07   9.994023E-01
+Wrap_R_before_stabUR        5   3.894698E-05   9.291091E-01
+ Wrap_R_after_stabUR        5   1.843500E-04   7.672822E-01
+Wrap_R_after_stabGre        5   2.637175E-07   9.994023E-01
+Wrap_R_before_stabUR       10   2.444173E-05   9.577184E-01
+ Wrap_R_after_stabUR       10   3.340885E-04   7.745984E-01
+Wrap_R_after_stabGre       10   3.477445E-07   9.994697E-01
+Wrap_R_before_stabUR       10   2.444173E-05   9.577184E-01
+ Wrap_R_after_stabUR       10   3.340885E-04   7.745984E-01
+Wrap_R_after_stabGre       10   3.477445E-07   9.994697E-01
+Wrap_R_before_stabUR       15   7.734089E-07   9.666808E-01
+ Wrap_R_after_stabUR       15   6.978848E-05   7.701126E-01
+Wrap_R_after_stabGre       15   5.836267E-08   9.994881E-01
+Wrap_R_before_stabUR       15   7.734089E-07   9.666808E-01
+ Wrap_R_after_stabUR       15   6.978848E-05   7.701126E-01
+Wrap_R_after_stabGre       15   5.836267E-08   9.994881E-01
+Wrap_R_before_stabUR       20   4.819567E-06   9.674738E-01
+ Wrap_R_after_stabUR       20   7.435108E-05   7.796318E-01
+Wrap_R_after_stabGre       20   5.369386E-07   9.998283E-01
+Wrap_R_before_stabUR       20   4.819567E-06   9.674738E-01
+ Wrap_R_after_stabUR       20   7.435108E-05   7.796318E-01
+Wrap_R_after_stabGre       20   5.369386E-07   9.998283E-01
+Wrap_R_before_stabUR       25   4.121643E-06   9.739947E-01
+ Wrap_R_after_stabUR       25   1.405603E-04   7.550757E-01
+Wrap_R_after_stabGre       25   1.040246E-06   9.998880E-01
+Wrap_R_before_stabUR       25   4.121643E-06   9.739947E-01
+ Wrap_R_after_stabUR       25   1.405603E-04   7.550757E-01
+Wrap_R_after_stabGre       25   1.040246E-06   9.998880E-01
+Wrap_R_before_stabUR       30   4.106762E-05   9.575049E-01
+ Wrap_R_after_stabUR       30   3.003242E-05   7.564983E-01
+Wrap_R_after_stabGre       30   6.485844E-08   1.000109E+00
+Wrap_R_before_stabUR       30   4.106762E-05   9.575049E-01
+ Wrap_R_after_stabUR       30   3.003242E-05   7.564983E-01
+Wrap_R_after_stabGre       30   6.485844E-08   1.000109E+00
+Wrap_R_before_stabUR       35   1.084316E-05   9.584447E-01
+ Wrap_R_after_stabUR       35   1.247660E-04   7.528481E-01
+Wrap_R_after_stabGre       35   7.035791E-08   9.999650E-01
+Wrap_R_before_stabUR       35   1.084316E-05   9.584447E-01
+ Wrap_R_after_stabUR       35   1.247660E-04   7.528481E-01
+Wrap_R_after_stabGre       35   7.035791E-08   9.999650E-01
+Wrap_R_before_stabUR       40   2.646281E-06   9.526825E-01
+ Wrap_R_after_stabUR       40   1.103022E-04   7.616937E-01
+Wrap_R_after_stabGre       40   3.406609E-07   9.999191E-01
+Wrap_R_before_stabUR       40   2.646281E-06   9.526825E-01
+ Wrap_R_after_stabUR       40   1.103022E-04   7.616937E-01
+Wrap_R_after_stabGre       40   3.406609E-07   9.999191E-01
+Wrap_R_before_stabUR       45   6.655461E-07   9.358800E-01
+ Wrap_R_after_stabUR       45   1.644303E-04   7.483928E-01
+Wrap_R_after_stabGre       45   5.772465E-08   9.998891E-01
+Wrap_R_before_stabUR       45   6.655461E-07   9.358800E-01
+ Wrap_R_after_stabUR       45   1.644303E-04   7.483928E-01
+Wrap_R_after_stabGre       45   5.772465E-08   9.998891E-01
+Wrap_R_before_stabUR       50   1.012205E-06   9.662785E-01
+ Wrap_R_after_stabUR       50   9.509384E-05   7.590563E-01
+Wrap_R_after_stabGre       50   3.973198E-08   9.998314E-01
+Wrap_R_before_stabUR       50   1.012205E-06   9.662785E-01
+ Wrap_R_after_stabUR       50   9.509384E-05   7.590563E-01
+Wrap_R_after_stabGre       50   3.973198E-08   9.998314E-01
+Wrap_R_before_stabUR       55   2.630167E-06   9.743041E-01
+ Wrap_R_after_stabUR       55   5.742822E-05   7.376332E-01
+Wrap_R_after_stabGre       55   4.008782E-07   9.998562E-01
+Wrap_R_before_stabUR       55   2.630167E-06   9.743041E-01
+ Wrap_R_after_stabUR       55   5.742822E-05   7.376332E-01
+Wrap_R_after_stabGre       55   4.008782E-07   9.998562E-01
+Wrap_R_before_stabUR       60   3.546112E-07   9.712731E-01
+ Wrap_R_after_stabUR       60   1.257856E-04   7.492883E-01
+Wrap_R_after_stabGre       60   1.924597E-07   9.998606E-01
+Wrap_R_before_stabUR       60   3.546112E-07   9.712731E-01
+ Wrap_R_after_stabUR       60   1.257856E-04   7.492883E-01
+Wrap_R_after_stabGre       60   1.924597E-07   9.998606E-01
+Wrap_R_before_stabUR       55   2.630167E-06   9.743041E-01
+ Wrap_R_after_stabUR       55   1.257856E-04   7.492883E-01
+Wrap_R_after_stabGre       55   5.739896E-08   9.998487E-01
+Wrap_R_before_stabUR       55   2.630167E-06   9.743041E-01
+ Wrap_R_after_stabUR       55   1.257856E-04   7.492883E-01
+Wrap_R_after_stabGre       55   5.739896E-08   9.998487E-01
+Wrap_R_before_stabUR        5   2.793662E-05   9.379784E-01
+ Wrap_R_after_stabUR        5   1.205231E-04   7.342711E-01
+Wrap_R_after_stabGre        5   4.083017E-08   9.999767E-01
+Wrap_R_before_stabUR        5   2.793662E-05   9.379784E-01
+ Wrap_R_after_stabUR        5   1.205231E-04   7.342711E-01
+Wrap_R_after_stabGre        5   4.083017E-08   9.999767E-01
+Wrap_R_before_stabUR       10   1.069494E-05   9.623177E-01
+ Wrap_R_after_stabUR       10   5.517763E-05   7.272246E-01
+Wrap_R_after_stabGre       10   6.365751E-08   1.000023E+00
+Wrap_R_before_stabUR       10   1.069494E-05   9.623177E-01
+ Wrap_R_after_stabUR       10   5.517763E-05   7.272246E-01
+Wrap_R_after_stabGre       10   6.365751E-08   1.000023E+00
+Wrap_R_before_stabUR       15   1.233639E-05   9.687700E-01
+ Wrap_R_after_stabUR       15   6.960022E-05   7.162370E-01
+Wrap_R_after_stabGre       15   2.456538E-09   9.999839E-01
+Wrap_R_before_stabUR       15   1.233639E-05   9.687700E-01
+ Wrap_R_after_stabUR       15   6.960022E-05   7.162370E-01
+Wrap_R_after_stabGre       15   2.456538E-09   9.999839E-01
+Wrap_R_before_stabUR       20   1.875822E-05   9.711843E-01
+ Wrap_R_after_stabUR       20   1.572734E-05   7.082391E-01
+Wrap_R_after_stabGre       20   8.921893E-08   9.999997E-01
+Wrap_R_before_stabUR       20   1.875822E-05   9.711843E-01
+ Wrap_R_after_stabUR       20   1.572734E-05   7.082391E-01
+Wrap_R_after_stabGre       20   8.921893E-08   9.999997E-01
+Wrap_R_before_stabUR       25   2.555123E-05   9.761708E-01
+ Wrap_R_after_stabUR       25   6.605192E-04   7.277199E-01
+Wrap_R_after_stabGre       25   7.797093E-08   9.999985E-01
+Wrap_R_before_stabUR       25   2.555123E-05   9.761708E-01
+ Wrap_R_after_stabUR       25   6.605192E-04   7.277199E-01
+Wrap_R_after_stabGre       25   7.797093E-08   9.999985E-01
+Wrap_R_before_stabUR       30   7.495045E-05   9.625537E-01
+ Wrap_R_after_stabUR       30   4.565597E-05   7.029962E-01
+Wrap_R_after_stabGre       30   2.090280E-07   9.999928E-01
+Wrap_R_before_stabUR       30   7.495045E-05   9.625537E-01
+ Wrap_R_after_stabUR       30   4.565597E-05   7.029962E-01
+Wrap_R_after_stabGre       30   2.090280E-07   9.999928E-01
+Wrap_R_before_stabUR       35   1.008012E-05   9.615356E-01
+ Wrap_R_after_stabUR       35   9.181901E-05   7.002016E-01
+Wrap_R_after_stabGre       35   7.181166E-08   9.999715E-01
+Wrap_R_before_stabUR       35   1.008012E-05   9.615356E-01
+ Wrap_R_after_stabUR       35   9.181901E-05   7.002016E-01
+Wrap_R_after_stabGre       35   7.181166E-08   9.999715E-01
+Wrap_R_before_stabUR       40   5.404182E-06   9.568357E-01
+ Wrap_R_after_stabUR       40   3.660743E-05   6.851304E-01
+Wrap_R_after_stabGre       40   1.251945E-08   9.999969E-01
+Wrap_R_before_stabUR       40   5.404182E-06   9.568357E-01
+ Wrap_R_after_stabUR       40   3.660743E-05   6.851304E-01
+Wrap_R_after_stabGre       40   1.251945E-08   9.999969E-01
+Wrap_R_before_stabUR       45   5.495551E-05   9.367529E-01
+ Wrap_R_after_stabUR       45   1.944566E-04   6.898839E-01
+Wrap_R_after_stabGre       45   1.994151E-07   9.999707E-01
+Wrap_R_before_stabUR       45   5.495551E-05   9.367529E-01
+ Wrap_R_after_stabUR       45   1.944566E-04   6.898839E-01
+Wrap_R_after_stabGre       45   1.994151E-07   9.999707E-01
+Wrap_R_before_stabUR       50   2.172953E-06   9.628560E-01
+ Wrap_R_after_stabUR       50   3.277183E-05   6.812401E-01
+Wrap_R_after_stabGre       50   1.172462E-07   9.999966E-01
+Wrap_R_before_stabUR       50   2.172953E-06   9.628560E-01
+ Wrap_R_after_stabUR       50   3.277183E-05   6.812401E-01
+Wrap_R_after_stabGre       50   1.172462E-07   9.999966E-01
+Wrap_R_before_stabUR       55   5.971131E-06   9.699346E-01
+ Wrap_R_after_stabUR       55   3.205535E-04   6.866315E-01
+Wrap_R_after_stabGre       55   1.763445E-07   9.999866E-01
+Wrap_R_before_stabUR       55   5.971131E-06   9.699346E-01
+ Wrap_R_after_stabUR       55   3.205535E-04   6.866315E-01
+Wrap_R_after_stabGre       55   1.763445E-07   9.999866E-01
+Wrap_R_before_stabUR       60   2.630167E-06   9.743041E-01
+ Wrap_R_after_stabUR       60   1.399724E-04   6.918225E-01
+Wrap_R_after_stabGre       60   2.620208E-08   9.999919E-01
+Wrap_R_before_stabUR       60   2.630167E-06   9.743041E-01
+ Wrap_R_after_stabUR       60   1.399724E-04   6.918225E-01
+Wrap_R_after_stabGre       60   2.620208E-08   9.999919E-01
+Wrap_R_before_stabUR       35   1.008012E-05   9.615356E-01
+ Wrap_R_after_stabUR       35   1.399724E-04   6.918225E-01
+Wrap_R_after_stabGre       35   5.074336E-08   1.000055E+00
+Wrap_R_before_stabUR       35   1.008012E-05   9.615356E-01
+ Wrap_R_after_stabUR       35   1.399724E-04   6.918225E-01
+Wrap_R_after_stabGre       35   5.074336E-08   1.000055E+00
+Wrap_R_before_stabUR       45   5.495551E-05   9.367529E-01
+ Wrap_R_after_stabUR       45   1.399724E-04   6.918225E-01
+Wrap_R_after_stabGre       45   9.662416E-08   1.000034E+00
+Wrap_R_before_stabUR       45   5.495551E-05   9.367529E-01
+ Wrap_R_after_stabUR       45   1.399724E-04   6.918225E-01
+Wrap_R_after_stabGre       45   9.662416E-08   1.000034E+00
+Wrap_R_before_stabUR       40   5.404182E-06   9.568357E-01
+ Wrap_R_after_stabUR       40   1.399724E-04   6.918225E-01
+Wrap_R_after_stabGre       40   9.356654E-08   1.000063E+00
+Wrap_R_before_stabUR       40   5.404182E-06   9.568357E-01
+ Wrap_R_after_stabUR       40   1.399724E-04   6.918225E-01
+Wrap_R_after_stabGre       40   9.356654E-08   1.000063E+00
+Wrap_R_before_stabUR        5   2.914612E-06   9.221313E-01
+ Wrap_R_after_stabUR        5   8.274470E-04   6.898719E-01
+Wrap_R_after_stabGre        5   7.724431E-09   1.000021E+00
+Wrap_R_before_stabUR        5   2.914612E-06   9.221313E-01
+ Wrap_R_after_stabUR        5   8.274470E-04   6.898719E-01
+Wrap_R_after_stabGre        5   7.724431E-09   1.000021E+00
+Wrap_R_before_stabUR       10   4.650322E-05   9.417698E-01
+ Wrap_R_after_stabUR       10   6.635114E-05   6.793439E-01
+Wrap_R_after_stabGre       10   1.308749E-08   1.000033E+00
+Wrap_R_before_stabUR       10   4.650322E-05   9.417698E-01
+ Wrap_R_after_stabUR       10   6.635114E-05   6.793439E-01
+Wrap_R_after_stabGre       10   1.308749E-08   1.000033E+00
+Wrap_R_before_stabUR       15   1.422072E-05   9.488948E-01
+ Wrap_R_after_stabUR       15   7.231452E-04   6.926757E-01
+Wrap_R_after_stabGre       15   1.062324E-08   1.000037E+00
+Wrap_R_before_stabUR       15   1.422072E-05   9.488948E-01
+ Wrap_R_after_stabUR       15   7.231452E-04   6.926757E-01
+Wrap_R_after_stabGre       15   1.062324E-08   1.000037E+00
+Wrap_R_before_stabUR       20   5.811972E-06   9.521498E-01
+ Wrap_R_after_stabUR       20   2.348564E-04   6.736316E-01
+Wrap_R_after_stabGre       20   8.841528E-09   1.000026E+00
+Wrap_R_before_stabUR       20   5.811972E-06   9.521498E-01
+ Wrap_R_after_stabUR       20   2.348564E-04   6.736316E-01
+Wrap_R_after_stabGre       20   8.841528E-09   1.000026E+00
+Wrap_R_before_stabUR       25   4.445916E-05   9.596329E-01
+ Wrap_R_after_stabUR       25   1.928337E-06   7.003864E-01
+Wrap_R_after_stabGre       25   3.485841E-09   1.000025E+00
+Wrap_R_before_stabUR       25   4.445916E-05   9.596329E-01
+ Wrap_R_after_stabUR       25   1.928337E-06   7.003864E-01
+Wrap_R_after_stabGre       25   3.485841E-09   1.000025E+00
+Wrap_R_before_stabUR       30   5.042617E-06   9.441709E-01
+ Wrap_R_after_stabUR       30   6.423159E-06   7.193495E-01
+Wrap_R_after_stabGre       30   4.088874E-08   1.000021E+00
+Wrap_R_before_stabUR       30   5.042617E-06   9.441709E-01
+ Wrap_R_after_stabUR       30   6.423159E-06   7.193495E-01
+Wrap_R_after_stabGre       30   4.088874E-08   1.000021E+00
+Wrap_R_before_stabUR       35   2.087480E-05   9.356752E-01
+ Wrap_R_after_stabUR       35   5.821876E-05   7.308231E-01
+Wrap_R_after_stabGre       35   5.478761E-09   1.000015E+00
+Wrap_R_before_stabUR       35   2.087480E-05   9.356752E-01
+ Wrap_R_after_stabUR       35   5.821876E-05   7.308231E-01
+Wrap_R_after_stabGre       35   5.478761E-09   1.000015E+00
+Wrap_R_before_stabUR       40   5.150236E-05   9.584198E-01
+ Wrap_R_after_stabUR       40   8.059847E-05   7.309804E-01
+Wrap_R_after_stabGre       40   2.843396E-08   1.000016E+00
+Wrap_R_before_stabUR       40   5.150236E-05   9.584198E-01
+ Wrap_R_after_stabUR       40   8.059847E-05   7.309804E-01
+Wrap_R_after_stabGre       40   2.843396E-08   1.000016E+00
+Wrap_R_before_stabUR       45   1.508832E-07   9.405325E-01
+ Wrap_R_after_stabUR       45   3.082512E-04   7.346492E-01
+Wrap_R_after_stabGre       45   2.289490E-08   1.000018E+00
+Wrap_R_before_stabUR       45   1.508832E-07   9.405325E-01
+ Wrap_R_after_stabUR       45   3.082512E-04   7.346492E-01
+Wrap_R_after_stabGre       45   2.289490E-08   1.000018E+00
+Wrap_R_before_stabUR       50   5.302292E-06   9.380575E-01
+ Wrap_R_after_stabUR       50   1.244300E-04   7.274868E-01
+Wrap_R_after_stabGre       50   1.026408E-08   1.000018E+00
+Wrap_R_before_stabUR       50   5.302292E-06   9.380575E-01
+ Wrap_R_after_stabUR       50   1.244300E-04   7.274868E-01
+Wrap_R_after_stabGre       50   1.026408E-08   1.000018E+00
+Wrap_R_before_stabUR       55   8.976085E-06   9.628107E-01
+ Wrap_R_after_stabUR       55   3.698225E-04   6.959108E-01
+Wrap_R_after_stabGre       55   2.888783E-08   1.000022E+00
+Wrap_R_before_stabUR       55   8.976085E-06   9.628107E-01
+ Wrap_R_after_stabUR       55   3.698225E-04   6.959108E-01
+Wrap_R_after_stabGre       55   2.888783E-08   1.000022E+00
+Wrap_R_before_stabUR       60   5.404182E-06   9.568357E-01
+ Wrap_R_after_stabUR       60   2.696894E-05   6.840359E-01
+Wrap_R_after_stabGre       60   3.511490E-08   1.000024E+00
+Wrap_R_before_stabUR       60   5.404182E-06   9.568357E-01
+ Wrap_R_after_stabUR       60   2.696894E-05   6.840359E-01
+Wrap_R_after_stabGre       60   3.511490E-08   1.000024E+00
+Wrap_R_before_stabUR       55   8.976085E-06   9.628107E-01
+ Wrap_R_after_stabUR       55   2.696894E-05   6.840359E-01
+Wrap_R_after_stabGre       55   6.528005E-09   1.000027E+00
+Wrap_R_before_stabUR       55   8.976085E-06   9.628107E-01
+ Wrap_R_after_stabUR       55   2.696894E-05   6.840359E-01
+Wrap_R_after_stabGre       55   6.528005E-09   1.000027E+00
+Wrap_R_before_stabUR        5   2.899344E-05   9.415231E-01
+ Wrap_R_after_stabUR        5   8.450666E-05   6.516369E-01
+Wrap_R_after_stabGre        5   7.669008E-09   1.000023E+00
+Wrap_R_before_stabUR        5   2.899344E-05   9.415231E-01
+ Wrap_R_after_stabUR        5   8.450666E-05   6.516369E-01
+Wrap_R_after_stabGre        5   7.669008E-09   1.000023E+00
+Wrap_R_before_stabUR       10   1.893400E-05   9.596039E-01
+ Wrap_R_after_stabUR       10   8.487329E-06   6.479220E-01
+Wrap_R_after_stabGre       10   1.327930E-09   1.000021E+00
+Wrap_R_before_stabUR       10   1.893400E-05   9.596039E-01
+ Wrap_R_after_stabUR       10   8.487329E-06   6.479220E-01
+Wrap_R_after_stabGre       10   1.327930E-09   1.000021E+00
+Wrap_R_before_stabUR       15   9.327151E-06   9.623224E-01
+ Wrap_R_after_stabUR       15   6.168507E-05   6.423378E-01
+Wrap_R_after_stabGre       15   3.736688E-09   1.000020E+00
+Wrap_R_before_stabUR       15   9.327151E-06   9.623224E-01
+ Wrap_R_after_stabUR       15   6.168507E-05   6.423378E-01
+Wrap_R_after_stabGre       15   3.736688E-09   1.000020E+00
+Wrap_R_before_stabUR       20   1.875408E-05   9.656915E-01
+ Wrap_R_after_stabUR       20   2.064329E-04   6.385628E-01
+Wrap_R_after_stabGre       20   1.216065E-08   1.000018E+00
+Wrap_R_before_stabUR       20   1.875408E-05   9.656915E-01
+ Wrap_R_after_stabUR       20   2.064329E-04   6.385628E-01
+Wrap_R_after_stabGre       20   1.216065E-08   1.000018E+00
+Wrap_R_before_stabUR       25   1.726756E-05   9.682807E-01
+ Wrap_R_after_stabUR       25   2.462543E-05   6.369272E-01
+Wrap_R_after_stabGre       25   6.247188E-09   1.000029E+00
+Wrap_R_before_stabUR       25   1.726756E-05   9.682807E-01
+ Wrap_R_after_stabUR       25   2.462543E-05   6.369272E-01
+Wrap_R_after_stabGre       25   6.247188E-09   1.000029E+00
+Wrap_R_before_stabUR       30   2.251912E-05   9.591131E-01
+ Wrap_R_after_stabUR       30   9.123050E-05   6.351616E-01
+Wrap_R_after_stabGre       30   9.363875E-09   1.000036E+00
+Wrap_R_before_stabUR       30   2.251912E-05   9.591131E-01
+ Wrap_R_after_stabUR       30   9.123050E-05   6.351616E-01
+Wrap_R_after_stabGre       30   9.363875E-09   1.000036E+00
+Wrap_R_before_stabUR       35   1.245378E-05   9.487811E-01
+ Wrap_R_after_stabUR       35   1.196797E-04   6.254275E-01
+Wrap_R_after_stabGre       35   6.319755E-09   1.000028E+00
+Wrap_R_before_stabUR       35   1.245378E-05   9.487811E-01
+ Wrap_R_after_stabUR       35   1.196797E-04   6.254275E-01
+Wrap_R_after_stabGre       35   6.319755E-09   1.000028E+00
+Wrap_R_before_stabUR       40   6.772277E-05   9.646217E-01
+ Wrap_R_after_stabUR       40   1.818334E-04   6.269781E-01
+Wrap_R_after_stabGre       40   2.726439E-10   1.000024E+00
+Wrap_R_before_stabUR       40   6.772277E-05   9.646217E-01
+ Wrap_R_after_stabUR       40   1.818334E-04   6.269781E-01
+Wrap_R_after_stabGre       40   2.726439E-10   1.000024E+00
+Wrap_R_before_stabUR       45   7.493508E-05   9.476014E-01
+ Wrap_R_after_stabUR       45   5.134673E-04   6.390622E-01
+Wrap_R_after_stabGre       45   8.954183E-09   1.000015E+00
+Wrap_R_before_stabUR       45   7.493508E-05   9.476014E-01
+ Wrap_R_after_stabUR       45   5.134673E-04   6.390622E-01
+Wrap_R_after_stabGre       45   8.954183E-09   1.000015E+00
+Wrap_R_before_stabUR       50   9.056066E-06   9.408302E-01
+ Wrap_R_after_stabUR       50   2.704856E-04   6.472353E-01
+Wrap_R_after_stabGre       50   1.069790E-08   1.000014E+00
+Wrap_R_before_stabUR       50   9.056066E-06   9.408302E-01
+ Wrap_R_after_stabUR       50   2.704856E-04   6.472353E-01
+Wrap_R_after_stabGre       50   1.069790E-08   1.000014E+00
+Wrap_R_before_stabUR       55   1.072154E-05   9.669059E-01
+ Wrap_R_after_stabUR       55   4.602654E-04   6.490154E-01
+Wrap_R_after_stabGre       55   1.405826E-09   1.000013E+00
+Wrap_R_before_stabUR       55   1.072154E-05   9.669059E-01
+ Wrap_R_after_stabUR       55   4.602654E-04   6.490154E-01
+Wrap_R_after_stabGre       55   1.405826E-09   1.000013E+00
+Wrap_R_before_stabUR       60   8.976085E-06   9.628107E-01
+ Wrap_R_after_stabUR       60   1.741555E-05   6.446268E-01
+Wrap_R_after_stabGre       60   4.683377E-09   1.000010E+00
+Wrap_R_before_stabUR       60   8.976085E-06   9.628107E-01
+ Wrap_R_after_stabUR       60   1.741555E-05   6.446268E-01
+Wrap_R_after_stabGre       60   4.683377E-09   1.000010E+00
+Wrap_R_before_stabUR       10   1.893400E-05   9.596039E-01
+ Wrap_R_after_stabUR       10   1.741555E-05   6.446268E-01
+Wrap_R_after_stabGre       10   1.086538E-09   1.000009E+00
+Wrap_R_before_stabUR       10   1.893400E-05   9.596039E-01
+ Wrap_R_after_stabUR       10   1.741555E-05   6.446268E-01
+Wrap_R_after_stabGre       10   1.086538E-09   1.000009E+00
+Wrap_R_before_stabUR        5   2.254065E-06   9.441556E-01
+ Wrap_R_after_stabUR        5   2.307779E-04   6.289410E-01
+Wrap_R_after_stabGre        5   5.437573E-10   1.000001E+00
+Wrap_R_before_stabUR        5   2.254065E-06   9.441556E-01
+ Wrap_R_after_stabUR        5   2.307779E-04   6.289410E-01
+Wrap_R_after_stabGre        5   5.437573E-10   1.000001E+00
+Wrap_R_before_stabUR       10   9.026819E-06   9.640829E-01
+ Wrap_R_after_stabUR       10   3.262451E-05   6.297244E-01
+Wrap_R_after_stabGre       10   2.006227E-10   1.000001E+00
+Wrap_R_before_stabUR       10   9.026819E-06   9.640829E-01
+ Wrap_R_after_stabUR       10   3.262451E-05   6.297244E-01
+Wrap_R_after_stabGre       10   2.006227E-10   1.000001E+00
+Wrap_R_before_stabUR       15   1.541881E-05   9.696824E-01
+ Wrap_R_after_stabUR       15   2.921714E-04   6.310059E-01
+Wrap_R_after_stabGre       15   1.149456E-09   1.000001E+00
+Wrap_R_before_stabUR       15   1.541881E-05   9.696824E-01
+ Wrap_R_after_stabUR       15   2.921714E-04   6.310059E-01
+Wrap_R_after_stabGre       15   1.149456E-09   1.000001E+00
+Wrap_R_before_stabUR       20   3.581551E-05   9.724453E-01
+ Wrap_R_after_stabUR       20   3.115150E-04   6.388588E-01
+Wrap_R_after_stabGre       20   9.531532E-10   1.000001E+00
+Wrap_R_before_stabUR       20   3.581551E-05   9.724453E-01
+ Wrap_R_after_stabUR       20   3.115150E-04   6.388588E-01
+Wrap_R_after_stabGre       20   9.531532E-10   1.000001E+00
+Wrap_R_before_stabUR       25   1.873746E-06   9.755035E-01
+ Wrap_R_after_stabUR       25   2.181316E-04   6.317872E-01
+Wrap_R_after_stabGre       25   8.165951E-10   1.000001E+00
+Wrap_R_before_stabUR       25   1.873746E-06   9.755035E-01
+ Wrap_R_after_stabUR       25   2.181316E-04   6.317872E-01
+Wrap_R_after_stabGre       25   8.165951E-10   1.000001E+00
+Wrap_R_before_stabUR       30   1.929840E-05   9.636691E-01
+ Wrap_R_after_stabUR       30   8.537347E-06   6.350735E-01
+Wrap_R_after_stabGre       30   1.535019E-10   1.000001E+00
+Wrap_R_before_stabUR       30   1.929840E-05   9.636691E-01
+ Wrap_R_after_stabUR       30   8.537347E-06   6.350735E-01
+Wrap_R_after_stabGre       30   1.535019E-10   1.000001E+00
+Wrap_R_before_stabUR       35   2.094546E-05   9.611964E-01
+ Wrap_R_after_stabUR       35   6.026325E-05   6.306231E-01
+Wrap_R_after_stabGre       35   3.946068E-10   1.000001E+00
+Wrap_R_before_stabUR       35   2.094546E-05   9.611964E-01
+ Wrap_R_after_stabUR       35   6.026325E-05   6.306231E-01
+Wrap_R_after_stabGre       35   3.946068E-10   1.000001E+00
+Wrap_R_before_stabUR       40   7.370405E-06   9.522810E-01
+ Wrap_R_after_stabUR       40   1.875043E-04   6.285974E-01
+Wrap_R_after_stabGre       40   5.921705E-11   1.000001E+00
+Wrap_R_before_stabUR       40   7.370405E-06   9.522810E-01
+ Wrap_R_after_stabUR       40   1.875043E-04   6.285974E-01
+Wrap_R_after_stabGre       40   5.921705E-11   1.000001E+00
+Wrap_R_before_stabUR       45   2.692659E-05   9.337397E-01
+ Wrap_R_after_stabUR       45   2.293355E-05   6.508321E-01
+Wrap_R_after_stabGre       45   6.554316E-09   1.000001E+00
+Wrap_R_before_stabUR       45   2.692659E-05   9.337397E-01
+ Wrap_R_after_stabUR       45   2.293355E-05   6.508321E-01
+Wrap_R_after_stabGre       45   6.554316E-09   1.000001E+00
+Wrap_R_before_stabUR       50   3.739208E-05   9.572275E-01
+ Wrap_R_after_stabUR       50   9.625899E-05   6.431524E-01
+Wrap_R_after_stabGre       50   1.314723E-09   1.000002E+00
+Wrap_R_before_stabUR       50   3.739208E-05   9.572275E-01
+ Wrap_R_after_stabUR       50   9.625899E-05   6.431524E-01
+Wrap_R_after_stabGre       50   1.314723E-09   1.000002E+00
+Wrap_R_before_stabUR       55   1.717598E-05   9.549338E-01
+ Wrap_R_after_stabUR       55   1.112568E-03   6.413718E-01
+Wrap_R_after_stabGre       55   3.149898E-10   1.000001E+00
+Wrap_R_before_stabUR       55   1.717598E-05   9.549338E-01
+ Wrap_R_after_stabUR       55   1.112568E-03   6.413718E-01
+Wrap_R_after_stabGre       55   3.149898E-10   1.000001E+00
+Wrap_R_before_stabUR       60   1.893400E-05   9.596039E-01
+ Wrap_R_after_stabUR       60   2.739611E-05   6.345904E-01
+Wrap_R_after_stabGre       60   1.772942E-09   1.000001E+00
+Wrap_R_before_stabUR       60   1.893400E-05   9.596039E-01
+ Wrap_R_after_stabUR       60   2.739611E-05   6.345904E-01
+Wrap_R_after_stabGre       60   1.772942E-09   1.000001E+00
+Wrap_R_before_stabUR       10   9.026819E-06   9.640829E-01
+ Wrap_R_after_stabUR       10   2.739611E-05   6.345904E-01
+Wrap_R_after_stabGre       10   4.626916E-10   1.000001E+00
+Wrap_R_before_stabUR       10   9.026819E-06   9.640829E-01
+ Wrap_R_after_stabUR       10   2.739611E-05   6.345904E-01
+Wrap_R_after_stabGre       10   4.626916E-10   1.000001E+00
+Wrap_R_before_stabUR       60   1.893400E-05   9.596039E-01
+ Wrap_R_after_stabUR       60   2.739611E-05   6.345904E-01
+Wrap_R_after_stabGre       60   1.772942E-09   1.000001E+00
+Wrap_R_before_stabUR       60   1.893400E-05   9.596039E-01
+ Wrap_R_after_stabUR       60   2.739611E-05   6.345904E-01
+Wrap_R_after_stabGre       60   1.772942E-09   1.000001E+00
+Wrap_R_before_stabUR       30   1.929840E-05   9.636691E-01
+ Wrap_R_after_stabUR       30   2.739611E-05   6.345904E-01
+Wrap_R_after_stabGre       30   3.266510E-10   1.000001E+00
+Wrap_R_before_stabUR       30   1.929840E-05   9.636691E-01
+ Wrap_R_after_stabUR       30   2.739611E-05   6.345904E-01
+Wrap_R_after_stabGre       30   3.266510E-10   1.000001E+00
+Wrap_R_before_stabUR       30   1.929840E-05   9.636691E-01
+ Wrap_R_after_stabUR       30   2.739611E-05   6.345904E-01
+Wrap_R_after_stabGre       30   3.266512E-10   1.000001E+00
+Wrap_R_before_stabUR       30   1.929840E-05   9.636691E-01
+ Wrap_R_after_stabUR       30   2.739611E-05   6.345904E-01
+Wrap_R_after_stabGre       30   3.266512E-10   1.000001E+00
+Wrap_R_before_stabUR       45   2.692659E-05   9.337397E-01
+ Wrap_R_after_stabUR       45   2.739611E-05   6.345904E-01
+Wrap_R_after_stabGre       45   1.125111E-09   1.000001E+00
+Wrap_R_before_stabUR       45   2.692659E-05   9.337397E-01
+ Wrap_R_after_stabUR       45   2.739611E-05   6.345904E-01
+Wrap_R_after_stabGre       45   1.125111E-09   1.000001E+00
+Wrap_R_before_stabUR        5   5.308952E-05   9.312248E-01
+ Wrap_R_after_stabUR        5   2.008627E-05   5.439441E-01
+Wrap_R_after_stabGre        5   1.652877E-10   1.000001E+00
+Wrap_R_before_stabUR        5   5.308952E-05   9.312248E-01
+ Wrap_R_after_stabUR        5   2.008627E-05   5.439441E-01
+Wrap_R_after_stabGre        5   1.652877E-10   1.000001E+00
+Wrap_R_before_stabUR       10   8.125439E-06   9.457609E-01
+ Wrap_R_after_stabUR       10   1.513690E-05   5.471539E-01
+Wrap_R_after_stabGre       10   1.518984E-10   1.000001E+00
+Wrap_R_before_stabUR       10   8.125439E-06   9.457609E-01
+ Wrap_R_after_stabUR       10   1.513690E-05   5.471539E-01
+Wrap_R_after_stabGre       10   1.518984E-10   1.000001E+00
+Wrap_R_before_stabUR       15   1.330571E-05   9.491423E-01
+ Wrap_R_after_stabUR       15   2.124451E-04   5.554927E-01
+Wrap_R_after_stabGre       15   3.220816E-10   1.000001E+00
+Wrap_R_before_stabUR       15   1.330571E-05   9.491423E-01
+ Wrap_R_after_stabUR       15   2.124451E-04   5.554927E-01
+Wrap_R_after_stabGre       15   3.220816E-10   1.000001E+00
+Wrap_R_before_stabUR       20   4.758006E-05   9.537620E-01
+ Wrap_R_after_stabUR       20   8.215908E-05   5.775770E-01
+Wrap_R_after_stabGre       20   1.363817E-11   1.000001E+00
+Wrap_R_before_stabUR       20   4.758006E-05   9.537620E-01
+ Wrap_R_after_stabUR       20   8.215908E-05   5.775770E-01
+Wrap_R_after_stabGre       20   1.363817E-11   1.000001E+00
+Wrap_R_before_stabUR       25   6.475094E-06   9.566184E-01
+ Wrap_R_after_stabUR       25   4.046713E-05   5.760696E-01
+Wrap_R_after_stabGre       25   4.106304E-10   1.000001E+00
+Wrap_R_before_stabUR       25   6.475094E-06   9.566184E-01
+ Wrap_R_after_stabUR       25   4.046713E-05   5.760696E-01
+Wrap_R_after_stabGre       25   4.106304E-10   1.000001E+00
+Wrap_R_before_stabUR       30   1.512286E-04   9.459626E-01
+ Wrap_R_after_stabUR       30   3.244709E-05   5.728026E-01
+Wrap_R_after_stabGre       30   1.271167E-11   1.000001E+00
+Wrap_R_before_stabUR       30   1.512286E-04   9.459626E-01
+ Wrap_R_after_stabUR       30   3.244709E-05   5.728026E-01
+Wrap_R_after_stabGre       30   1.271167E-11   1.000001E+00
+Wrap_R_before_stabUR       35   3.688748E-05   9.382996E-01
+ Wrap_R_after_stabUR       35   3.188650E-04   5.821667E-01
+Wrap_R_after_stabGre       35   2.163253E-10   1.000001E+00
+Wrap_R_before_stabUR       35   3.688748E-05   9.382996E-01
+ Wrap_R_after_stabUR       35   3.188650E-04   5.821667E-01
+Wrap_R_after_stabGre       35   2.163253E-10   1.000001E+00
+Wrap_R_before_stabUR       40   7.331263E-06   9.377195E-01
+ Wrap_R_after_stabUR       40   2.423064E-04   6.003619E-01
+Wrap_R_after_stabGre       40   2.630201E-11   1.000001E+00
+Wrap_R_before_stabUR       40   7.331263E-06   9.377195E-01
+ Wrap_R_after_stabUR       40   2.423064E-04   6.003619E-01
+Wrap_R_after_stabGre       40   2.630201E-11   1.000001E+00
+Wrap_R_before_stabUR       45   1.256166E-05   9.163447E-01
+ Wrap_R_after_stabUR       45   3.340002E-05   6.067439E-01
+Wrap_R_after_stabGre       45   1.581937E-10   1.000001E+00
+Wrap_R_before_stabUR       45   1.256166E-05   9.163447E-01
+ Wrap_R_after_stabUR       45   3.340002E-05   6.067439E-01
+Wrap_R_after_stabGre       45   1.581937E-10   1.000001E+00
+Wrap_R_before_stabUR       50   3.212857E-05   9.266669E-01
+ Wrap_R_after_stabUR       50   5.494979E-07   6.088765E-01
+Wrap_R_after_stabGre       50   5.949455E-11   1.000001E+00
+Wrap_R_before_stabUR       50   3.212857E-05   9.266669E-01
+ Wrap_R_after_stabUR       50   5.494979E-07   6.088765E-01
+Wrap_R_after_stabGre       50   5.949455E-11   1.000001E+00
+Wrap_R_before_stabUR       55   2.894993E-05   9.374845E-01
+ Wrap_R_after_stabUR       55   1.203688E-04   6.114231E-01
+Wrap_R_after_stabGre       55   4.323289E-10   1.000001E+00
+Wrap_R_before_stabUR       55   2.894993E-05   9.374845E-01
+ Wrap_R_after_stabUR       55   1.203688E-04   6.114231E-01
+Wrap_R_after_stabGre       55   4.323289E-10   1.000001E+00
+Wrap_R_before_stabUR       60   2.692659E-05   9.337397E-01
+ Wrap_R_after_stabUR       60   3.577164E-05   6.245339E-01
+Wrap_R_after_stabGre       60   1.415749E-10   1.000001E+00
+Wrap_R_before_stabUR       60   2.692659E-05   9.337397E-01
+ Wrap_R_after_stabUR       60   3.577164E-05   6.245339E-01
+Wrap_R_after_stabGre       60   1.415749E-10   1.000001E+00
+Wrap_R_before_stabUR       45   1.256166E-05   9.163447E-01
+ Wrap_R_after_stabUR       45   3.577164E-05   6.245339E-01
+Wrap_R_after_stabGre       45   3.458484E-10   1.000001E+00
+Wrap_R_before_stabUR       45   1.256166E-05   9.163447E-01
+ Wrap_R_after_stabUR       45   3.577164E-05   6.245339E-01
+Wrap_R_after_stabGre       45   3.458484E-10   1.000001E+00
+Wrap_R_before_stabUR        5   5.308952E-05   9.312248E-01
+ Wrap_R_after_stabUR        5   3.577164E-05   6.245339E-01
+Wrap_R_after_stabGre        5   1.621438E-11   1.000000E+00
+Wrap_R_before_stabUR        5   5.308952E-05   9.312248E-01
+ Wrap_R_after_stabUR        5   3.577164E-05   6.245339E-01
+Wrap_R_after_stabGre        5   1.621438E-11   1.000000E+00
+Wrap_R_before_stabUR        5   5.178918E-06   9.117262E-01
+ Wrap_R_after_stabUR        5   8.694599E-05   6.398556E-01
+Wrap_R_after_stabGre        5   3.205518E-12   1.000000E+00
+Wrap_R_before_stabUR        5   5.178918E-06   9.117262E-01
+ Wrap_R_after_stabUR        5   8.694599E-05   6.398556E-01
+Wrap_R_after_stabGre        5   3.205518E-12   1.000000E+00
+Wrap_R_before_stabUR       10   9.830977E-06   9.426586E-01
+ Wrap_R_after_stabUR       10   1.541744E-04   6.596028E-01
+Wrap_R_after_stabGre       10   3.981323E-11   1.000000E+00
+Wrap_R_before_stabUR       10   9.830977E-06   9.426586E-01
+ Wrap_R_after_stabUR       10   1.541744E-04   6.596028E-01
+Wrap_R_after_stabGre       10   3.981323E-11   1.000000E+00
+Wrap_R_before_stabUR       15   1.192512E-04   9.515202E-01
+ Wrap_R_after_stabUR       15   6.831296E-05   6.509406E-01
+Wrap_R_after_stabGre       15   8.295165E-11   1.000000E+00
+Wrap_R_before_stabUR       15   1.192512E-04   9.515202E-01
+ Wrap_R_after_stabUR       15   6.831296E-05   6.509406E-01
+Wrap_R_after_stabGre       15   8.295165E-11   1.000000E+00
+Wrap_R_before_stabUR       20   1.446618E-05   9.527982E-01
+ Wrap_R_after_stabUR       20   2.788736E-04   6.545287E-01
+Wrap_R_after_stabGre       20   5.240276E-11   1.000000E+00
+Wrap_R_before_stabUR       20   1.446618E-05   9.527982E-01
+ Wrap_R_after_stabUR       20   2.788736E-04   6.545287E-01
+Wrap_R_after_stabGre       20   5.240276E-11   1.000000E+00
+Wrap_R_before_stabUR       25   1.118732E-04   9.593510E-01
+ Wrap_R_after_stabUR       25   1.901187E-04   6.574129E-01
+Wrap_R_after_stabGre       25   1.286140E-10   1.000000E+00
+Wrap_R_before_stabUR       25   1.118732E-04   9.593510E-01
+ Wrap_R_after_stabUR       25   1.901187E-04   6.574129E-01
+Wrap_R_after_stabGre       25   1.286140E-10   1.000000E+00
+Wrap_R_before_stabUR       30   3.744461E-05   9.406051E-01
+ Wrap_R_after_stabUR       30   4.443465E-04   6.541171E-01
+Wrap_R_after_stabGre       30   1.741101E-12   1.000000E+00
+Wrap_R_before_stabUR       30   3.744461E-05   9.406051E-01
+ Wrap_R_after_stabUR       30   4.443465E-04   6.541171E-01
+Wrap_R_after_stabGre       30   1.741101E-12   1.000000E+00
+Wrap_R_before_stabUR       35   8.691712E-05   9.411595E-01
+ Wrap_R_after_stabUR       35   3.016340E-04   6.665800E-01
+Wrap_R_after_stabGre       35   2.639443E-12   1.000000E+00
+Wrap_R_before_stabUR       35   8.691712E-05   9.411595E-01
+ Wrap_R_after_stabUR       35   3.016340E-04   6.665800E-01
+Wrap_R_after_stabGre       35   2.639443E-12   1.000000E+00
+Wrap_R_before_stabUR       40   9.022458E-06   9.331448E-01
+ Wrap_R_after_stabUR       40   5.321423E-05   6.639670E-01
+Wrap_R_after_stabGre       40   7.756897E-11   1.000000E+00
+Wrap_R_before_stabUR       40   9.022458E-06   9.331448E-01
+ Wrap_R_after_stabUR       40   5.321423E-05   6.639670E-01
+Wrap_R_after_stabGre       40   7.756897E-11   1.000000E+00
+Wrap_R_before_stabUR       45   4.140788E-05   9.134564E-01
+ Wrap_R_after_stabUR       45   1.035818E-04   6.604395E-01
+Wrap_R_after_stabGre       45   6.395324E-11   1.000000E+00
+Wrap_R_before_stabUR       45   4.140788E-05   9.134564E-01
+ Wrap_R_after_stabUR       45   1.035818E-04   6.604395E-01
+Wrap_R_after_stabGre       45   6.395324E-11   1.000000E+00
+Wrap_R_before_stabUR       50   9.363166E-06   9.452584E-01
+ Wrap_R_after_stabUR       50   2.365403E-04   6.511891E-01
+Wrap_R_after_stabGre       50   1.187403E-11   1.000000E+00
+Wrap_R_before_stabUR       50   9.363166E-06   9.452584E-01
+ Wrap_R_after_stabUR       50   2.365403E-04   6.511891E-01
+Wrap_R_after_stabGre       50   1.187403E-11   1.000000E+00
+Wrap_R_before_stabUR       55   8.988133E-05   9.350348E-01
+ Wrap_R_after_stabUR       55   1.489332E-05   6.606193E-01
+Wrap_R_after_stabGre       55   4.011747E-11   1.000000E+00
+Wrap_R_before_stabUR       55   8.988133E-05   9.350348E-01
+ Wrap_R_after_stabUR       55   1.489332E-05   6.606193E-01
+Wrap_R_after_stabGre       55   4.011747E-11   1.000000E+00
+Wrap_R_before_stabUR       60   5.308952E-05   9.312248E-01
+ Wrap_R_after_stabUR       60   2.399799E-04   6.531580E-01
+Wrap_R_after_stabGre       60   6.144744E-12   1.000000E+00
+Wrap_R_before_stabUR       60   5.308952E-05   9.312248E-01
+ Wrap_R_after_stabUR       60   2.399799E-04   6.531580E-01
+Wrap_R_after_stabGre       60   6.144744E-12   1.000000E+00
+Wrap_R_before_stabUR       15   1.192512E-04   9.515202E-01
+ Wrap_R_after_stabUR       15   2.399799E-04   6.531580E-01
+Wrap_R_after_stabGre       15   4.655647E-11   1.000000E+00
+Wrap_R_before_stabUR       15   1.192512E-04   9.515202E-01
+ Wrap_R_after_stabUR       15   2.399799E-04   6.531580E-01
+Wrap_R_after_stabGre       15   4.655647E-11   1.000000E+00
+Wrap_R_before_stabUR       20   1.446618E-05   9.527982E-01
+ Wrap_R_after_stabUR       20   2.399799E-04   6.531580E-01
+Wrap_R_after_stabGre       20   2.703417E-11   1.000000E+00
+Wrap_R_before_stabUR       20   1.446618E-05   9.527982E-01
+ Wrap_R_after_stabUR       20   2.399799E-04   6.531580E-01
+Wrap_R_after_stabGre       20   2.703417E-11   1.000000E+00
+Wrap_R_before_stabUR       40   9.022458E-06   9.331448E-01
+ Wrap_R_after_stabUR       40   2.399799E-04   6.531580E-01
+Wrap_R_after_stabGre       40   7.163207E-12   1.000000E+00
+Wrap_R_before_stabUR       40   9.022458E-06   9.331448E-01
+ Wrap_R_after_stabUR       40   2.399799E-04   6.531580E-01
+Wrap_R_after_stabGre       40   7.163207E-12   1.000000E+00
+Wrap_R_before_stabUR        5   1.633975E-06   9.842756E-01
+ Wrap_R_after_stabUR        5   1.919270E-09   9.987958E-01
+Wrap_R_after_stabGre        5   3.791851E-08   7.108029E-01
+Wrap_R_before_stabUR        5   1.633975E-06   9.842756E-01
+ Wrap_R_after_stabUR        5   1.919270E-09   9.987958E-01
+Wrap_R_after_stabGre        5   3.791851E-08   7.108029E-01
+Wrap_R_before_stabUR       10   2.281568E-07   9.876621E-01
+ Wrap_R_after_stabUR       10   1.840929E-06   9.981498E-01
+Wrap_R_after_stabGre       10   2.542934E-07   7.100395E-01
+Wrap_R_before_stabUR       10   2.281568E-07   9.876621E-01
+ Wrap_R_after_stabUR       10   1.840929E-06   9.981498E-01
+Wrap_R_after_stabGre       10   2.542934E-07   7.100395E-01
+Wrap_R_before_stabUR       15   7.311442E-07   9.872990E-01
+ Wrap_R_after_stabUR       15   1.120509E-05   9.896383E-01
+Wrap_R_after_stabGre       15   8.228121E-07   7.124794E-01
+Wrap_R_before_stabUR       15   7.311442E-07   9.872990E-01
+ Wrap_R_after_stabUR       15   1.120509E-05   9.896383E-01
+Wrap_R_after_stabGre       15   8.228121E-07   7.124794E-01
+Wrap_R_before_stabUR       20   1.281442E-07   9.874067E-01
+ Wrap_R_after_stabUR       20   6.510004E-06   9.864872E-01
+Wrap_R_after_stabGre       20   2.726607E-05   7.158707E-01
+Wrap_R_before_stabUR       20   1.281442E-07   9.874067E-01
+ Wrap_R_after_stabUR       20   6.510004E-06   9.864872E-01
+Wrap_R_after_stabGre       20   2.726607E-05   7.158707E-01
+Wrap_R_before_stabUR       25   2.332042E-06   9.911640E-01
+ Wrap_R_after_stabUR       25   4.477667E-06   9.880808E-01
+Wrap_R_after_stabGre       25   5.994405E-07   7.149288E-01
+Wrap_R_before_stabUR       25   2.332042E-06   9.911640E-01
+ Wrap_R_after_stabUR       25   4.477667E-06   9.880808E-01
+Wrap_R_after_stabGre       25   5.994405E-07   7.149288E-01
+Wrap_R_before_stabUR       30   1.705762E-07   9.918839E-01
+ Wrap_R_after_stabUR       30   4.495369E-06   9.848271E-01
+Wrap_R_after_stabGre       30   1.713508E-05   7.161187E-01
+Wrap_R_before_stabUR       30   1.705762E-07   9.918839E-01
+ Wrap_R_after_stabUR       30   4.495369E-06   9.848271E-01
+Wrap_R_after_stabGre       30   1.713508E-05   7.161187E-01
+Wrap_R_before_stabUR       35   4.433525E-07   9.937634E-01
+ Wrap_R_after_stabUR       35   5.688068E-05   9.777672E-01
+Wrap_R_after_stabGre       35   2.210368E-05   7.158691E-01
+Wrap_R_before_stabUR       35   4.433525E-07   9.937634E-01
+ Wrap_R_after_stabUR       35   5.688068E-05   9.777672E-01
+Wrap_R_after_stabGre       35   2.210368E-05   7.158691E-01
+Wrap_R_before_stabUR       40   5.272380E-08   9.958168E-01
+ Wrap_R_after_stabUR       40   2.939186E-06   9.735436E-01
+Wrap_R_after_stabGre       40   2.125002E-06   7.154125E-01
+Wrap_R_before_stabUR       40   5.272380E-08   9.958168E-01
+ Wrap_R_after_stabUR       40   2.939186E-06   9.735436E-01
+Wrap_R_after_stabGre       40   2.125002E-06   7.154125E-01
+Wrap_R_before_stabUR       45   9.570244E-08   9.938385E-01
+ Wrap_R_after_stabUR       45   1.313668E-05   9.666201E-01
+Wrap_R_after_stabGre       45   1.652381E-07   7.150856E-01
+Wrap_R_before_stabUR       45   9.570244E-08   9.938385E-01
+ Wrap_R_after_stabUR       45   1.313668E-05   9.666201E-01
+Wrap_R_after_stabGre       45   1.652381E-07   7.150856E-01
+Wrap_R_before_stabUR       50   1.435466E-08   9.975330E-01
+ Wrap_R_after_stabUR       50   3.239521E-05   9.638478E-01
+Wrap_R_after_stabGre       50   7.105454E-06   7.187683E-01
+Wrap_R_before_stabUR       50   1.435466E-08   9.975330E-01
+ Wrap_R_after_stabUR       50   3.239521E-05   9.638478E-01
+Wrap_R_after_stabGre       50   7.105454E-06   7.187683E-01
+Wrap_R_before_stabUR       55   2.171655E-10   9.987651E-01
+ Wrap_R_after_stabUR       55   4.509203E-05   9.647427E-01
+Wrap_R_after_stabGre       55   2.589413E-05   7.205661E-01
+Wrap_R_before_stabUR       55   2.171655E-10   9.987651E-01
+ Wrap_R_after_stabUR       55   4.509203E-05   9.647427E-01
+Wrap_R_after_stabGre       55   2.589413E-05   7.205661E-01
 Wrap_R_before_stabUR       60   0.000000E+00   1.000000E+00
- Wrap_R_after_stabUR       60   7.522970E-05   9.242312E-01
-Wrap_R_after_stabGre       60   1.094948E-05   8.586225E-01
+ Wrap_R_after_stabUR       60   2.387826E-05   9.619467E-01
+Wrap_R_after_stabGre       60   6.570991E-06   7.196935E-01
 Wrap_R_before_stabUR       60   0.000000E+00   1.000000E+00
- Wrap_R_after_stabUR       60   7.522970E-05   9.242312E-01
-Wrap_R_after_stabGre       60   1.094948E-05   8.586225E-01
-Wrap_R_before_stabUR        5   3.411791E-07   9.918737E-01
- Wrap_R_after_stabUR        5   5.085525E-05   9.135261E-01
-Wrap_R_after_stabGre        5   7.573237E-06   9.371436E-01
-Wrap_R_before_stabUR        5   3.411791E-07   9.918737E-01
- Wrap_R_after_stabUR        5   5.085525E-05   9.135261E-01
-Wrap_R_after_stabGre        5   7.573237E-06   9.371436E-01
-Wrap_R_before_stabUR       10   2.347317E-06   9.925731E-01
- Wrap_R_after_stabUR       10   6.393942E-05   9.161153E-01
-Wrap_R_before_stabUR        5   3.676716E-06   9.853514E-01
-Wrap_R_after_stabGre       10   9.557244E-07   9.360893E-01
-Wrap_R_before_stabUR       10   2.347317E-06   9.925731E-01
- Wrap_R_after_stabUR        5   3.438504E-05   9.133431E-01
- Wrap_R_after_stabUR       10   6.393942E-05   9.161153E-01
-Wrap_R_after_stabGre        5   4.123265E-05   9.337694E-01
-Wrap_R_before_stabUR        5   3.676716E-06   9.853514E-01
-Wrap_R_after_stabGre       10   9.557244E-07   9.360893E-01
- Wrap_R_after_stabUR        5   3.438504E-05   9.133431E-01
-Wrap_R_after_stabGre        5   4.123265E-05   9.337694E-01
-Wrap_R_before_stabUR       15   1.337342E-06   9.928484E-01
- Wrap_R_after_stabUR       15   7.226432E-05   9.120168E-01
-Wrap_R_before_stabUR       10   2.435806E-06   9.838846E-01
-Wrap_R_after_stabGre       15   9.472505E-06   9.358641E-01
-Wrap_R_before_stabUR       15   1.337342E-06   9.928484E-01
- Wrap_R_after_stabUR       10   5.677983E-05   9.285156E-01
- Wrap_R_after_stabUR       15   7.226432E-05   9.120168E-01
-Wrap_R_after_stabGre       10   2.175491E-06   9.357487E-01
-Wrap_R_before_stabUR       10   2.435806E-06   9.838846E-01
-Wrap_R_after_stabGre       15   9.472505E-06   9.358641E-01
- Wrap_R_after_stabUR       10   5.677983E-05   9.285156E-01
-Wrap_R_after_stabGre       10   2.175491E-06   9.357487E-01
-Wrap_R_before_stabUR       20   1.617356E-06   9.895475E-01
- Wrap_R_after_stabUR       20   1.065219E-04   9.145563E-01
-Wrap_R_before_stabUR       15   3.345655E-07   9.881470E-01
-Wrap_R_after_stabGre       20   1.423614E-05   9.357965E-01
-Wrap_R_before_stabUR       20   1.617356E-06   9.895475E-01
- Wrap_R_after_stabUR       15   7.917184E-05   9.220140E-01
- Wrap_R_after_stabUR       20   1.065219E-04   9.145563E-01
-Wrap_R_after_stabGre       15   3.428973E-06   9.357289E-01
-Wrap_R_before_stabUR       15   3.345655E-07   9.881470E-01
-Wrap_R_after_stabGre       20   1.423614E-05   9.357965E-01
- Wrap_R_after_stabUR       15   7.917184E-05   9.220140E-01
-Wrap_R_after_stabGre       15   3.428973E-06   9.357289E-01
-Wrap_R_before_stabUR       25   4.357894E-07   9.913062E-01
- Wrap_R_after_stabUR       25   1.437378E-04   9.099470E-01
-Wrap_R_before_stabUR       20   1.029351E-07   9.929506E-01
-Wrap_R_before_stabUR       25   4.357894E-07   9.913062E-01
- Wrap_R_after_stabUR       20   3.448270E-06   9.192991E-01
- Wrap_R_after_stabUR       25   1.437378E-04   9.099470E-01
-Wrap_R_after_stabGre       20   9.727247E-07   9.357962E-01
-Wrap_R_after_stabGre       25   6.949710E-06   9.371881E-01
- Wrap_R_after_stabUR       20   3.448270E-06   9.192991E-01
-Wrap_R_after_stabGre       20   9.727247E-07   9.357962E-01
-Wrap_R_before_stabUR       30   1.460878E-07   9.899363E-01
- Wrap_R_after_stabUR       30   7.807744E-05   9.175532E-01
-Wrap_R_before_stabUR       25   4.684709E-07   9.932372E-01
-Wrap_R_after_stabGre       30   1.355285E-06   9.364781E-01
-Wrap_R_before_stabUR       30   1.460878E-07   9.899363E-01
- Wrap_R_after_stabUR       25   2.451582E-05   9.072471E-01
- Wrap_R_after_stabUR       30   7.807744E-05   9.175532E-01
-Wrap_R_after_stabGre       25   1.437624E-06   9.374545E-01
-Wrap_R_before_stabUR       25   4.684709E-07   9.932372E-01
-Wrap_R_after_stabGre       30   1.355285E-06   9.364781E-01
- Wrap_R_after_stabUR       25   2.451582E-05   9.072471E-01
-Wrap_R_after_stabGre       25   1.437624E-06   9.374545E-01
-Wrap_R_before_stabUR       35   1.049105E-06   9.885572E-01
- Wrap_R_after_stabUR       35   4.190646E-05   9.221857E-01
-Wrap_R_before_stabUR       30   5.810209E-08   9.933001E-01
-Wrap_R_after_stabGre       35   2.453817E-06   9.358203E-01
-Wrap_R_before_stabUR       35   1.049105E-06   9.885572E-01
- Wrap_R_after_stabUR       30   1.397330E-05   9.113488E-01
- Wrap_R_after_stabUR       35   4.190646E-05   9.221857E-01
-Wrap_R_after_stabGre       30   1.853555E-05   9.396920E-01
-Wrap_R_before_stabUR       30   5.810209E-08   9.933001E-01
- Wrap_R_after_stabUR       30   1.397330E-05   9.113488E-01
-Wrap_R_after_stabGre       30   1.853555E-05   9.396920E-01
-Wrap_R_before_stabUR       40   5.440745E-08   9.961906E-01
- Wrap_R_after_stabUR       40   2.129621E-05   9.250261E-01
-Wrap_R_after_stabGre       40   3.963720E-06   9.369540E-01
-Wrap_R_before_stabUR       35   3.161952E-07   9.960398E-01
-Wrap_R_before_stabUR       40   5.440745E-08   9.961906E-01
- Wrap_R_after_stabUR       35   1.053097E-06   9.027215E-01
- Wrap_R_after_stabUR       40   2.129621E-05   9.250261E-01
-Wrap_R_after_stabGre       35   1.075172E-06   9.401215E-01
-Wrap_R_after_stabGre       40   3.963720E-06   9.369540E-01
-Wrap_R_before_stabUR       35   3.161952E-07   9.960398E-01
- Wrap_R_after_stabUR       35   1.053097E-06   9.027215E-01
-Wrap_R_after_stabGre       35   1.075172E-06   9.401215E-01
-Wrap_R_before_stabUR       45   7.311994E-08   9.985358E-01
- Wrap_R_after_stabUR       45   7.833381E-05   9.230704E-01
-Wrap_R_after_stabGre       45   1.824691E-06   9.359619E-01
-Wrap_R_before_stabUR       40   2.166809E-08   9.934694E-01
-Wrap_R_before_stabUR       45   7.311994E-08   9.985358E-01
- Wrap_R_after_stabUR       40   3.578489E-06   9.101730E-01
- Wrap_R_after_stabUR       45   7.833381E-05   9.230704E-01
-Wrap_R_after_stabGre       40   7.131378E-07   9.400374E-01
-Wrap_R_after_stabGre       45   1.824691E-06   9.359619E-01
-Wrap_R_before_stabUR       40   2.166809E-08   9.934694E-01
- Wrap_R_after_stabUR       40   3.578489E-06   9.101730E-01
-Wrap_R_after_stabGre       40   7.131378E-07   9.400374E-01
-Wrap_R_before_stabUR       50   1.352928E-09   9.987317E-01
- Wrap_R_after_stabUR       50   7.086713E-05   9.241669E-01
-Wrap_R_after_stabGre       50   1.824644E-06   9.383407E-01
-Wrap_R_before_stabUR       45   9.038986E-09   9.941531E-01
-Wrap_R_before_stabUR       50   1.352928E-09   9.987317E-01
- Wrap_R_after_stabUR       45   7.176525E-05   9.026860E-01
- Wrap_R_after_stabUR       50   7.086713E-05   9.241669E-01
-Wrap_R_after_stabGre       45   1.076482E-06   9.396186E-01
-Wrap_R_after_stabGre       50   1.824644E-06   9.383407E-01
-Wrap_R_before_stabUR       45   9.038986E-09   9.941531E-01
- Wrap_R_after_stabUR       45   7.176525E-05   9.026860E-01
-Wrap_R_after_stabGre       45   1.076482E-06   9.396186E-01
-Wrap_R_before_stabUR       55   1.069553E-09   9.987766E-01
- Wrap_R_after_stabUR       55   2.664221E-05   9.148821E-01
-Wrap_R_after_stabGre       55   8.418749E-06   9.365870E-01
-Wrap_R_before_stabUR       50   2.731849E-08   9.976558E-01
-Wrap_R_before_stabUR       55   1.069553E-09   9.987766E-01
- Wrap_R_after_stabUR       50   4.841034E-05   9.001789E-01
- Wrap_R_after_stabUR       55   2.664221E-05   9.148821E-01
-Wrap_R_after_stabGre       50   2.142759E-07   9.396498E-01
-Wrap_R_after_stabGre       55   8.418749E-06   9.365870E-01
-Wrap_R_before_stabUR       50   2.731849E-08   9.976558E-01
- Wrap_R_after_stabUR       50   4.841034E-05   9.001789E-01
-Wrap_R_after_stabGre       50   2.142759E-07   9.396498E-01
-Wrap_R_before_stabUR       60   0.000000E+00   1.000000E+00
- Wrap_R_after_stabUR       60   4.737751E-06   9.157064E-01
-Wrap_R_after_stabGre       60   4.373339E-06   9.410493E-01
-Wrap_R_before_stabUR       55   3.939754E-10   9.987785E-01
-Wrap_R_before_stabUR       60   0.000000E+00   1.000000E+00
- Wrap_R_after_stabUR       55   1.745995E-05   8.948815E-01
- Wrap_R_after_stabUR       60   4.737751E-06   9.157064E-01
-Wrap_R_after_stabGre       60   4.373339E-06   9.410493E-01
-Wrap_R_after_stabGre       55   1.079572E-06   9.404162E-01
-Wrap_R_before_stabUR       55   3.939754E-10   9.987785E-01
- Wrap_R_after_stabUR       55   1.745995E-05   8.948815E-01
-Wrap_R_after_stabGre       55   1.079572E-06   9.404162E-01
-Wrap_R_before_stabUR       60   0.000000E+00   1.000000E+00
- Wrap_R_after_stabUR       60   5.601613E-05   8.924192E-01
-Wrap_R_after_stabGre       60   3.951904E-07   9.413317E-01
-Wrap_R_before_stabUR       60   0.000000E+00   1.000000E+00
- Wrap_R_after_stabUR       60   5.601613E-05   8.924192E-01
-Wrap_R_after_stabGre       60   3.951904E-07   9.413317E-01
-Wrap_R_before_stabUR        5   3.411791E-07   9.918737E-01
- Wrap_R_after_stabUR        5   9.109028E-05   9.142748E-01
-Wrap_R_after_stabGre        5   2.271387E-06   9.755003E-01
-Wrap_R_before_stabUR        5   3.411791E-07   9.918737E-01
- Wrap_R_after_stabUR        5   9.109028E-05   9.142748E-01
-Wrap_R_after_stabGre        5   2.271387E-06   9.755003E-01
-Wrap_R_before_stabUR       10   2.347317E-06   9.925731E-01
- Wrap_R_after_stabUR       10   1.791079E-04   9.100397E-01
-Wrap_R_after_stabGre       10   1.341367E-06   9.749517E-01
-Wrap_R_before_stabUR       10   2.347317E-06   9.925731E-01
- Wrap_R_after_stabUR       10   1.791079E-04   9.100397E-01
-Wrap_R_before_stabUR        5   3.676716E-06   9.853514E-01
-Wrap_R_after_stabGre       10   1.341367E-06   9.749517E-01
- Wrap_R_after_stabUR        5   8.446592E-05   8.849212E-01
-Wrap_R_after_stabGre        5   1.750406E-06   9.747059E-01
-Wrap_R_before_stabUR        5   3.676716E-06   9.853514E-01
- Wrap_R_after_stabUR        5   8.446592E-05   8.849212E-01
-Wrap_R_before_stabUR       15   1.337342E-06   9.928484E-01
- Wrap_R_after_stabUR       15   1.116071E-04   9.040506E-01
-Wrap_R_after_stabGre        5   1.750406E-06   9.747059E-01
-Wrap_R_after_stabGre       15   1.210782E-05   9.761811E-01
-Wrap_R_before_stabUR       15   1.337342E-06   9.928484E-01
- Wrap_R_after_stabUR       15   1.116071E-04   9.040506E-01
-Wrap_R_before_stabUR       10   2.435806E-06   9.838846E-01
-Wrap_R_after_stabGre       15   1.210782E-05   9.761811E-01
- Wrap_R_after_stabUR       10   1.882911E-05   8.820053E-01
-Wrap_R_after_stabGre       10   7.342125E-08   9.746028E-01
-Wrap_R_before_stabUR       10   2.435806E-06   9.838846E-01
- Wrap_R_after_stabUR       10   1.882911E-05   8.820053E-01
-Wrap_R_before_stabUR       20   1.617356E-06   9.895475E-01
- Wrap_R_after_stabUR       20   2.469624E-05   9.042990E-01
-Wrap_R_after_stabGre       10   7.342125E-08   9.746028E-01
-Wrap_R_after_stabGre       20   1.805649E-06   9.761322E-01
-Wrap_R_before_stabUR       20   1.617356E-06   9.895475E-01
- Wrap_R_after_stabUR       20   2.469624E-05   9.042990E-01
-Wrap_R_before_stabUR       15   3.345655E-07   9.881470E-01
-Wrap_R_after_stabGre       20   1.805649E-06   9.761322E-01
- Wrap_R_after_stabUR       15   3.911006E-06   8.956959E-01
-Wrap_R_after_stabGre       15   4.871741E-06   9.749207E-01
-Wrap_R_before_stabUR       15   3.345655E-07   9.881470E-01
- Wrap_R_after_stabUR       15   3.911006E-06   8.956959E-01
-Wrap_R_before_stabUR       25   4.357894E-07   9.913062E-01
- Wrap_R_after_stabUR       25   1.338538E-06   8.934368E-01
-Wrap_R_after_stabGre       15   4.871741E-06   9.749207E-01
-Wrap_R_after_stabGre       25   2.110247E-06   9.763602E-01
-Wrap_R_before_stabUR       25   4.357894E-07   9.913062E-01
- Wrap_R_after_stabUR       25   1.338538E-06   8.934368E-01
-Wrap_R_before_stabUR       20   1.029351E-07   9.929506E-01
-Wrap_R_after_stabGre       25   2.110247E-06   9.763602E-01
- Wrap_R_after_stabUR       20   3.441020E-05   8.953087E-01
-Wrap_R_after_stabGre       20   1.172444E-05   9.748884E-01
-Wrap_R_before_stabUR       20   1.029351E-07   9.929506E-01
- Wrap_R_after_stabUR       20   3.441020E-05   8.953087E-01
-Wrap_R_before_stabUR       30   1.460878E-07   9.899363E-01
- Wrap_R_after_stabUR       30   3.205998E-05   8.929467E-01
-Wrap_R_after_stabGre       20   1.172444E-05   9.748884E-01
-Wrap_R_after_stabGre       30   7.022603E-06   9.785119E-01
-Wrap_R_before_stabUR       30   1.460878E-07   9.899363E-01
- Wrap_R_after_stabUR       30   3.205998E-05   8.929467E-01
-Wrap_R_before_stabUR       25   4.684709E-07   9.932372E-01
-Wrap_R_after_stabGre       30   7.022603E-06   9.785119E-01
- Wrap_R_after_stabUR       25   4.292030E-05   8.661917E-01
-Wrap_R_after_stabGre       25   3.558297E-06   9.747050E-01
-Wrap_R_before_stabUR       25   4.684709E-07   9.932372E-01
- Wrap_R_after_stabUR       25   4.292030E-05   8.661917E-01
-Wrap_R_before_stabUR       35   1.049105E-06   9.885572E-01
- Wrap_R_after_stabUR       35   2.994935E-05   8.716707E-01
-Wrap_R_after_stabGre       25   3.558297E-06   9.747050E-01
-Wrap_R_after_stabGre       35   5.473665E-06   9.783126E-01
-Wrap_R_before_stabUR       35   1.049105E-06   9.885572E-01
- Wrap_R_after_stabUR       35   2.994935E-05   8.716707E-01
-Wrap_R_before_stabUR       30   5.810209E-08   9.933001E-01
-Wrap_R_after_stabGre       35   5.473665E-06   9.783126E-01
- Wrap_R_after_stabUR       30   5.433342E-05   8.564523E-01
-Wrap_R_after_stabGre       30   2.271213E-07   9.742413E-01
-Wrap_R_before_stabUR       30   5.810209E-08   9.933001E-01
- Wrap_R_after_stabUR       30   5.433342E-05   8.564523E-01
-Wrap_R_before_stabUR       40   5.440745E-08   9.961906E-01
- Wrap_R_after_stabUR       40   1.381351E-04   8.494363E-01
-Wrap_R_after_stabGre       30   2.271213E-07   9.742413E-01
-Wrap_R_after_stabGre       40   1.219414E-06   9.786921E-01
-Wrap_R_before_stabUR       40   5.440745E-08   9.961906E-01
- Wrap_R_after_stabUR       40   1.381351E-04   8.494363E-01
-Wrap_R_after_stabGre       40   1.219414E-06   9.786921E-01
-Wrap_R_before_stabUR       35   3.161952E-07   9.960398E-01
- Wrap_R_after_stabUR       35   6.540254E-05   8.545517E-01
-Wrap_R_after_stabGre       35   8.528593E-07   9.741958E-01
-Wrap_R_before_stabUR       35   3.161952E-07   9.960398E-01
- Wrap_R_after_stabUR       35   6.540254E-05   8.545517E-01
-Wrap_R_before_stabUR       45   7.311994E-08   9.985358E-01
- Wrap_R_after_stabUR       45   1.826375E-04   8.522678E-01
-Wrap_R_after_stabGre       35   8.528593E-07   9.741958E-01
-Wrap_R_after_stabGre       45   7.765070E-06   9.813991E-01
-Wrap_R_before_stabUR       45   7.311994E-08   9.985358E-01
- Wrap_R_after_stabUR       45   1.826375E-04   8.522678E-01
-Wrap_R_after_stabGre       45   7.765070E-06   9.813991E-01
-Wrap_R_before_stabUR       40   2.166809E-08   9.934694E-01
- Wrap_R_after_stabUR       40   2.939752E-05   8.592563E-01
-Wrap_R_after_stabGre       40   5.176511E-06   9.744144E-01
-Wrap_R_before_stabUR       40   2.166809E-08   9.934694E-01
- Wrap_R_after_stabUR       40   2.939752E-05   8.592563E-01
-Wrap_R_before_stabUR       50   1.352928E-09   9.987317E-01
- Wrap_R_after_stabUR       50   1.464590E-04   8.512115E-01
-Wrap_R_after_stabGre       40   5.176511E-06   9.744144E-01
-Wrap_R_after_stabGre       50   6.191957E-08   9.803996E-01
-Wrap_R_before_stabUR       50   1.352928E-09   9.987317E-01
- Wrap_R_after_stabUR       50   1.464590E-04   8.512115E-01
-Wrap_R_after_stabGre       50   6.191957E-08   9.803996E-01
-Wrap_R_before_stabUR       45   9.038986E-09   9.941531E-01
- Wrap_R_after_stabUR       45   5.949534E-05   8.560648E-01
-Wrap_R_after_stabGre       45   1.631214E-06   9.740048E-01
-Wrap_R_before_stabUR       45   9.038986E-09   9.941531E-01
- Wrap_R_after_stabUR       45   5.949534E-05   8.560648E-01
-Wrap_R_before_stabUR       55   1.069553E-09   9.987766E-01
- Wrap_R_after_stabUR       55   3.650939E-05   8.744027E-01
-Wrap_R_after_stabGre       45   1.631214E-06   9.740048E-01
-Wrap_R_after_stabGre       55   4.754891E-06   9.834506E-01
-Wrap_R_before_stabUR       55   1.069553E-09   9.987766E-01
- Wrap_R_after_stabUR       55   3.650939E-05   8.744027E-01
-Wrap_R_after_stabGre       55   4.754891E-06   9.834506E-01
-Wrap_R_before_stabUR       50   2.731849E-08   9.976558E-01
- Wrap_R_after_stabUR       50   5.481801E-05   8.667717E-01
-Wrap_R_after_stabGre       50   3.478200E-06   9.744167E-01
-Wrap_R_before_stabUR       50   2.731849E-08   9.976558E-01
- Wrap_R_after_stabUR       50   5.481801E-05   8.667717E-01
-Wrap_R_before_stabUR       60   0.000000E+00   1.000000E+00
- Wrap_R_after_stabUR       60   8.458116E-05   8.525898E-01
-Wrap_R_after_stabGre       50   3.478200E-06   9.744167E-01
-Wrap_R_after_stabGre       60   2.946554E-06   9.867365E-01
-Wrap_R_before_stabUR       60   0.000000E+00   1.000000E+00
- Wrap_R_after_stabUR       60   8.458116E-05   8.525898E-01
-Wrap_R_after_stabGre       60   2.946554E-06   9.867365E-01
-Wrap_R_before_stabUR       55   3.939754E-10   9.987785E-01
- Wrap_R_after_stabUR       55   1.783991E-04   8.586961E-01
-Wrap_R_after_stabGre       55   1.271977E-08   9.758575E-01
-Wrap_R_before_stabUR       55   3.939754E-10   9.987785E-01
- Wrap_R_after_stabUR       55   1.783991E-04   8.586961E-01
-Wrap_R_after_stabGre       55   1.271977E-08   9.758575E-01
-Wrap_R_before_stabUR       60   0.000000E+00   1.000000E+00
- Wrap_R_after_stabUR       60   1.865116E-04   8.590013E-01
-Wrap_R_after_stabGre       60   2.894943E-07   9.756477E-01
-Wrap_R_before_stabUR       60   0.000000E+00   1.000000E+00
- Wrap_R_after_stabUR       60   1.865116E-04   8.590013E-01
-Wrap_R_after_stabGre       60   2.894943E-07   9.756477E-01
-Wrap_R_before_stabUR        5   3.411791E-07   9.918737E-01
- Wrap_R_after_stabUR        5   3.498743E-05   8.502680E-01
-Wrap_R_after_stabGre        5   3.854272E-07   9.959203E-01
-Wrap_R_before_stabUR        5   3.411791E-07   9.918737E-01
- Wrap_R_after_stabUR        5   3.498743E-05   8.502680E-01
-Wrap_R_after_stabGre        5   3.854272E-07   9.959203E-01
-Wrap_R_before_stabUR       10   2.347317E-06   9.925731E-01
- Wrap_R_after_stabUR       10   4.889657E-05   8.371968E-01
-Wrap_R_after_stabGre       10   7.199643E-07   9.959967E-01
-Wrap_R_before_stabUR       10   2.347317E-06   9.925731E-01
- Wrap_R_after_stabUR       10   4.889657E-05   8.371968E-01
-Wrap_R_after_stabGre       10   7.199643E-07   9.959967E-01
-Wrap_R_before_stabUR        5   3.676716E-06   9.853514E-01
- Wrap_R_after_stabUR        5   9.607068E-05   8.555267E-01
-Wrap_R_before_stabUR       15   1.337342E-06   9.928484E-01
-Wrap_R_after_stabGre        5   1.668922E-06   9.902170E-01
-Wrap_R_before_stabUR        5   3.676716E-06   9.853514E-01
- Wrap_R_after_stabUR       15   2.377802E-04   8.422027E-01
- Wrap_R_after_stabUR        5   9.607068E-05   8.555267E-01
-Wrap_R_after_stabGre       15   1.668906E-06   9.963313E-01
-Wrap_R_before_stabUR       15   1.337342E-06   9.928484E-01
-Wrap_R_after_stabGre        5   1.668922E-06   9.902170E-01
- Wrap_R_after_stabUR       15   2.377802E-04   8.422027E-01
-Wrap_R_after_stabGre       15   1.668906E-06   9.963313E-01
-Wrap_R_before_stabUR       10   2.435806E-06   9.838846E-01
- Wrap_R_after_stabUR       10   5.975061E-05   8.518631E-01
-Wrap_R_before_stabUR       20   1.617356E-06   9.895475E-01
-Wrap_R_after_stabGre       10   3.082393E-06   9.904189E-01
-Wrap_R_before_stabUR       10   2.435806E-06   9.838846E-01
- Wrap_R_after_stabUR       20   2.599573E-04   8.416919E-01
- Wrap_R_after_stabUR       10   5.975061E-05   8.518631E-01
-Wrap_R_after_stabGre       20   7.035869E-07   9.964255E-01
-Wrap_R_before_stabUR       20   1.617356E-06   9.895475E-01
-Wrap_R_after_stabGre       10   3.082393E-06   9.904189E-01
- Wrap_R_after_stabUR       20   2.599573E-04   8.416919E-01
-Wrap_R_after_stabGre       20   7.035869E-07   9.964255E-01
-Wrap_R_before_stabUR       15   3.345655E-07   9.881470E-01
- Wrap_R_after_stabUR       15   8.377770E-05   8.512410E-01
-Wrap_R_before_stabUR       25   4.357894E-07   9.913062E-01
-Wrap_R_after_stabGre       15   1.827213E-07   9.903057E-01
-Wrap_R_before_stabUR       15   3.345655E-07   9.881470E-01
- Wrap_R_after_stabUR       25   4.205874E-06   8.380612E-01
- Wrap_R_after_stabUR       15   8.377770E-05   8.512410E-01
-Wrap_R_after_stabGre       25   1.062482E-05   9.961945E-01
-Wrap_R_before_stabUR    Wrap_R_after_stabGre       15   1.827213E-07   9.903057E-01
- Wrap_R_after_stabUR       25   4.205874E-06   8.380612E-01
-Wrap_R_after_stabGre       25   1.062482E-05   9.961945E-01
-Wrap_R_before_stabUR       20   1.029351E-07   9.929506E-01
- Wrap_R_after_stabUR       20   5.241152E-04   8.581325E-01
-Wrap_R_before_stabUR       30   1.460878E-07   9.899363E-01
- Wrap_R_after_stabUR       30   4.244224E-06   8.580522E-01
-Wrap_R_after_stabGre       20   2.542874E-06   9.905101E-01
-Wrap_R_before_stabUR       20   1.029351E-07   9.929506E-01
-Wrap_R_after_stabGre       30   1.975092E-06   9.975470E-01
-Wrap_R_before_stabUR       30   1.460878E-07   9.899363E-01
- Wrap_R_after_stabUR       30   4.244224E-06   8.580522E-01
-Wrap_R_after_stabGre       20   2.542874E-06   9.905101E-01
-Wrap_R_after_stabGre       30   1.975092E-06   9.975470E-01
-Wrap_R_before_stabUR       25   4.684709E-07   9.932372E-01
-Wrap_R_before_stabUR       35   1.049105E-06   9.885572E-01
- Wrap_R_after_stabUR       25   1.824572E-04   8.592117E-01
- Wrap_R_after_stabUR       35   4.585204E-05   8.393178E-01
-Wrap_R_after_stabGre       25   4.064166E-06   9.901762E-01
-Wrap_R_after_stabGre       35   9.968151E-07   9.977386E-01
-Wrap_R_before_stabUR       25   4.684709E-07   9.932372E-01
-Wrap_R_before_stabUR       35   1.049105E-06   9.885572E-01
- Wrap_R_after_stabUR       25   1.824572E-04   8.592117E-01
- Wrap_R_after_stabUR       35   4.585204E-05   8.393178E-01
-Wrap_R_after_stabGre       25   4.064166E-06   9.901762E-01
-Wrap_R_after_stabGre       35   9.968151E-07   9.977386E-01
-Wrap_R_before_stabUR       30   5.810209E-08   9.933001E-01
-Wrap_R_before_stabUR       40   5.440745E-08   9.961906E-01
- Wrap_R_after_stabUR       30   7.461492E-05   8.627066E-01
- Wrap_R_after_stabUR       40   7.477311E-05   8.441820E-01
-Wrap_R_after_stabGre       30   1.320078E-06   9.895998E-01
-Wrap_R_after_stabGre       40   9.148938E-07   9.983023E-01
-Wrap_R_before_stabUR       30   5.810209E-08   9.933001E-01
-Wrap_R_before_stabUR       40   5.440745E-08   9.961906E-01
- Wrap_R_after_stabUR       30   7.461492E-05   8.627066E-01
- Wrap_R_after_stabUR       40   7.477311E-05   8.441820E-01
-Wrap_R_after_stabGre       30   1.320078E-06   9.895998E-01
-Wrap_R_after_stabGre       40   9.148938E-07   9.983023E-01
-Wrap_R_before_stabUR       35   3.161952E-07   9.960398E-01
-Wrap_R_before_stabUR       45   7.311994E-08   9.985358E-01
- Wrap_R_after_stabUR       35   1.176027E-04   8.621909E-01
- Wrap_R_after_stabUR       45   9.407785E-05   8.435585E-01
-Wrap_R_after_stabGre       35   4.287606E-06   9.895336E-01
-Wrap_R_after_stabGre       45   9.160810E-08   9.994220E-01
-Wrap_R_before_stabUR       35   3.161952E-07   9.960398E-01
-Wrap_R_before_stabUR       45   7.311994E-08   9.985358E-01
- Wrap_R_after_stabUR       35   1.176027E-04   8.621909E-01
- Wrap_R_after_stabUR       45   9.407785E-05   8.435585E-01
-Wrap_R_after_stabGre       35   4.287606E-06   9.895336E-01
-Wrap_R_after_stabGre       45   9.160810E-08   9.994220E-01
-Wrap_R_before_stabUR       40   2.166809E-08   9.934694E-01
-Wrap_R_before_stabUR       50   1.352928E-09   9.987317E-01
- Wrap_R_after_stabUR       40   2.131204E-04   8.664892E-01
- Wrap_R_after_stabUR       50   8.463254E-06   8.399261E-01
-Wrap_R_after_stabGre       50   2.417268E-06   9.992299E-01
-Wrap_R_before_stabUR       50   1.352928E-09   9.987317E-01
- Wrap_R_after_stabUR       40   2.131204E-04   8.664892E-01
- Wrap_R_after_stabUR       50   8.463254E-06   8.399261E-01
-Wrap_R_after_stabGre       40   2.925088E-06   9.895113E-01
-Wrap_R_before_stabUR       55   1.069553E-09   9.987766E-01
-Wrap_R_before_stabUR       45   9.038986E-09   9.941531E-01
- Wrap_R_after_stabUR       55   6.343280E-05   8.384950E-01
- Wrap_R_after_stabUR       45   3.687294E-05   8.632917E-01
-Wrap_R_after_stabGre       55   2.788709E-07   1.000844E+00
-Wrap_R_after_stabGre       45   6.484737E-07   9.896131E-01
-Wrap_R_before_stabUR       55   1.069553E-09   9.987766E-01
-Wrap_R_before_stabUR       45   9.038986E-09   9.941531E-01
- Wrap_R_after_stabUR       55   6.343280E-05   8.384950E-01
- Wrap_R_after_stabUR       45   3.687294E-05   8.632917E-01
-Wrap_R_after_stabGre       55   2.788709E-07   1.000844E+00
-Wrap_R_after_stabGre       45   6.484737E-07   9.896131E-01
-Wrap_R_before_stabUR       60   0.000000E+00   1.000000E+00
-Wrap_R_before_stabUR       50   2.731849E-08   9.976558E-01
- Wrap_R_after_stabUR       60   4.768934E-05   8.361703E-01
- Wrap_R_after_stabUR       50   1.479200E-04   8.559229E-01
-Wrap_R_after_stabGre       60   1.237528E-05   1.002109E+00
-Wrap_R_after_stabGre       50   5.583751E-07   9.897907E-01
-Wrap_R_before_stabUR       60   0.000000E+00   1.000000E+00
-Wrap_R_before_stabUR       50   2.731849E-08   9.976558E-01
- Wrap_R_after_stabUR       60   4.768934E-05   8.361703E-01
- Wrap_R_after_stabUR       50   1.479200E-04   8.559229E-01
-Wrap_R_after_stabGre       60   1.237528E-05   1.002109E+00
-Wrap_R_after_stabGre       50   5.583751E-07   9.897907E-01
-Wrap_R_before_stabUR       55   3.939754E-10   9.987785E-01
- Wrap_R_after_stabUR       55   5.464411E-05   8.548496E-01
-Wrap_R_after_stabGre       55   5.173478E-07   9.894860E-01
-Wrap_R_before_stabUR       55   3.939754E-10   9.987785E-01
- Wrap_R_after_stabUR       55   5.464411E-05   8.548496E-01
-Wrap_R_after_stabGre       55   5.173478E-07   9.894860E-01
-Wrap_R_before_stabUR       60   0.000000E+00   1.000000E+00
- Wrap_R_after_stabUR       60   1.442418E-04   8.525162E-01
-Wrap_R_after_stabGre       60   3.667888E-06   9.896235E-01
-Wrap_R_before_stabUR       60   0.000000E+00   1.000000E+00
- Wrap_R_after_stabUR       60   1.442418E-04   8.525162E-01
-Wrap_R_after_stabGre       60   3.667888E-06   9.896235E-01
-Wrap_R_before_stabUR        5   3.411791E-07   9.918737E-01
- Wrap_R_after_stabUR        5   2.447673E-05   8.403047E-01
-Wrap_R_after_stabGre        5   2.204270E-07   1.001920E+00
-Wrap_R_before_stabUR        5   3.411791E-07   9.918737E-01
- Wrap_R_after_stabUR        5   2.447673E-05   8.403047E-01
-Wrap_R_after_stabGre        5   2.204270E-07   1.001920E+00
-Wrap_R_before_stabUR       10   2.347317E-06   9.925731E-01
- Wrap_R_after_stabUR       10   2.025189E-05   8.498433E-01
-Wrap_R_after_stabGre       10   2.727378E-06   1.002049E+00
-Wrap_R_before_stabUR       10   2.347317E-06   9.925731E-01
- Wrap_R_after_stabUR       10   2.025189E-05   8.498433E-01
-Wrap_R_after_stabGre       10   2.727378E-06   1.002049E+00
-Wrap_R_before_stabUR       15   1.337342E-06   9.928484E-01
- Wrap_R_after_stabUR       15   6.104738E-05   8.506569E-01
-Wrap_R_before_stabUR        5   3.676716E-06   9.853514E-01
-Wrap_R_after_stabGre       15   9.417171E-07   1.001480E+00
- Wrap_R_after_stabUR        5   2.042129E-04   8.433804E-01
-Wrap_R_before_stabUR       15   1.337342E-06   9.928484E-01
- Wrap_R_after_stabUR       15   6.104738E-05   8.506569E-01
-Wrap_R_after_stabGre        5   1.401145E-06   9.953481E-01
-Wrap_R_before_stabUR        5   3.676716E-06   9.853514E-01
-Wrap_R_after_stabGre       15   9.417171E-07   1.001480E+00
- Wrap_R_after_stabUR        5   2.042129E-04   8.433804E-01
-Wrap_R_after_stabGre        5   1.401145E-06   9.953481E-01
-Wrap_R_before_stabUR       20   1.617356E-06   9.895475E-01
- Wrap_R_after_stabUR       20   1.924226E-04   8.297306E-01
-Wrap_R_before_stabUR       10   2.435806E-06   9.838846E-01
-Wrap_R_after_stabGre       20   2.218016E-06   1.001361E+00
- Wrap_R_after_stabUR       10   9.800706E-05   8.396252E-01
-Wrap_R_before_stabUR       20   1.617356E-06   9.895475E-01
- Wrap_R_after_stabUR       20   1.924226E-04   8.297306E-01
-Wrap_R_after_stabGre       10   3.063741E-07   9.955919E-01
-Wrap_R_before_stabUR       10   2.435806E-06   9.838846E-01
-Wrap_R_after_stabGre       20   2.218016E-06   1.001361E+00
- Wrap_R_after_stabUR       10   9.800706E-05   8.396252E-01
-Wrap_R_after_stabGre       10   3.063741E-07   9.955919E-01
-Wrap_R_before_stabUR       25   4.357894E-07   9.913062E-01
- Wrap_R_after_stabUR       25   1.807018E-04   8.195408E-01
-Wrap_R_before_stabUR       15   3.345655E-07   9.881470E-01
-Wrap_R_after_stabGre       25   1.339856E-06   1.001149E+00
- Wrap_R_after_stabUR       15   1.710965E-04   8.266453E-01
-Wrap_R_before_stabUR       25   4.357894E-07   9.913062E-01
- Wrap_R_after_stabUR       25   1.807018E-04   8.195408E-01
-Wrap_R_after_stabGre       15   4.752515E-06   9.958214E-01
-Wrap_R_before_stabUR       15   3.345655E-07   9.881470E-01
-Wrap_R_after_stabGre       25   1.339856E-06   1.001149E+00
- Wrap_R_after_stabUR       15   1.710965E-04   8.266453E-01
-Wrap_R_after_stabGre       15   4.752515E-06   9.958214E-01
-Wrap_R_before_stabUR       30   1.460878E-07   9.899363E-01
- Wrap_R_after_stabUR       30   2.700023E-05   8.320694E-01
-Wrap_R_before_stabUR       20   1.029351E-07   9.929506E-01
-Wrap_R_after_stabGre       30   1.506597E-08   1.000946E+00
- Wrap_R_after_stabUR       20   1.608194E-04   8.461331E-01
-Wrap_R_before_stabUR       30   1.460878E-07   9.899363E-01
- Wrap_R_after_stabUR       30   2.700023E-05   8.320694E-01
-Wrap_R_after_stabGre       20   1.199832E-07   9.957582E-01
-Wrap_R_before_stabUR       20   1.029351E-07   9.929506E-01
-Wrap_R_after_stabGre       30   1.506597E-08   1.000946E+00
- Wrap_R_after_stabUR       20   1.608194E-04   8.461331E-01
-Wrap_R_after_stabGre       20   1.199832E-07   9.957582E-01
-Wrap_R_before_stabUR       35   1.049105E-06   9.885572E-01
- Wrap_R_after_stabUR       35   2.526536E-05   8.408949E-01
-Wrap_R_before_stabUR       25   4.684709E-07   9.932372E-01
-Wrap_R_after_stabGre       35   5.550267E-06   1.000879E+00
- Wrap_R_after_stabUR       25   3.159580E-05   8.503354E-01
-Wrap_R_before_stabUR       35   1.049105E-06   9.885572E-01
- Wrap_R_after_stabUR       35   2.526536E-05   8.408949E-01
-Wrap_R_after_stabGre       25   1.085625E-06   9.955299E-01
-Wrap_R_before_stabUR       25   4.684709E-07   9.932372E-01
-Wrap_R_after_stabGre       35   5.550267E-06   1.000879E+00
- Wrap_R_after_stabUR       25   3.159580E-05   8.503354E-01
-Wrap_R_after_stabGre       25   1.085625E-06   9.955299E-01
-Wrap_R_before_stabUR       40   5.440745E-08   9.961906E-01
- Wrap_R_after_stabUR       40   1.090728E-04   8.282205E-01
-Wrap_R_before_stabUR       30   5.810209E-08   9.933001E-01
-Wrap_R_after_stabGre       40   8.486322E-07   1.000734E+00
-Wrap_R_before_stabUR       40   5.440745E-08   9.961906E-01
- Wrap_R_after_stabUR       30   4.420594E-05   8.475497E-01
- Wrap_R_after_stabUR       40   1.090728E-04   8.282205E-01
-Wrap_R_after_stabGre       30   3.115593E-07   9.959288E-01
-Wrap_R_after_stabGre       40   8.486322E-07   1.000734E+00
-Wrap_R_before_stabUR       30   5.810209E-08   9.933001E-01
- Wrap_R_after_stabUR       30   4.420594E-05   8.475497E-01
-Wrap_R_after_stabGre       30   3.115593E-07   9.959288E-01
-Wrap_R_before_stabUR       45   7.311994E-08   9.985358E-01
- Wrap_R_after_stabUR       45   3.762018E-05   8.276291E-01
-Wrap_R_after_stabGre       45   1.153614E-06   1.001081E+00
-Wrap_R_before_stabUR       35   3.161952E-07   9.960398E-01
-Wrap_R_before_stabUR       45   7.311994E-08   9.985358E-01
- Wrap_R_after_stabUR       35   8.918715E-05   8.324492E-01
- Wrap_R_after_stabUR       45   3.762018E-05   8.276291E-01
-Wrap_R_after_stabGre       35   1.402714E-06   9.962214E-01
-Wrap_R_after_stabGre       45   1.153614E-06   1.001081E+00
-Wrap_R_before_stabUR       35   3.161952E-07   9.960398E-01
- Wrap_R_after_stabUR       35   8.918715E-05   8.324492E-01
-Wrap_R_after_stabGre       35   1.402714E-06   9.962214E-01
-Wrap_R_before_stabUR       50   1.352928E-09   9.987317E-01
- Wrap_R_after_stabUR       50   5.844732E-05   8.335240E-01
-Wrap_R_after_stabGre       50   1.465814E-06   1.001961E+00
-Wrap_R_before_stabUR       40   2.166809E-08   9.934694E-01
-Wrap_R_before_stabUR       50   1.352928E-09   9.987317E-01
- Wrap_R_after_stabUR       40   1.042755E-04   8.384200E-01
- Wrap_R_after_stabUR       50   5.844732E-05   8.335240E-01
-Wrap_R_after_stabGre       40   1.031176E-06   9.964437E-01
-Wrap_R_after_stabGre       50   1.465814E-06   1.001961E+00
-Wrap_R_before_stabUR       40   2.166809E-08   9.934694E-01
- Wrap_R_after_stabUR       40   1.042755E-04   8.384200E-01
-Wrap_R_after_stabGre       40   1.031176E-06   9.964437E-01
-Wrap_R_before_stabUR       55   1.069553E-09   9.987766E-01
- Wrap_R_after_stabUR       55   1.447881E-04   8.351940E-01
-Wrap_R_after_stabGre       55   2.455423E-07   1.002481E+00
-Wrap_R_before_stabUR       45   9.038986E-09   9.941531E-01
-Wrap_R_before_stabUR       55   1.069553E-09   9.987766E-01
- Wrap_R_after_stabUR       55   1.447881E-04   8.351940E-01
- Wrap_R_after_stabUR       45   3.014606E-04   8.266311E-01
-Wrap_R_after_stabGre       55   2.455423E-07   1.002481E+00
-Wrap_R_after_stabGre       45   9.093231E-07   9.966632E-01
-Wrap_R_before_stabUR       45   9.038986E-09   9.941531E-01
- Wrap_R_after_stabUR       45   3.014606E-04   8.266311E-01
-Wrap_R_before_stabUR       60   0.000000E+00   1.000000E+00
-Wrap_R_after_stabGre       45   9.093231E-07   9.966632E-01
- Wrap_R_after_stabUR       60   5.326489E-05   8.327825E-01
-Wrap_R_after_stabGre       60   2.584524E-06   1.002765E+00
-Wrap_R_before_stabUR       60   0.000000E+00   1.000000E+00
- Wrap_R_after_stabUR       60   5.326489E-05   8.327825E-01
-Wrap_R_before_stabUR       50   2.731849E-08   9.976558E-01
- Wrap_R_after_stabUR       50   9.913350E-05   8.566761E-01
-Wrap_R_after_stabGre       50   2.129394E-06   9.973539E-01
-Wrap_R_before_stabUR       50   2.731849E-08   9.976558E-01
- Wrap_R_after_stabUR       50   9.913350E-05   8.566761E-01
-Wrap_R_after_stabGre       50   2.129394E-06   9.973539E-01
-Wrap_R_before_stabUR       55   3.939754E-10   9.987785E-01
- Wrap_R_after_stabUR       55   1.313494E-04   8.602460E-01
-Wrap_R_after_stabGre       55   1.353480E-06   9.967436E-01
-Wrap_R_before_stabUR       55   3.939754E-10   9.987785E-01
- Wrap_R_after_stabUR       55   1.313494E-04   8.602460E-01
-Wrap_R_after_stabGre       55   1.353480E-06   9.967436E-01
-Wrap_R_before_stabUR       60   0.000000E+00   1.000000E+00
- Wrap_R_after_stabUR       60   4.138413E-06   8.597883E-01
-Wrap_R_after_stabGre       60   5.197453E-07   9.962631E-01
-Wrap_R_before_stabUR       60   0.000000E+00   1.000000E+00
- Wrap_R_after_stabUR       60   4.138413E-06   8.597883E-01
-Wrap_R_after_stabGre       60   5.197453E-07   9.962631E-01
+ Wrap_R_after_stabUR       60   2.387826E-05   9.619467E-01
+Wrap_R_after_stabGre       60   6.570991E-06   7.196935E-01
+Wrap_R_before_stabUR       50   1.435466E-08   9.975330E-01
+ Wrap_R_after_stabUR       50   2.387826E-05   9.619467E-01
+Wrap_R_after_stabGre       50   5.596738E-06   7.476575E-01
+Wrap_R_before_stabUR       50   1.435466E-08   9.975330E-01
+ Wrap_R_after_stabUR       50   2.387826E-05   9.619467E-01
+Wrap_R_after_stabGre       50   5.596738E-06   7.476575E-01
+Wrap_R_before_stabUR        5   2.726302E-06   9.740981E-01
+ Wrap_R_after_stabUR        5   1.575577E-05   9.234184E-01
+Wrap_R_after_stabGre        5   5.815152E-06   9.533287E-01
+Wrap_R_before_stabUR        5   2.726302E-06   9.740981E-01
+ Wrap_R_after_stabUR        5   1.575577E-05   9.234184E-01
+Wrap_R_after_stabGre        5   5.815152E-06   9.533287E-01
+Wrap_R_before_stabUR       10   3.546756E-06   9.777189E-01
+ Wrap_R_after_stabUR       10   2.061427E-05   9.165607E-01
+Wrap_R_after_stabGre       10   4.985578E-06   9.510959E-01
+Wrap_R_before_stabUR       10   3.546756E-06   9.777189E-01
+ Wrap_R_after_stabUR       10   2.061427E-05   9.165607E-01
+Wrap_R_after_stabGre       10   4.985578E-06   9.510959E-01
+Wrap_R_before_stabUR       15   3.275607E-06   9.758447E-01
+ Wrap_R_after_stabUR       15   1.434015E-05   9.182521E-01
+Wrap_R_after_stabGre       15   1.545909E-06   9.528099E-01
+Wrap_R_before_stabUR       15   3.275607E-06   9.758447E-01
+ Wrap_R_after_stabUR       15   1.434015E-05   9.182521E-01
+Wrap_R_after_stabGre       15   1.545909E-06   9.528099E-01
+Wrap_R_before_stabUR       20   6.507949E-07   9.692662E-01
+ Wrap_R_after_stabUR       20   1.632216E-04   9.170531E-01
+Wrap_R_after_stabGre       20   3.424837E-07   9.532123E-01
+Wrap_R_before_stabUR       20   6.507949E-07   9.692662E-01
+ Wrap_R_after_stabUR       20   1.632216E-04   9.170531E-01
+Wrap_R_after_stabGre       20   3.424837E-07   9.532123E-01
+Wrap_R_before_stabUR       25   1.155212E-06   9.625732E-01
+ Wrap_R_after_stabUR       25   1.197799E-05   9.209722E-01
+Wrap_R_after_stabGre       25   1.776632E-06   9.564411E-01
+Wrap_R_before_stabUR       25   1.155212E-06   9.625732E-01
+ Wrap_R_after_stabUR       25   1.197799E-05   9.209722E-01
+Wrap_R_after_stabGre       25   1.776632E-06   9.564411E-01
+Wrap_R_before_stabUR       30   2.314757E-07   9.814561E-01
+ Wrap_R_after_stabUR       30   7.953951E-05   9.036571E-01
+Wrap_R_after_stabGre       30   3.346214E-08   9.585844E-01
+Wrap_R_before_stabUR       30   2.314757E-07   9.814561E-01
+ Wrap_R_after_stabUR       30   7.953951E-05   9.036571E-01
+Wrap_R_after_stabGre       30   3.346214E-08   9.585844E-01
+Wrap_R_before_stabUR       35   5.959698E-07   9.818214E-01
+ Wrap_R_after_stabUR       35   5.991078E-05   9.251303E-01
+Wrap_R_after_stabGre       35   2.125580E-06   9.602255E-01
+Wrap_R_before_stabUR       35   5.959698E-07   9.818214E-01
+ Wrap_R_after_stabUR       35   5.991078E-05   9.251303E-01
+Wrap_R_after_stabGre       35   2.125580E-06   9.602255E-01
+Wrap_R_before_stabUR       40   9.356119E-07   9.849905E-01
+ Wrap_R_after_stabUR       40   1.542984E-04   9.336462E-01
+Wrap_R_after_stabGre       40   9.797704E-06   9.624880E-01
+Wrap_R_before_stabUR       40   9.356119E-07   9.849905E-01
+ Wrap_R_after_stabUR       40   1.542984E-04   9.336462E-01
+Wrap_R_after_stabGre       40   9.797704E-06   9.624880E-01
+Wrap_R_before_stabUR       45   1.017868E-06   9.875388E-01
+ Wrap_R_after_stabUR       45   7.410182E-06   9.305358E-01
+Wrap_R_after_stabGre       45   8.075046E-06   9.679867E-01
+Wrap_R_before_stabUR       45   1.017868E-06   9.875388E-01
+ Wrap_R_after_stabUR       45   7.410182E-06   9.305358E-01
+Wrap_R_after_stabGre       45   8.075046E-06   9.679867E-01
+Wrap_R_before_stabUR       50   1.884010E-07   9.909331E-01
+ Wrap_R_after_stabUR       50   7.354793E-06   9.199005E-01
+Wrap_R_after_stabGre       50   2.030718E-06   9.669200E-01
+Wrap_R_before_stabUR       50   1.884010E-07   9.909331E-01
+ Wrap_R_after_stabUR       50   7.354793E-06   9.199005E-01
+Wrap_R_after_stabGre       50   2.030718E-06   9.669200E-01
+Wrap_R_before_stabUR       55   2.122081E-08   9.941302E-01
+ Wrap_R_after_stabUR       55   3.922520E-05   9.242589E-01
+Wrap_R_after_stabGre       55   3.236437E-06   9.691449E-01
+Wrap_R_before_stabUR       55   2.122081E-08   9.941302E-01
+ Wrap_R_after_stabUR       55   3.922520E-05   9.242589E-01
+Wrap_R_after_stabGre       55   3.236437E-06   9.691449E-01
+Wrap_R_before_stabUR       60   1.435466E-08   9.975330E-01
+ Wrap_R_after_stabUR       60   5.134676E-05   9.354888E-01
+Wrap_R_after_stabGre       60   1.399295E-05   9.704513E-01
+Wrap_R_before_stabUR       60   1.435466E-08   9.975330E-01
+ Wrap_R_after_stabUR       60   5.134676E-05   9.354888E-01
+Wrap_R_after_stabGre       60   1.399295E-05   9.704513E-01
+Wrap_R_before_stabUR       45   1.017868E-06   9.875388E-01
+ Wrap_R_after_stabUR       45   5.134676E-05   9.354888E-01
+Wrap_R_after_stabGre       45   9.005239E-06   9.762002E-01
+Wrap_R_before_stabUR       45   1.017868E-06   9.875388E-01
+ Wrap_R_after_stabUR       45   5.134676E-05   9.354888E-01
+Wrap_R_after_stabGre       45   9.005239E-06   9.762002E-01
+Wrap_R_before_stabUR       40   9.356119E-07   9.849905E-01
+ Wrap_R_after_stabUR       40   5.134676E-05   9.354888E-01
+Wrap_R_after_stabGre       40   4.695018E-06   9.779099E-01
+Wrap_R_before_stabUR       40   9.356119E-07   9.849905E-01
+ Wrap_R_after_stabUR       40   5.134676E-05   9.354888E-01
+Wrap_R_after_stabGre       40   4.695018E-06   9.779099E-01
+Wrap_R_before_stabUR        5   3.604954E-06   9.652622E-01
+ Wrap_R_after_stabUR        5   8.959599E-05   8.760660E-01
+Wrap_R_after_stabGre        5   3.657006E-07   9.956220E-01
+Wrap_R_before_stabUR        5   3.604954E-06   9.652622E-01
+ Wrap_R_after_stabUR        5   8.959599E-05   8.760660E-01
+Wrap_R_after_stabGre        5   3.657006E-07   9.956220E-01
+Wrap_R_before_stabUR       10   8.101370E-06   9.565440E-01
+ Wrap_R_after_stabUR       10   1.429521E-05   8.829877E-01
+Wrap_R_after_stabGre       10   1.070242E-06   9.952529E-01
+Wrap_R_before_stabUR       10   8.101370E-06   9.565440E-01
+ Wrap_R_after_stabUR       10   1.429521E-05   8.829877E-01
+Wrap_R_after_stabGre       10   1.070242E-06   9.952529E-01
+Wrap_R_before_stabUR       15   2.452351E-06   9.556704E-01
+ Wrap_R_after_stabUR       15   2.080116E-04   8.957885E-01
+Wrap_R_after_stabGre       15   4.331972E-06   9.946718E-01
+Wrap_R_before_stabUR       15   2.452351E-06   9.556704E-01
+ Wrap_R_after_stabUR       15   2.080116E-04   8.957885E-01
+Wrap_R_after_stabGre       15   4.331972E-06   9.946718E-01
+Wrap_R_before_stabUR       20   3.998763E-06   9.533783E-01
+ Wrap_R_after_stabUR       20   1.188222E-04   8.968526E-01
+Wrap_R_after_stabGre       20   5.758368E-06   9.938924E-01
+Wrap_R_before_stabUR       20   3.998763E-06   9.533783E-01
+ Wrap_R_after_stabUR       20   1.188222E-04   8.968526E-01
+Wrap_R_after_stabGre       20   5.758368E-06   9.938924E-01
+Wrap_R_before_stabUR       25   5.134209E-06   9.444554E-01
+ Wrap_R_after_stabUR       25   1.180604E-04   8.910252E-01
+Wrap_R_after_stabGre       25   4.611425E-07   9.926059E-01
+Wrap_R_before_stabUR       25   5.134209E-06   9.444554E-01
+ Wrap_R_after_stabUR       25   1.180604E-04   8.910252E-01
+Wrap_R_after_stabGre       25   4.611425E-07   9.926059E-01
+Wrap_R_before_stabUR       30   1.082155E-06   9.710392E-01
+ Wrap_R_after_stabUR       30   8.891964E-06   8.816508E-01
+Wrap_R_after_stabGre       30   1.527886E-06   9.924117E-01
+Wrap_R_before_stabUR       30   1.082155E-06   9.710392E-01
+ Wrap_R_after_stabUR       30   8.891964E-06   8.816508E-01
+Wrap_R_after_stabGre       30   1.527886E-06   9.924117E-01
+Wrap_R_before_stabUR       35   8.398121E-08   9.620627E-01
+ Wrap_R_after_stabUR       35   5.373667E-05   8.761721E-01
+Wrap_R_after_stabGre       35   1.423645E-06   9.931371E-01
+Wrap_R_before_stabUR       35   8.398121E-08   9.620627E-01
+ Wrap_R_after_stabUR       35   5.373667E-05   8.761721E-01
+Wrap_R_after_stabGre       35   1.423645E-06   9.931371E-01
+Wrap_R_before_stabUR       40   5.416464E-06   9.699130E-01
+ Wrap_R_after_stabUR       40   1.384929E-04   8.743808E-01
+Wrap_R_after_stabGre       40   2.026963E-07   9.933438E-01
+Wrap_R_before_stabUR       40   5.416464E-06   9.699130E-01
+ Wrap_R_after_stabUR       40   1.384929E-04   8.743808E-01
+Wrap_R_after_stabGre       40   2.026963E-07   9.933438E-01
+Wrap_R_before_stabUR       45   9.749567E-07   9.664107E-01
+ Wrap_R_after_stabUR       45   6.566195E-06   8.790339E-01
+Wrap_R_after_stabGre       45   1.760060E-06   9.941441E-01
+Wrap_R_before_stabUR       45   9.749567E-07   9.664107E-01
+ Wrap_R_after_stabUR       45   6.566195E-06   8.790339E-01
+Wrap_R_after_stabGre       45   1.760060E-06   9.941441E-01
+Wrap_R_before_stabUR       50   7.213814E-07   9.688702E-01
+ Wrap_R_after_stabUR       50   6.818967E-04   8.889020E-01
+Wrap_R_after_stabGre       50   3.596771E-06   9.941990E-01
+Wrap_R_before_stabUR       50   7.213814E-07   9.688702E-01
+ Wrap_R_after_stabUR       50   6.818967E-04   8.889020E-01
+Wrap_R_after_stabGre       50   3.596771E-06   9.941990E-01
+Wrap_R_before_stabUR       55   1.099782E-06   9.775677E-01
+ Wrap_R_after_stabUR       55   3.842143E-05   8.884119E-01
+Wrap_R_after_stabGre       55   1.893603E-06   9.943665E-01
+Wrap_R_before_stabUR       55   1.099782E-06   9.775677E-01
+ Wrap_R_after_stabUR       55   3.842143E-05   8.884119E-01
+Wrap_R_after_stabGre       55   1.893603E-06   9.943665E-01
+Wrap_R_before_stabUR       60   9.356119E-07   9.849905E-01
+ Wrap_R_after_stabUR       60   2.430695E-05   8.922886E-01
+Wrap_R_after_stabGre       60   2.071574E-06   9.946198E-01
+Wrap_R_before_stabUR       60   9.356119E-07   9.849905E-01
+ Wrap_R_after_stabUR       60   2.430695E-05   8.922886E-01
+Wrap_R_after_stabGre       60   2.071574E-06   9.946198E-01
+Wrap_R_before_stabUR       10   8.101370E-06   9.565440E-01
+ Wrap_R_after_stabUR       10   2.430695E-05   8.922886E-01
+Wrap_R_after_stabGre       10   3.421640E-06   9.972299E-01
+Wrap_R_before_stabUR       10   8.101370E-06   9.565440E-01
+ Wrap_R_after_stabUR       10   2.430695E-05   8.922886E-01
+Wrap_R_after_stabGre       10   3.421640E-06   9.972299E-01
+Wrap_R_before_stabUR        5   3.604954E-06   9.652622E-01
+ Wrap_R_after_stabUR        5   2.430695E-05   8.922886E-01
+Wrap_R_after_stabGre        5   3.488970E-07   9.974071E-01
+Wrap_R_before_stabUR        5   3.604954E-06   9.652622E-01
+ Wrap_R_after_stabUR        5   2.430695E-05   8.922886E-01
+Wrap_R_after_stabGre        5   3.488970E-07   9.974071E-01
+Wrap_R_before_stabUR       20   3.998763E-06   9.533783E-01
+ Wrap_R_after_stabUR       20   2.430695E-05   8.922886E-01
+Wrap_R_after_stabGre       20   2.551220E-06   9.967980E-01
+Wrap_R_before_stabUR       20   3.998763E-06   9.533783E-01
+ Wrap_R_after_stabUR       20   2.430695E-05   8.922886E-01
+Wrap_R_after_stabGre       20   2.551220E-06   9.967980E-01
+Wrap_R_before_stabUR        5   1.459573E-06   9.526881E-01
+ Wrap_R_after_stabUR        5   5.015810E-05   7.894936E-01
+Wrap_R_after_stabGre        5   1.608086E-08   9.996307E-01
+Wrap_R_before_stabUR        5   1.459573E-06   9.526881E-01
+ Wrap_R_after_stabUR        5   5.015810E-05   7.894936E-01
+Wrap_R_after_stabGre        5   1.608086E-08   9.996307E-01
+Wrap_R_before_stabUR       10   7.852272E-06   9.445167E-01
+ Wrap_R_after_stabUR       10   7.062380E-05   8.008088E-01
+Wrap_R_after_stabGre       10   5.788017E-07   9.995805E-01
+Wrap_R_before_stabUR       10   7.852272E-06   9.445167E-01
+ Wrap_R_after_stabUR       10   7.062380E-05   8.008088E-01
+Wrap_R_after_stabGre       10   5.788017E-07   9.995805E-01
+Wrap_R_before_stabUR       15   4.191202E-07   9.500604E-01
+ Wrap_R_after_stabUR       15   7.620240E-04   7.822665E-01
+Wrap_R_after_stabGre       15   1.633201E-07   9.995872E-01
+Wrap_R_before_stabUR       15   4.191202E-07   9.500604E-01
+ Wrap_R_after_stabUR       15   7.620240E-04   7.822665E-01
+Wrap_R_after_stabGre       15   1.633201E-07   9.995872E-01
+Wrap_R_before_stabUR       20   1.965268E-06   9.480067E-01
+ Wrap_R_after_stabUR       20   2.038892E-05   7.942634E-01
+Wrap_R_after_stabGre       20   1.099989E-06   9.995624E-01
+Wrap_R_before_stabUR       20   1.965268E-06   9.480067E-01
+ Wrap_R_after_stabUR       20   2.038892E-05   7.942634E-01
+Wrap_R_after_stabGre       20   1.099989E-06   9.995624E-01
+Wrap_R_before_stabUR       25   7.732877E-06   9.339544E-01
+ Wrap_R_after_stabUR       25   2.470106E-05   7.991533E-01
+Wrap_R_after_stabGre       25   9.914598E-07   9.996295E-01
+Wrap_R_before_stabUR       25   7.732877E-06   9.339544E-01
+ Wrap_R_after_stabUR       25   2.470106E-05   7.991533E-01
+Wrap_R_after_stabGre       25   9.914598E-07   9.996295E-01
+Wrap_R_before_stabUR       30   2.362015E-06   9.644163E-01
+ Wrap_R_after_stabUR       30   1.810093E-04   7.910898E-01
+Wrap_R_after_stabGre       30   5.173707E-07   9.996512E-01
+Wrap_R_before_stabUR       30   2.362015E-06   9.644163E-01
+ Wrap_R_after_stabUR       30   1.810093E-04   7.910898E-01
+Wrap_R_after_stabGre       30   5.173707E-07   9.996512E-01
+Wrap_R_before_stabUR       35   3.092577E-06   9.633112E-01
+ Wrap_R_after_stabUR       35   1.117000E-04   7.848335E-01
+Wrap_R_after_stabGre       35   4.674831E-07   9.996304E-01
+Wrap_R_before_stabUR       35   3.092577E-06   9.633112E-01
+ Wrap_R_after_stabUR       35   1.117000E-04   7.848335E-01
+Wrap_R_after_stabGre       35   4.674831E-07   9.996304E-01
+Wrap_R_before_stabUR       40   1.014478E-05   9.606886E-01
+ Wrap_R_after_stabUR       40   9.075027E-05   7.860122E-01
+Wrap_R_after_stabGre       40   9.624206E-07   9.996104E-01
+Wrap_R_before_stabUR       40   1.014478E-05   9.606886E-01
+ Wrap_R_after_stabUR       40   9.075027E-05   7.860122E-01
+Wrap_R_after_stabGre       40   9.624206E-07   9.996104E-01
+Wrap_R_before_stabUR       45   7.650465E-06   9.623480E-01
+ Wrap_R_after_stabUR       45   1.923814E-05   7.791207E-01
+Wrap_R_after_stabGre       45   3.830660E-09   9.996028E-01
+Wrap_R_before_stabUR       45   7.650465E-06   9.623480E-01
+ Wrap_R_after_stabUR       45   1.923814E-05   7.791207E-01
+Wrap_R_after_stabGre       45   3.830660E-09   9.996028E-01
+Wrap_R_before_stabUR       50   2.308233E-06   9.671990E-01
+ Wrap_R_after_stabUR       50   2.478433E-05   7.734414E-01
+Wrap_R_after_stabGre       50   6.469872E-07   9.996301E-01
+Wrap_R_before_stabUR       50   2.308233E-06   9.671990E-01
+ Wrap_R_after_stabUR       50   2.478433E-05   7.734414E-01
+Wrap_R_after_stabGre       50   6.469872E-07   9.996301E-01
+Wrap_R_before_stabUR       55   2.244586E-06   9.682469E-01
+ Wrap_R_after_stabUR       55   8.663421E-06   7.730038E-01
+Wrap_R_after_stabGre       55   2.448548E-08   9.995817E-01
+Wrap_R_before_stabUR       55   2.244586E-06   9.682469E-01
+ Wrap_R_after_stabUR       55   8.663421E-06   7.730038E-01
+Wrap_R_after_stabGre       55   2.448548E-08   9.995817E-01
+Wrap_R_before_stabUR       60   3.998763E-06   9.533783E-01
+ Wrap_R_after_stabUR       60   5.781918E-06   7.837005E-01
+Wrap_R_after_stabGre       60   4.660331E-07   9.996310E-01
+Wrap_R_before_stabUR       60   3.998763E-06   9.533783E-01
+ Wrap_R_after_stabUR       60   5.781918E-06   7.837005E-01
+Wrap_R_after_stabGre       60   4.660331E-07   9.996310E-01
+Wrap_R_before_stabUR       60   3.998763E-06   9.533783E-01
+ Wrap_R_after_stabUR       60   5.781918E-06   7.837005E-01
+Wrap_R_after_stabGre       60   4.660331E-07   9.996310E-01
+Wrap_R_before_stabUR       60   3.998763E-06   9.533783E-01
+ Wrap_R_after_stabUR       60   5.781918E-06   7.837005E-01
+Wrap_R_after_stabGre       60   4.660331E-07   9.996310E-01
+Wrap_R_before_stabUR        5   1.459573E-06   9.526881E-01
+ Wrap_R_after_stabUR        5   5.781918E-06   7.837005E-01
+Wrap_R_after_stabGre        5   7.156077E-07   9.998630E-01
+Wrap_R_before_stabUR        5   1.459573E-06   9.526881E-01
+ Wrap_R_after_stabUR        5   5.781918E-06   7.837005E-01
+Wrap_R_after_stabGre        5   7.156077E-07   9.998630E-01
+Wrap_R_before_stabUR       50   2.308233E-06   9.671990E-01
+ Wrap_R_after_stabUR       50   5.781918E-06   7.837005E-01
+Wrap_R_after_stabGre       50   1.244636E-07   9.997137E-01
+Wrap_R_before_stabUR       50   2.308233E-06   9.671990E-01
+ Wrap_R_after_stabUR       50   5.781918E-06   7.837005E-01
+Wrap_R_after_stabGre       50   1.244636E-07   9.997137E-01
+Wrap_R_before_stabUR        5   3.186477E-05   9.442154E-01
+ Wrap_R_after_stabUR        5   4.363409E-05   7.869131E-01
+Wrap_R_after_stabGre        5   6.082619E-08   9.999446E-01
+Wrap_R_before_stabUR        5   3.186477E-05   9.442154E-01
+ Wrap_R_after_stabUR        5   4.363409E-05   7.869131E-01
+Wrap_R_after_stabGre        5   6.082619E-08   9.999446E-01
+Wrap_R_before_stabUR       10   2.994446E-06   9.381144E-01
+ Wrap_R_after_stabUR       10   1.273082E-04   8.054471E-01
+Wrap_R_after_stabGre       10   2.582971E-08   9.999374E-01
+Wrap_R_before_stabUR       10   2.994446E-06   9.381144E-01
+ Wrap_R_after_stabUR       10   1.273082E-04   8.054471E-01
+Wrap_R_after_stabGre       10   2.582971E-08   9.999374E-01
+Wrap_R_before_stabUR       15   1.854839E-05   9.381323E-01
+ Wrap_R_after_stabUR       15   2.863274E-05   8.031041E-01
+Wrap_R_after_stabGre       15   2.562530E-07   9.999341E-01
+Wrap_R_before_stabUR       15   1.854839E-05   9.381323E-01
+ Wrap_R_after_stabUR       15   2.863274E-05   8.031041E-01
+Wrap_R_after_stabGre       15   2.562530E-07   9.999341E-01
+Wrap_R_before_stabUR       20   2.751139E-05   9.337962E-01
+ Wrap_R_after_stabUR       20   2.633974E-05   7.932727E-01
+Wrap_R_after_stabGre       20   1.935236E-07   9.999346E-01
+Wrap_R_before_stabUR       20   2.751139E-05   9.337962E-01
+ Wrap_R_after_stabUR       20   2.633974E-05   7.932727E-01
+Wrap_R_after_stabGre       20   1.935236E-07   9.999346E-01
+Wrap_R_before_stabUR       25   5.360017E-06   9.192589E-01
+ Wrap_R_after_stabUR       25   4.194724E-04   8.172673E-01
+Wrap_R_after_stabGre       25   8.176258E-08   9.999403E-01
+Wrap_R_before_stabUR       25   5.360017E-06   9.192589E-01
+ Wrap_R_after_stabUR       25   4.194724E-04   8.172673E-01
+Wrap_R_after_stabGre       25   8.176258E-08   9.999403E-01
+Wrap_R_before_stabUR       30   4.198136E-05   9.470082E-01
+ Wrap_R_after_stabUR       30   3.199538E-05   8.103700E-01
+Wrap_R_after_stabGre       30   1.916336E-08   9.999520E-01
+Wrap_R_before_stabUR       30   4.198136E-05   9.470082E-01
+ Wrap_R_after_stabUR       30   3.199538E-05   8.103700E-01
+Wrap_R_after_stabGre       30   1.916336E-08   9.999520E-01
+Wrap_R_before_stabUR       35   2.038370E-05   9.404732E-01
+ Wrap_R_after_stabUR       35   1.622726E-04   8.095271E-01
+Wrap_R_after_stabGre       35   1.932588E-08   9.999629E-01
+Wrap_R_before_stabUR       35   2.038370E-05   9.404732E-01
+ Wrap_R_after_stabUR       35   1.622726E-04   8.095271E-01
+Wrap_R_after_stabGre       35   1.932588E-08   9.999629E-01
+Wrap_R_before_stabUR       40   7.260239E-06   9.498942E-01
+ Wrap_R_after_stabUR       40   3.875442E-04   8.172897E-01
+Wrap_R_after_stabGre       40   2.887860E-08   9.999733E-01
+Wrap_R_before_stabUR       40   7.260239E-06   9.498942E-01
+ Wrap_R_after_stabUR       40   3.875442E-04   8.172897E-01
+Wrap_R_after_stabGre       40   2.887860E-08   9.999733E-01
+Wrap_R_before_stabUR       45   4.794729E-06   9.486152E-01
+ Wrap_R_after_stabUR       45   3.240615E-04   8.161015E-01
+Wrap_R_after_stabGre       45   5.103300E-08   9.999770E-01
+Wrap_R_before_stabUR       45   4.794729E-06   9.486152E-01
+ Wrap_R_after_stabUR       45   3.240615E-04   8.161015E-01
+Wrap_R_after_stabGre       45   5.103300E-08   9.999770E-01
+Wrap_R_before_stabUR       50   9.446230E-06   9.487785E-01
+ Wrap_R_after_stabUR       50   1.151838E-05   8.159950E-01
+Wrap_R_after_stabGre       50   1.276091E-08   9.999704E-01
+Wrap_R_before_stabUR       50   9.446230E-06   9.487785E-01
+ Wrap_R_after_stabUR       50   1.151838E-05   8.159950E-01
+Wrap_R_after_stabGre       50   1.276091E-08   9.999704E-01
+Wrap_R_before_stabUR       55   6.204421E-06   9.492750E-01
+ Wrap_R_after_stabUR       55   1.240880E-04   8.240800E-01
+Wrap_R_after_stabGre       55   3.299307E-08   9.999762E-01
+Wrap_R_before_stabUR       55   6.204421E-06   9.492750E-01
+ Wrap_R_after_stabUR       55   1.240880E-04   8.240800E-01
+Wrap_R_after_stabGre       55   3.299307E-08   9.999762E-01
+Wrap_R_before_stabUR       60   2.308233E-06   9.671990E-01
+ Wrap_R_after_stabUR       60   3.926769E-05   8.121525E-01
+Wrap_R_after_stabGre       60   2.867996E-08   9.999751E-01
+Wrap_R_before_stabUR       60   2.308233E-06   9.671990E-01
+ Wrap_R_after_stabUR       60   3.926769E-05   8.121525E-01
+Wrap_R_after_stabGre       60   2.867996E-08   9.999751E-01
+Wrap_R_before_stabUR       10   2.994446E-06   9.381144E-01
+ Wrap_R_after_stabUR       10   3.926769E-05   8.121525E-01
+Wrap_R_after_stabGre       10   4.844278E-09   9.999920E-01
+Wrap_R_before_stabUR       10   2.994446E-06   9.381144E-01
+ Wrap_R_after_stabUR       10   3.926769E-05   8.121525E-01
+Wrap_R_after_stabGre       10   4.844278E-09   9.999920E-01
+Wrap_R_before_stabUR        5   4.576617E-05   9.234045E-01
+ Wrap_R_after_stabUR        5   2.907381E-05   7.212989E-01
+Wrap_R_after_stabGre        5   4.355891E-09   1.000005E+00
+Wrap_R_before_stabUR        5   4.576617E-05   9.234045E-01
+ Wrap_R_after_stabUR        5   2.907381E-05   7.212989E-01
+Wrap_R_after_stabGre        5   4.355891E-09   1.000005E+00
+Wrap_R_before_stabUR       10   3.955205E-06   9.249566E-01
+ Wrap_R_after_stabUR       10   5.953437E-05   7.279170E-01
+Wrap_R_after_stabGre       10   2.990631E-08   1.000007E+00
+Wrap_R_before_stabUR       10   3.955205E-06   9.249566E-01
+ Wrap_R_after_stabUR       10   5.953437E-05   7.279170E-01
+Wrap_R_after_stabGre       10   2.990631E-08   1.000007E+00
+Wrap_R_before_stabUR       15   5.183783E-06   9.480982E-01
+ Wrap_R_after_stabUR       15   5.389168E-05   7.528004E-01
+Wrap_R_after_stabGre       15   3.569988E-10   1.000010E+00
+Wrap_R_before_stabUR       15   5.183783E-06   9.480982E-01
+ Wrap_R_after_stabUR       15   5.389168E-05   7.528004E-01
+Wrap_R_after_stabGre       15   3.569988E-10   1.000010E+00
+Wrap_R_before_stabUR       20   1.304164E-06   9.435132E-01
+ Wrap_R_after_stabUR       20   6.795649E-05   7.429981E-01
+Wrap_R_after_stabGre       20   2.146381E-08   1.000009E+00
+Wrap_R_before_stabUR       20   1.304164E-06   9.435132E-01
+ Wrap_R_after_stabUR       20   6.795649E-05   7.429981E-01
+Wrap_R_after_stabGre       20   2.146381E-08   1.000009E+00
+Wrap_R_before_stabUR       25   2.371252E-05   9.323601E-01
+ Wrap_R_after_stabUR       25   5.661107E-05   7.421303E-01
+Wrap_R_after_stabGre       25   6.815978E-09   1.000010E+00
+Wrap_R_before_stabUR       25   2.371252E-05   9.323601E-01
+ Wrap_R_after_stabUR       25   5.661107E-05   7.421303E-01
+Wrap_R_after_stabGre       25   6.815978E-09   1.000010E+00
+Wrap_R_before_stabUR       30   1.464735E-05   9.561424E-01
+ Wrap_R_after_stabUR       30   9.480013E-05   7.504135E-01
+Wrap_R_after_stabGre       30   1.085671E-09   1.000009E+00
+Wrap_R_before_stabUR       30   1.464735E-05   9.561424E-01
+ Wrap_R_after_stabUR       30   9.480013E-05   7.504135E-01
+Wrap_R_after_stabGre       30   1.085671E-09   1.000009E+00
+Wrap_R_before_stabUR       35   2.200740E-05   9.620767E-01
+ Wrap_R_after_stabUR       35   8.643365E-05   7.343017E-01
+Wrap_R_after_stabGre       35   7.889124E-09   1.000004E+00
+Wrap_R_before_stabUR       35   2.200740E-05   9.620767E-01
+ Wrap_R_after_stabUR       35   8.643365E-05   7.343017E-01
+Wrap_R_after_stabGre       35   7.889124E-09   1.000004E+00
+Wrap_R_before_stabUR       40   2.277261E-05   9.551453E-01
+ Wrap_R_after_stabUR       40   1.687189E-04   7.403083E-01
+Wrap_R_after_stabGre       40   1.025298E-08   1.000003E+00
+Wrap_R_before_stabUR       40   2.277261E-05   9.551453E-01
+ Wrap_R_after_stabUR       40   1.687189E-04   7.403083E-01
+Wrap_R_after_stabGre       40   1.025298E-08   1.000003E+00
+Wrap_R_before_stabUR       45   2.019990E-05   9.486815E-01
+ Wrap_R_after_stabUR       45   1.019313E-05   7.255868E-01
+Wrap_R_after_stabGre       45   1.293133E-10   9.999964E-01
+Wrap_R_before_stabUR       45   2.019990E-05   9.486815E-01
+ Wrap_R_after_stabUR       45   1.019313E-05   7.255868E-01
+Wrap_R_after_stabGre       45   1.293133E-10   9.999964E-01
+Wrap_R_before_stabUR       50   4.111891E-06   9.493376E-01
+ Wrap_R_after_stabUR       50   1.047672E-04   7.200327E-01
+Wrap_R_after_stabGre       50   6.669569E-09   9.999965E-01
+Wrap_R_before_stabUR       50   4.111891E-06   9.493376E-01
+ Wrap_R_after_stabUR       50   1.047672E-04   7.200327E-01
+Wrap_R_after_stabGre       50   6.669569E-09   9.999965E-01
+Wrap_R_before_stabUR       55   3.086376E-05   9.423348E-01
+ Wrap_R_after_stabUR       55   1.657417E-04   7.105465E-01
+Wrap_R_after_stabGre       55   5.783619E-09   9.999945E-01
+Wrap_R_before_stabUR       55   3.086376E-05   9.423348E-01
+ Wrap_R_after_stabUR       55   1.657417E-04   7.105465E-01
+Wrap_R_after_stabGre       55   5.783619E-09   9.999945E-01
+Wrap_R_before_stabUR       60   2.994446E-06   9.381144E-01
+ Wrap_R_after_stabUR       60   1.116046E-04   7.169237E-01
+Wrap_R_after_stabGre       60   4.441269E-09   9.999944E-01
+Wrap_R_before_stabUR       60   2.994446E-06   9.381144E-01
+ Wrap_R_after_stabUR       60   1.116046E-04   7.169237E-01
+Wrap_R_after_stabGre       60   4.441269E-09   9.999944E-01
+Wrap_R_before_stabUR       15   5.183783E-06   9.480982E-01
+ Wrap_R_after_stabUR       15   1.116046E-04   7.169237E-01
+Wrap_R_after_stabGre       15   4.391958E-09   9.999968E-01
+Wrap_R_before_stabUR       15   5.183783E-06   9.480982E-01
+ Wrap_R_after_stabUR       15   1.116046E-04   7.169237E-01
+Wrap_R_after_stabGre       15   4.391958E-09   9.999968E-01
+Wrap_R_before_stabUR        5   4.576617E-05   9.234045E-01
+ Wrap_R_after_stabUR        5   1.116046E-04   7.169237E-01
+Wrap_R_after_stabGre        5   1.815785E-09   9.999966E-01
+Wrap_R_before_stabUR        5   4.576617E-05   9.234045E-01
+ Wrap_R_after_stabUR        5   1.116046E-04   7.169237E-01
+Wrap_R_after_stabGre        5   1.815785E-09   9.999966E-01
+Wrap_R_before_stabUR       55   3.086376E-05   9.423348E-01
+ Wrap_R_after_stabUR       55   1.116046E-04   7.169237E-01
+Wrap_R_after_stabGre       55   1.741399E-08   9.999945E-01
+Wrap_R_before_stabUR       55   3.086376E-05   9.423348E-01
+ Wrap_R_after_stabUR       55   1.116046E-04   7.169237E-01
+Wrap_R_after_stabGre       55   1.741399E-08   9.999945E-01
+Wrap_R_before_stabUR       55   3.086376E-05   9.423348E-01
+ Wrap_R_after_stabUR       55   1.116046E-04   7.169237E-01
+Wrap_R_after_stabGre       55   1.741399E-08   9.999945E-01
+Wrap_R_before_stabUR       55   3.086376E-05   9.423348E-01
+ Wrap_R_after_stabUR       55   1.116046E-04   7.169237E-01
+Wrap_R_after_stabGre       55   1.741399E-08   9.999945E-01
+Wrap_R_before_stabUR        5   1.133194E-05   8.957307E-01
+ Wrap_R_after_stabUR        5   4.919923E-05   6.947374E-01
+Wrap_R_after_stabGre        5   1.133387E-10   9.999994E-01
+Wrap_R_before_stabUR        5   1.133194E-05   8.957307E-01
+ Wrap_R_after_stabUR        5   4.919923E-05   6.947374E-01
+Wrap_R_after_stabGre        5   1.133387E-10   9.999994E-01
+Wrap_R_before_stabUR       10   1.759363E-05   8.990964E-01
+ Wrap_R_after_stabUR       10   1.561980E-04   6.932331E-01
+Wrap_R_after_stabGre       10   1.490595E-09   1.000001E+00
+Wrap_R_before_stabUR       10   1.759363E-05   8.990964E-01
+ Wrap_R_after_stabUR       10   1.561980E-04   6.932331E-01
+Wrap_R_after_stabGre       10   1.490595E-09   1.000001E+00
+Wrap_R_before_stabUR       15   3.476783E-06   9.270039E-01
+ Wrap_R_after_stabUR       15   9.359288E-05   6.906888E-01
+Wrap_R_after_stabGre       15   3.183312E-10   1.000001E+00
+Wrap_R_before_stabUR       15   3.476783E-06   9.270039E-01
+ Wrap_R_after_stabUR       15   9.359288E-05   6.906888E-01
+Wrap_R_after_stabGre       15   3.183312E-10   1.000001E+00
+Wrap_R_before_stabUR       20   4.153102E-05   9.208598E-01
+ Wrap_R_after_stabUR       20   3.559918E-05   6.776512E-01
+Wrap_R_after_stabGre       20   2.046057E-09   1.000001E+00
+Wrap_R_before_stabUR       20   4.153102E-05   9.208598E-01
+ Wrap_R_after_stabUR       20   3.559918E-05   6.776512E-01
+Wrap_R_after_stabGre       20   2.046057E-09   1.000001E+00
+Wrap_R_before_stabUR       25   1.718260E-05   9.095402E-01
+ Wrap_R_after_stabUR       25   6.870512E-05   6.623723E-01
+Wrap_R_after_stabGre       25   6.969061E-09   1.000001E+00
+Wrap_R_before_stabUR       25   1.718260E-05   9.095402E-01
+ Wrap_R_after_stabUR       25   6.870512E-05   6.623723E-01
+Wrap_R_after_stabGre       25   6.969061E-09   1.000001E+00
+Wrap_R_before_stabUR       30   1.888862E-06   9.296930E-01
+ Wrap_R_after_stabUR       30   2.810790E-04   6.456387E-01
+Wrap_R_after_stabGre       30   7.636519E-10   9.999999E-01
+Wrap_R_before_stabUR       30   1.888862E-06   9.296930E-01
+ Wrap_R_after_stabUR       30   2.810790E-04   6.456387E-01
+Wrap_R_after_stabGre       30   7.636519E-10   9.999999E-01
+Wrap_R_before_stabUR       35   3.259886E-05   9.379558E-01
+ Wrap_R_after_stabUR       35   1.494603E-04   6.596094E-01
+Wrap_R_after_stabGre       35   4.115760E-09   9.999996E-01
+Wrap_R_before_stabUR       35   3.259886E-05   9.379558E-01
+ Wrap_R_after_stabUR       35   1.494603E-04   6.596094E-01
+Wrap_R_after_stabGre       35   4.115760E-09   9.999996E-01
+Wrap_R_before_stabUR       40   5.859044E-06   9.305587E-01
+ Wrap_R_after_stabUR       40   9.839094E-06   6.364770E-01
+Wrap_R_after_stabGre       40   5.239915E-10   9.999991E-01
+Wrap_R_before_stabUR       40   5.859044E-06   9.305587E-01
+ Wrap_R_after_stabUR       40   9.839094E-06   6.364770E-01
+Wrap_R_after_stabGre       40   5.239915E-10   9.999991E-01
+Wrap_R_before_stabUR       45   7.896726E-06   9.218003E-01
+ Wrap_R_after_stabUR       45   7.754466E-05   6.266248E-01
+Wrap_R_after_stabGre       45   2.529254E-09   9.999988E-01
+Wrap_R_before_stabUR       45   7.896726E-06   9.218003E-01
+ Wrap_R_after_stabUR       45   7.754466E-05   6.266248E-01
+Wrap_R_after_stabGre       45   2.529254E-09   9.999988E-01
+Wrap_R_before_stabUR       50   1.564738E-05   9.354805E-01
+ Wrap_R_after_stabUR       50   7.267524E-04   6.171490E-01
+Wrap_R_after_stabGre       50   3.823774E-10   9.999989E-01
+Wrap_R_before_stabUR       50   1.564738E-05   9.354805E-01
+ Wrap_R_after_stabUR       50   7.267524E-04   6.171490E-01
+Wrap_R_after_stabGre       50   3.823774E-10   9.999989E-01
+Wrap_R_before_stabUR       55   7.501374E-06   9.409921E-01
+ Wrap_R_after_stabUR       55   5.560101E-05   6.207826E-01
+Wrap_R_after_stabGre       55   4.322761E-09   9.999991E-01
+Wrap_R_before_stabUR       55   7.501374E-06   9.409921E-01
+ Wrap_R_after_stabUR       55   5.560101E-05   6.207826E-01
+Wrap_R_after_stabGre       55   4.322761E-09   9.999991E-01
+Wrap_R_before_stabUR       60   3.086376E-05   9.423348E-01
+ Wrap_R_after_stabUR       60   1.513996E-04   6.101116E-01
+Wrap_R_after_stabGre       60   4.289602E-09   9.999995E-01
+Wrap_R_before_stabUR       60   3.086376E-05   9.423348E-01
+ Wrap_R_after_stabUR       60   1.513996E-04   6.101116E-01
+Wrap_R_after_stabGre       60   4.289602E-09   9.999995E-01
+Wrap_R_before_stabUR       45   7.896726E-06   9.218003E-01
+ Wrap_R_after_stabUR       45   1.513996E-04   6.101116E-01
+Wrap_R_after_stabGre       45   4.595547E-09   9.999991E-01
+Wrap_R_before_stabUR       45   7.896726E-06   9.218003E-01
+ Wrap_R_after_stabUR       45   1.513996E-04   6.101116E-01
+Wrap_R_after_stabGre       45   4.595547E-09   9.999991E-01
+Wrap_R_before_stabUR       60   3.086376E-05   9.423348E-01
+ Wrap_R_after_stabUR       60   1.513996E-04   6.101116E-01
+Wrap_R_after_stabGre       60   4.289602E-09   9.999995E-01
+Wrap_R_before_stabUR       60   3.086376E-05   9.423348E-01
+ Wrap_R_after_stabUR       60   1.513996E-04   6.101116E-01
+Wrap_R_after_stabGre       60   4.289602E-09   9.999995E-01
+Wrap_R_before_stabUR       50   1.564738E-05   9.354805E-01
+ Wrap_R_after_stabUR       50   1.513996E-04   6.101116E-01
+Wrap_R_after_stabGre       50   2.638527E-09   9.999994E-01
+Wrap_R_before_stabUR       50   1.564738E-05   9.354805E-01
+ Wrap_R_after_stabUR       50   1.513996E-04   6.101116E-01
+Wrap_R_after_stabGre       50   2.638527E-09   9.999994E-01
+Wrap_R_before_stabUR        5   1.250493E-05   8.848286E-01
+ Wrap_R_after_stabUR        5   5.193022E-05   6.468592E-01
+Wrap_R_after_stabGre        5   2.752859E-09   1.000000E+00
+Wrap_R_before_stabUR        5   1.250493E-05   8.848286E-01
+ Wrap_R_after_stabUR        5   5.193022E-05   6.468592E-01
+Wrap_R_after_stabGre        5   2.752859E-09   1.000000E+00
+Wrap_R_before_stabUR       10   3.527545E-06   8.878625E-01
+ Wrap_R_after_stabUR       10   3.265711E-04   6.622095E-01
+Wrap_R_after_stabGre       10   3.007936E-10   1.000000E+00
+Wrap_R_before_stabUR       10   3.527545E-06   8.878625E-01
+ Wrap_R_after_stabUR       10   3.265711E-04   6.622095E-01
+Wrap_R_after_stabGre       10   3.007936E-10   1.000000E+00
+Wrap_R_before_stabUR       15   1.889224E-05   9.068660E-01
+ Wrap_R_after_stabUR       15   1.581821E-04   6.544713E-01
+Wrap_R_after_stabGre       15   5.578338E-10   1.000000E+00
+Wrap_R_before_stabUR       15   1.889224E-05   9.068660E-01
+ Wrap_R_after_stabUR       15   1.581821E-04   6.544713E-01
+Wrap_R_after_stabGre       15   5.578338E-10   1.000000E+00
+Wrap_R_before_stabUR       20   1.169414E-05   8.994306E-01
+ Wrap_R_after_stabUR       20   2.372712E-05   6.581548E-01
+Wrap_R_after_stabGre       20   3.106577E-10   1.000000E+00
+Wrap_R_before_stabUR       20   1.169414E-05   8.994306E-01
+ Wrap_R_after_stabUR       20   2.372712E-05   6.581548E-01
+Wrap_R_after_stabGre       20   3.106577E-10   1.000000E+00
+Wrap_R_before_stabUR       25   1.385395E-05   8.883146E-01
+ Wrap_R_after_stabUR       25   5.630150E-05   6.474026E-01
+Wrap_R_after_stabGre       25   3.214230E-10   1.000000E+00
+Wrap_R_before_stabUR       25   1.385395E-05   8.883146E-01
+ Wrap_R_after_stabUR       25   5.630150E-05   6.474026E-01
+Wrap_R_after_stabGre       25   3.214230E-10   1.000000E+00
+Wrap_R_before_stabUR       30   1.641473E-06   9.011589E-01
+ Wrap_R_after_stabUR       30   7.391709E-05   6.133839E-01
+Wrap_R_after_stabGre       30   2.782794E-10   1.000000E+00
+Wrap_R_before_stabUR       30   1.641473E-06   9.011589E-01
+ Wrap_R_after_stabUR       30   7.391709E-05   6.133839E-01
+Wrap_R_after_stabGre       30   2.782794E-10   1.000000E+00
+Wrap_R_before_stabUR       35   6.976112E-05   9.127413E-01
+ Wrap_R_after_stabUR       35   6.375189E-05   6.135050E-01
+Wrap_R_after_stabGre       35   1.206028E-10   1.000000E+00
+Wrap_R_before_stabUR       35   6.976112E-05   9.127413E-01
+ Wrap_R_after_stabUR       35   6.375189E-05   6.135050E-01
+Wrap_R_after_stabGre       35   1.206028E-10   1.000000E+00
+Wrap_R_before_stabUR       40   2.073978E-06   9.100783E-01
+ Wrap_R_after_stabUR       40   5.477223E-05   6.249095E-01
+Wrap_R_after_stabGre       40   5.625973E-10   1.000000E+00
+Wrap_R_before_stabUR       40   2.073978E-06   9.100783E-01
+ Wrap_R_after_stabUR       40   5.477223E-05   6.249095E-01
+Wrap_R_after_stabGre       40   5.625973E-10   1.000000E+00
+Wrap_R_before_stabUR       45   5.320953E-07   9.247959E-01
+ Wrap_R_after_stabUR       45   6.091787E-05   6.244311E-01
+Wrap_R_after_stabGre       45   3.268513E-10   1.000000E+00
+Wrap_R_before_stabUR       45   5.320953E-07   9.247959E-01
+ Wrap_R_after_stabUR       45   6.091787E-05   6.244311E-01
+Wrap_R_after_stabGre       45   3.268513E-10   1.000000E+00
+Wrap_R_before_stabUR       50   5.266998E-06   9.356763E-01
+ Wrap_R_after_stabUR       50   1.272745E-04   6.339938E-01
+Wrap_R_after_stabGre       50   2.954210E-10   1.000000E+00
+Wrap_R_before_stabUR       50   5.266998E-06   9.356763E-01
+ Wrap_R_after_stabUR       50   1.272745E-04   6.339938E-01
+Wrap_R_after_stabGre       50   2.954210E-10   1.000000E+00
+Wrap_R_before_stabUR       55   3.719076E-06   9.488681E-01
+ Wrap_R_after_stabUR       55   1.539557E-04   6.175858E-01
+Wrap_R_after_stabGre       55   1.508842E-10   9.999999E-01
+Wrap_R_before_stabUR       55   3.719076E-06   9.488681E-01
+ Wrap_R_after_stabUR       55   1.539557E-04   6.175858E-01
+Wrap_R_after_stabGre       55   1.508842E-10   9.999999E-01
+Wrap_R_before_stabUR       60   1.564738E-05   9.354805E-01
+ Wrap_R_after_stabUR       60   1.375333E-05   6.244500E-01
+Wrap_R_after_stabGre       60   1.136296E-09   9.999999E-01
+Wrap_R_before_stabUR       60   1.564738E-05   9.354805E-01
+ Wrap_R_after_stabUR       60   1.375333E-05   6.244500E-01
+Wrap_R_after_stabGre       60   1.136296E-09   9.999999E-01
+Wrap_R_before_stabUR       55   3.719076E-06   9.488681E-01
+ Wrap_R_after_stabUR       55   1.375333E-05   6.244500E-01
+Wrap_R_after_stabGre       55   7.294479E-10   9.999999E-01
+Wrap_R_before_stabUR       55   3.719076E-06   9.488681E-01
+ Wrap_R_after_stabUR       55   1.375333E-05   6.244500E-01
+Wrap_R_after_stabGre       55   7.294479E-10   9.999999E-01
+Wrap_R_before_stabUR        5   7.153713E-06   8.995415E-01
+ Wrap_R_after_stabUR        5   9.572209E-05   6.275815E-01
+Wrap_R_after_stabGre        5   1.392427E-10   1.000000E+00
+Wrap_R_before_stabUR        5   7.153713E-06   8.995415E-01
+ Wrap_R_after_stabUR        5   9.572209E-05   6.275815E-01
+Wrap_R_after_stabGre        5   1.392427E-10   1.000000E+00
+Wrap_R_before_stabUR       10   3.164527E-05   9.034856E-01
+ Wrap_R_after_stabUR       10   5.728860E-05   6.438909E-01
+Wrap_R_after_stabGre       10   3.944665E-11   1.000000E+00
+Wrap_R_before_stabUR       10   3.164527E-05   9.034856E-01
+ Wrap_R_after_stabUR       10   5.728860E-05   6.438909E-01
+Wrap_R_after_stabGre       10   3.944665E-11   1.000000E+00
+Wrap_R_before_stabUR       15   1.469839E-05   8.897449E-01
+ Wrap_R_after_stabUR       15   1.323667E-04   6.281948E-01
+Wrap_R_after_stabGre       15   1.697275E-11   1.000000E+00
+Wrap_R_before_stabUR       15   1.469839E-05   8.897449E-01
+ Wrap_R_after_stabUR       15   1.323667E-04   6.281948E-01
+Wrap_R_after_stabGre       15   1.697275E-11   1.000000E+00
+Wrap_R_before_stabUR       20   1.841353E-05   8.753918E-01
+ Wrap_R_after_stabUR       20   2.433854E-05   6.242418E-01
+Wrap_R_after_stabGre       20   2.265121E-10   1.000000E+00
+Wrap_R_before_stabUR       20   1.841353E-05   8.753918E-01
+ Wrap_R_after_stabUR       20   2.433854E-05   6.242418E-01
+Wrap_R_after_stabGre       20   2.265121E-10   1.000000E+00
+Wrap_R_before_stabUR       25   3.912527E-05   8.632412E-01
+ Wrap_R_after_stabUR       25   1.018367E-05   6.130850E-01
+Wrap_R_after_stabGre       25   1.171205E-10   1.000000E+00
+Wrap_R_before_stabUR       25   3.912527E-05   8.632412E-01
+ Wrap_R_after_stabUR       25   1.018367E-05   6.130850E-01
+Wrap_R_after_stabGre       25   1.171205E-10   1.000000E+00
+Wrap_R_before_stabUR       30   3.774062E-05   8.854500E-01
+ Wrap_R_after_stabUR       30   1.099504E-05   6.134483E-01
+Wrap_R_after_stabGre       30   1.240678E-10   1.000000E+00
+Wrap_R_before_stabUR       30   3.774062E-05   8.854500E-01
+ Wrap_R_after_stabUR       30   1.099504E-05   6.134483E-01
+Wrap_R_after_stabGre       30   1.240678E-10   1.000000E+00
+Wrap_R_before_stabUR       35   2.687646E-05   9.265619E-01
+ Wrap_R_after_stabUR       35   6.961879E-05   6.162904E-01
+Wrap_R_after_stabGre       35   2.049815E-10   1.000000E+00
+Wrap_R_before_stabUR       35   2.687646E-05   9.265619E-01
+ Wrap_R_after_stabUR       35   6.961879E-05   6.162904E-01
+Wrap_R_after_stabGre       35   2.049815E-10   1.000000E+00
+Wrap_R_before_stabUR       40   4.607931E-06   9.237839E-01
+ Wrap_R_after_stabUR       40   6.062289E-05   6.064809E-01
+Wrap_R_after_stabGre       40   8.747295E-11   1.000000E+00
+Wrap_R_before_stabUR       40   4.607931E-06   9.237839E-01
+ Wrap_R_after_stabUR       40   6.062289E-05   6.064809E-01
+Wrap_R_after_stabGre       40   8.747295E-11   1.000000E+00
+Wrap_R_before_stabUR       45   8.219272E-06   9.347392E-01
+ Wrap_R_after_stabUR       45   3.761400E-05   6.145551E-01
+Wrap_R_after_stabGre       45   2.653568E-11   1.000000E+00
+Wrap_R_before_stabUR       45   8.219272E-06   9.347392E-01
+ Wrap_R_after_stabUR       45   3.761400E-05   6.145551E-01
+Wrap_R_after_stabGre       45   2.653568E-11   1.000000E+00
+Wrap_R_before_stabUR       50   8.811861E-06   9.460303E-01
+ Wrap_R_after_stabUR       50   1.740724E-05   6.132980E-01
+Wrap_R_after_stabGre       50   2.505910E-11   1.000000E+00
+Wrap_R_before_stabUR       50   8.811861E-06   9.460303E-01
+ Wrap_R_after_stabUR       50   1.740724E-05   6.132980E-01
+Wrap_R_after_stabGre       50   2.505910E-11   1.000000E+00
+Wrap_R_before_stabUR       55   3.584308E-05   9.574899E-01
+ Wrap_R_after_stabUR       55   3.097986E-04   6.305582E-01
+Wrap_R_after_stabGre       55   2.012103E-10   1.000000E+00
+Wrap_R_before_stabUR       55   3.584308E-05   9.574899E-01
+ Wrap_R_after_stabUR       55   3.097986E-04   6.305582E-01
+Wrap_R_after_stabGre       55   2.012103E-10   1.000000E+00
+Wrap_R_before_stabUR       60   3.719076E-06   9.488681E-01
+ Wrap_R_after_stabUR       60   2.141928E-04   6.463498E-01
+Wrap_R_after_stabGre       60   1.622994E-10   1.000000E+00
+Wrap_R_before_stabUR       60   3.719076E-06   9.488681E-01
+ Wrap_R_after_stabUR       60   2.141928E-04   6.463498E-01
+Wrap_R_after_stabGre       60   1.622994E-10   1.000000E+00
+Wrap_R_before_stabUR       50   8.811861E-06   9.460303E-01
+ Wrap_R_after_stabUR       50   2.141928E-04   6.463498E-01
+Wrap_R_after_stabGre       50   1.856358E-11   1.000000E+00
+Wrap_R_before_stabUR       50   8.811861E-06   9.460303E-01
+ Wrap_R_after_stabUR       50   2.141928E-04   6.463498E-01
+Wrap_R_after_stabGre       50   1.856358E-11   1.000000E+00
+Wrap_R_before_stabUR        5   6.973475E-06   9.203673E-01
+ Wrap_R_after_stabUR        5   1.829558E-04   6.907965E-01
+Wrap_R_after_stabGre        5   2.931645E-11   1.000000E+00
+Wrap_R_before_stabUR        5   6.973475E-06   9.203673E-01
+ Wrap_R_after_stabUR        5   1.829558E-04   6.907965E-01
+Wrap_R_after_stabGre        5   2.931645E-11   1.000000E+00
+Wrap_R_before_stabUR       10   1.163881E-05   9.220036E-01
+ Wrap_R_after_stabUR       10   2.830346E-05   7.197249E-01
+Wrap_R_after_stabGre       10   1.173199E-10   1.000000E+00
+Wrap_R_before_stabUR       10   1.163881E-05   9.220036E-01
+ Wrap_R_after_stabUR       10   2.830346E-05   7.197249E-01
+Wrap_R_after_stabGre       10   1.173199E-10   1.000000E+00
+Wrap_R_before_stabUR       15   1.362901E-05   9.061301E-01
+ Wrap_R_after_stabUR       15   2.583159E-05   7.088079E-01
+Wrap_R_after_stabGre       15   3.531587E-11   1.000000E+00
+Wrap_R_before_stabUR       15   1.362901E-05   9.061301E-01
+ Wrap_R_after_stabUR       15   2.583159E-05   7.088079E-01
+Wrap_R_after_stabGre       15   3.531587E-11   1.000000E+00
+Wrap_R_before_stabUR       20   1.275317E-05   8.837292E-01
+ Wrap_R_after_stabUR       20   2.003860E-04   6.643072E-01
+Wrap_R_after_stabGre       20   1.054315E-11   1.000000E+00
+Wrap_R_before_stabUR       20   1.275317E-05   8.837292E-01
+ Wrap_R_after_stabUR       20   2.003860E-04   6.643072E-01
+Wrap_R_after_stabGre       20   1.054315E-11   1.000000E+00
+Wrap_R_before_stabUR       25   3.036939E-06   8.741968E-01
+ Wrap_R_after_stabUR       25   5.327301E-04   6.784966E-01
+Wrap_R_after_stabGre       25   9.224953E-12   1.000000E+00
+Wrap_R_before_stabUR       25   3.036939E-06   8.741968E-01
+ Wrap_R_after_stabUR       25   5.327301E-04   6.784966E-01
+Wrap_R_after_stabGre       25   9.224953E-12   1.000000E+00
+Wrap_R_before_stabUR       30   1.487992E-06   8.922722E-01
+ Wrap_R_after_stabUR       30   1.204940E-05   6.888005E-01
+Wrap_R_after_stabGre       30   2.912741E-11   1.000000E+00
+Wrap_R_before_stabUR       30   1.487992E-06   8.922722E-01
+ Wrap_R_after_stabUR       30   1.204940E-05   6.888005E-01
+Wrap_R_after_stabGre       30   2.912741E-11   1.000000E+00
+Wrap_R_before_stabUR       35   1.216759E-06   9.254301E-01
+ Wrap_R_after_stabUR       35   1.969991E-04   7.098935E-01
+Wrap_R_after_stabGre       35   1.774960E-11   1.000000E+00
+Wrap_R_before_stabUR       35   1.216759E-06   9.254301E-01
+ Wrap_R_after_stabUR       35   1.969991E-04   7.098935E-01
+Wrap_R_after_stabGre       35   1.774960E-11   1.000000E+00
+Wrap_R_before_stabUR       40   1.713185E-05   9.204709E-01
+ Wrap_R_after_stabUR       40   1.489059E-04   6.839148E-01
+Wrap_R_after_stabGre       40   5.629790E-11   1.000000E+00
+Wrap_R_before_stabUR       40   1.713185E-05   9.204709E-01
+ Wrap_R_after_stabUR       40   1.489059E-04   6.839148E-01
+Wrap_R_after_stabGre       40   5.629790E-11   1.000000E+00
+Wrap_R_before_stabUR       45   3.468210E-06   9.267299E-01
+ Wrap_R_after_stabUR       45   3.322203E-06   6.843133E-01
+Wrap_R_after_stabGre       45   1.706676E-12   1.000000E+00
+Wrap_R_before_stabUR       45   3.468210E-06   9.267299E-01
+ Wrap_R_after_stabUR       45   3.322203E-06   6.843133E-01
+Wrap_R_after_stabGre       45   1.706676E-12   1.000000E+00
+Wrap_R_before_stabUR       50   1.703895E-06   9.360588E-01
+ Wrap_R_after_stabUR       50   5.044012E-05   6.666790E-01
+Wrap_R_after_stabGre       50   1.299734E-11   1.000000E+00
+Wrap_R_before_stabUR       50   1.703895E-06   9.360588E-01
+ Wrap_R_after_stabUR       50   5.044012E-05   6.666790E-01
+Wrap_R_after_stabGre       50   1.299734E-11   1.000000E+00
+Wrap_R_before_stabUR       55   1.383862E-05   9.541774E-01
+ Wrap_R_after_stabUR       55   4.236291E-04   6.762037E-01
+Wrap_R_after_stabGre       55   1.430725E-12   1.000000E+00
+Wrap_R_before_stabUR       55   1.383862E-05   9.541774E-01
+ Wrap_R_after_stabUR       55   4.236291E-04   6.762037E-01
+Wrap_R_after_stabGre       55   1.430725E-12   1.000000E+00
+Wrap_R_before_stabUR       60   8.811861E-06   9.460303E-01
+ Wrap_R_after_stabUR       60   5.636308E-05   6.716697E-01
+Wrap_R_after_stabGre       60   1.545862E-11   1.000000E+00
+Wrap_R_before_stabUR       60   8.811861E-06   9.460303E-01
+ Wrap_R_after_stabUR       60   5.636308E-05   6.716697E-01
+Wrap_R_after_stabGre       60   1.545862E-11   1.000000E+00
+Wrap_R_before_stabUR       55   1.383862E-05   9.541774E-01
+ Wrap_R_after_stabUR       55   5.636308E-05   6.716697E-01
+Wrap_R_after_stabGre       55   2.762177E-11   1.000000E+00
+Wrap_R_before_stabUR       55   1.383862E-05   9.541774E-01
+ Wrap_R_after_stabUR       55   5.636308E-05   6.716697E-01
+Wrap_R_after_stabGre       55   2.762177E-11   1.000000E+00
+Wrap_R_before_stabUR       20   1.275317E-05   8.837292E-01
+ Wrap_R_after_stabUR       20   5.636308E-05   6.716697E-01
+Wrap_R_after_stabGre       20   1.983189E-11   1.000000E+00
+Wrap_R_before_stabUR       20   1.275317E-05   8.837292E-01
+ Wrap_R_after_stabUR       20   5.636308E-05   6.716697E-01
+Wrap_R_after_stabGre       20   1.983189E-11   1.000000E+00
+Wrap_R_before_stabUR       60   8.811861E-06   9.460303E-01
+ Wrap_R_after_stabUR       60   5.636308E-05   6.716697E-01
+Wrap_R_after_stabGre       60   1.545902E-11   1.000000E+00
+Wrap_R_before_stabUR       60   8.811861E-06   9.460303E-01
+ Wrap_R_after_stabUR       60   5.636308E-05   6.716697E-01
+Wrap_R_after_stabGre       60   1.545902E-11   1.000000E+00
+Wrap_R_before_stabUR       45   3.468210E-06   9.267299E-01
+ Wrap_R_after_stabUR       45   5.636308E-05   6.716697E-01
+Wrap_R_after_stabGre       45   3.781940E-11   1.000000E+00
+Wrap_R_before_stabUR       45   3.468210E-06   9.267299E-01
+ Wrap_R_after_stabUR       45   5.636308E-05   6.716697E-01
+Wrap_R_after_stabGre       45   3.781940E-11   1.000000E+00

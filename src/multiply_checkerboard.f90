@@ -14,6 +14,7 @@ module MultiplyChecker_mod
 contains
     subroutine apply_group_R(Mat, Latt, Bonds, Gauge, nt, group_no, dir, nflag, scale)
 ! Mat <- Mat * Π_{b∈group(group_no,dir)} O_b(σ_b,τ)^{±1}
+! 修复：使用 mmult_L_2x2 执行真正的右乘（修改列）
         complex(kind=8), intent(inout) :: Mat(:, :)
         class(SquareLattice), intent(in) :: Latt
         class(BondList), intent(in) :: Bonds
@@ -69,6 +70,7 @@ contains
 
     subroutine apply_group_L(Mat, Latt, Bonds, Gauge, nt, group_no, dir, nflag, scale)
 ! Mat <- Π_{b∈group(group_no,dir)} O_b(σ_b,τ)^{±1} * Mat
+! 修复：使用 mmult_R_2x2 执行真正的左乘（修改行）
         complex(kind=8), intent(inout) :: Mat(:, :)
         class(SquareLattice), intent(in) :: Latt
         class(BondList), intent(in) :: Bonds

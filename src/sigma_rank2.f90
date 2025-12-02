@@ -61,30 +61,20 @@ contains
 
         if (.not. upd) return
 
-! 正确的Woodbury公式: G' = G - (I - G) E A (I + A K)^{-1} E^T G
-! 其中 E = [e_i, e_j], K = E^T (I - G) E
-! 注意：det_ratio = det(I + A K) = det(I + W)
+! B = (I - G) U = [(I-G) e_i, (I-G) e_j]
+        allocate(B(size(Gr,1), 2))
+        B(:,1) = unit_vec(size(Gr,1), i) - Gr(:, i)
+        B(:,2) = unit_vec(size(Gr,1), j) - Gr(:, j)
 
-! Minv = (I + A K)^{-1} = (I + W)^{-1}
+! Minv = (I2 + W)^-1
         call inv2x2(cmplx(1.d0, 0.d0, kind=8) + W(1,1), W(1,2), W(2,1), cmplx(1.d0, 0.d0, kind=8) + W(2,2), Minv)
 
-! B = (I - G) E = [(I-G)_i, (I-G)_j]（Ndim×2矩阵）
-! (I-G)_i 表示 (I-G) 的第 i 列
-        allocate(B(size(Gr,1), 2))
-        B(:,1) = -Gr(:, i)
-        B(i,1) = B(i,1) + cmplx(1.d0, 0.d0, kind=8)
-        B(:,2) = -Gr(:, j)
-        B(j,2) = B(j,2) + cmplx(1.d0, 0.d0, kind=8)
+! C = V^T G = A * (E^T G)
+        Cvec(1,:) = A(1,1) * Gr(i,:) + A(1,2) * Gr(j,:)
+        Cvec(2,:) = A(2,1) * Gr(i,:) + A(2,2) * Gr(j,:)
 
-! B_left = (I - G) E A (I + A K)^{-1} = B * A * Minv
-        B = matmul(B, matmul(A, Minv))
-
-! C = E^T G = [G(i,:); G(j,:)]（2×Ndim矩阵）
-        Cvec(1,:) = Gr(i,:)
-        Cvec(2,:) = Gr(j,:)
-
-! ΔG = B_left * C = (I - G) E A (I + A K)^{-1} E^T G
-        Gr = Gr - matmul(B, Cvec)
+! ΔG = B * Minv * C
+        Gr = Gr - matmul( matmul(B, Minv), Cvec )
         deallocate(B)
         return
     contains

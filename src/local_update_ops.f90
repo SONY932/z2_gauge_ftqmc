@@ -10,88 +10,126 @@ module LocalUpdateOps_mod
 contains
 
     subroutine prop_pre_step(PropU, PropD, Latt, Bonds, Gauge, nt)
+! 累积 UUR: UUR <- UUR * B(nt)
+! 其中 B = B_gauge * exp(-μ)
         class(Propagator), intent(inout) :: PropU, PropD
         class(SquareLattice), intent(in) :: Latt
         class(BondList), intent(in) :: Bonds
         class(GaugeConf), intent(in) :: Gauge
         integer, intent(in) :: nt
+! UUR <- UUR * B_gauge（右乘）
         call apply_trotter_layer_R(PropU%UUR, Latt, Bonds, Gauge, nt)
         call apply_trotter_layer_R(PropD%UUR, Latt, Bonds, Gauge, nt)
-        call opMu_mmult_R(PropU%UUR, -1)
-        call opMu_mmult_R(PropD%UUR, -1)
+! UUR <- UUR * exp(-μ)（右乘，使用 opMu_mmult_L）
+        call opMu_mmult_L(PropU%UUR, -1)
+        call opMu_mmult_L(PropD%UUR, -1)
     end subroutine prop_pre_step
 
     subroutine left_step_prefix(PropU, PropD, Latt, Bonds, Gauge, nt)
-! 左扫时的预处理（空操作，因为现在用完整层传播）
         class(Propagator), intent(inout) :: PropU, PropD
         class(SquareLattice), intent(in) :: Latt
         class(BondList), intent(in) :: Bonds
         class(GaugeConf), intent(in) :: Gauge
         integer, intent(in) :: nt
-        ! 什么都不做，等待 post_mu 做完整传播
+! 为 σ 更新做准备，不再需要
     end subroutine left_step_prefix
 
     subroutine left_step_after_sigma_pre_mu(PropU, PropD, Latt, Bonds, Gauge, nt)
-! 左扫σ更新后（空操作）
         class(Propagator), intent(inout) :: PropU, PropD
         class(SquareLattice), intent(in) :: Latt
         class(BondList), intent(in) :: Bonds
         class(GaugeConf), intent(in) :: Gauge
         integer, intent(in) :: nt
-        ! 什么都不做
+! 为 σ 更新做准备，不再需要
     end subroutine left_step_after_sigma_pre_mu
 
     subroutine left_step_after_sigma_post_mu(PropU, PropD, Latt, Bonds, Gauge, nt)
-! 累积 UUL: UUL <- UUL * B(nt)（右乘正向）
-! 这样 UUL(nt) = B(Ltrot) * ... * B(nt+1)，与 stab_green 一致
+! 左扫传播：G(nt-1) = B(nt)^{-1} * G(nt) * B(nt)
+! 其中 B = B_gauge * exp(-μ)，B^{-1} = exp(μ) * B_gauge^{-1}
+! 完整公式：G' = exp(μ) * B_gauge^{-1} * G * B_gauge * exp(-μ)
+! 同时累积 UUL: UUL <- UUL * B(nt)
         class(Propagator), intent(inout) :: PropU, PropD
         class(SquareLattice), intent(in) :: Latt
         class(BondList), intent(in) :: Bonds
         class(GaugeConf), intent(in) :: Gauge
         integer, intent(in) :: nt
-! 累积 UUL: UUL <- UUL * B = UUL * B_gauge * e^{-μ}
+! 传播 G：按从右到左的顺序应用
+! 步骤1：G <- G * B_gauge（右乘）
+        call apply_trotter_layer_R(PropU%Gr, Latt, Bonds, Gauge, nt, nflag_in=+1)
+        call apply_trotter_layer_R(PropD%Gr, Latt, Bonds, Gauge, nt, nflag_in=+1)
+! 步骤2：G <- G * exp(-μ)（右乘）
+        call opMu_mmult_L(PropU%Gr, -1)
+        call opMu_mmult_L(PropD%Gr, -1)
+! 步骤3：G <- B_gauge^{-1} * G（左乘）
+        call apply_trotter_layer_L(PropU%Gr, Latt, Bonds, Gauge, nt, nflag_in=-1)
+        call apply_trotter_layer_L(PropD%Gr, Latt, Bonds, Gauge, nt, nflag_in=-1)
+! 步骤4：G <- exp(μ) * G（左乘）
+        call opMu_mmult_R(PropU%Gr, +1)
+        call opMu_mmult_R(PropD%Gr, +1)
+! 累积 UUL: UUL <- UUL * B(nt)
+! 步骤1：UUL <- UUL * B_gauge（右乘）
         call apply_trotter_layer_R(PropU%UUL, Latt, Bonds, Gauge, nt, nflag_in=+1)
         call apply_trotter_layer_R(PropD%UUL, Latt, Bonds, Gauge, nt, nflag_in=+1)
-        call opMu_mmult_R(PropU%UUL, -1)
-        call opMu_mmult_R(PropD%UUL, -1)
+! 步骤2：UUL <- UUL * exp(-μ)（右乘）
+        call opMu_mmult_L(PropU%UUL, -1)
+        call opMu_mmult_L(PropD%UUL, -1)
     end subroutine left_step_after_sigma_post_mu
 
     subroutine right_step_prefix(PropU, PropD, Latt, Bonds, Gauge, nt)
-! 右扫预处理（空操作）
         class(Propagator), intent(inout) :: PropU, PropD
         class(SquareLattice), intent(in) :: Latt
         class(BondList), intent(in) :: Bonds
         class(GaugeConf), intent(in) :: Gauge
         integer, intent(in) :: nt
+! 为 σ 更新做准备，不再需要
     end subroutine right_step_prefix
 
     subroutine right_step_after_sigma_pre_mu(PropU, PropD, Latt, Bonds, Gauge, nt)
-! 右扫σ更新后（空操作）
         class(Propagator), intent(inout) :: PropU, PropD
         class(SquareLattice), intent(in) :: Latt
         class(BondList), intent(in) :: Bonds
         class(GaugeConf), intent(in) :: Gauge
         integer, intent(in) :: nt
+! 为 σ 更新做准备，不再需要
     end subroutine right_step_after_sigma_pre_mu
 
     subroutine right_step_after_sigma_post_mu(PropU, PropD, Latt, Bonds, Gauge, nt)
-! 右扫（空操作，传播在 propagate_right_step 中完成）
+! 右扫传播：G(nt+1) = B(nt) * G(nt) * B(nt)^{-1}
+! 其中 B = B_gauge * exp(-μ)，B^{-1} = exp(μ) * B_gauge^{-1}
+! 完整公式：G' = B_gauge * exp(-μ) * G * exp(μ) * B_gauge^{-1}
         class(Propagator), intent(inout) :: PropU, PropD
         class(SquareLattice), intent(in) :: Latt
         class(BondList), intent(in) :: Bonds
         class(GaugeConf), intent(in) :: Gauge
         integer, intent(in) :: nt
+! 传播 G：按从右到左的顺序应用
+! 步骤1：G <- G * B_gauge^{-1}（右乘）
+        call apply_trotter_layer_R(PropU%Gr, Latt, Bonds, Gauge, nt, nflag_in=-1)
+        call apply_trotter_layer_R(PropD%Gr, Latt, Bonds, Gauge, nt, nflag_in=-1)
+! 步骤2：G <- G * exp(μ)（右乘）
+        call opMu_mmult_L(PropU%Gr, +1)
+        call opMu_mmult_L(PropD%Gr, +1)
+! 步骤3：G <- exp(-μ) * G（左乘）
+        call opMu_mmult_R(PropU%Gr, -1)
+        call opMu_mmult_R(PropD%Gr, -1)
+! 步骤4：G <- B_gauge * G（左乘）
+        call apply_trotter_layer_L(PropU%Gr, Latt, Bonds, Gauge, nt, nflag_in=+1)
+        call apply_trotter_layer_L(PropD%Gr, Latt, Bonds, Gauge, nt, nflag_in=+1)
     end subroutine right_step_after_sigma_post_mu
 
     subroutine right_step_finalize(PropU, PropD, Latt, Bonds, Gauge, nt)
-! 累积 UUR: UUR <- UUR * B
+! 右扫累积 UUR: UUR <- UUR * B(nt)
         class(Propagator), intent(inout) :: PropU, PropD
         class(SquareLattice), intent(in) :: Latt
         class(BondList), intent(in) :: Bonds
         class(GaugeConf), intent(in) :: Gauge
         integer, intent(in) :: nt
+! 步骤1：UUR <- UUR * B_gauge（右乘）
         call apply_trotter_layer_R(PropU%UUR, Latt, Bonds, Gauge, nt, nflag_in=+1)
         call apply_trotter_layer_R(PropD%UUR, Latt, Bonds, Gauge, nt, nflag_in=+1)
+! 步骤2：UUR <- UUR * exp(-μ)（右乘）
+        call opMu_mmult_L(PropU%UUR, -1)
+        call opMu_mmult_L(PropD%UUR, -1)
     end subroutine right_step_finalize
 
 end module LocalUpdateOps_mod
