@@ -1,0 +1,24 @@
+TARGET = bin/dqmc_gauge
+OBJS = obj/calc_basic.o obj/lattice.o obj/process_matrix.o \
+       obj/gauge_fields.o obj/stabilization.o obj/bondlist.o \
+       obj/operator_gauge.o obj/op_mu.o \
+       obj/multiply_checkerboard.o obj/propagator.o \
+       obj/gauge_action.o \
+       obj/local_sigma.o obj/local_update_ops.o obj/lambda_rank1.o obj/sigma_rank2.o \
+       obj/lambda_pair_update.o \
+       obj/obser_min.o obj/obser_gauge.o \
+       obj/worm_proposal.o obj/worm_core.o obj/worm.o \
+       obj/local_sweep.o obj/stabilize_v1.o \
+       obj/main.o
+
+.SUFFIXES: .f90 
+obj/%.o: src/%.f90
+	@mkdir -p obj
+	$(FC) $(FLAGS) -module obj -Iobj -c $< -o $@
+
+$(TARGET): $(OBJS)
+	@mkdir -p bin
+	$(FC) $(LF) -o $(TARGET) $(OBJS) $(LIBS)
+
+clean:
+	rm -rf obj
