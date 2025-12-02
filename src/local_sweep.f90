@@ -86,8 +86,13 @@ contains
     end subroutine local_pre
 
     subroutine propagate_left_step(this, PropU, PropD, Latt, Bonds, Gauge, nt, iseed)
-! 左扫传播：G(nt-1) = B(nt)^{-1} * G(nt) * B(nt)
+! 左扫传播：G(nt-1) = B(nt) * G(nt) * B(nt)^{-1}
 ! 其中 B = B_gauge * exp(-μ)
+!
+! 关键顺序修正：
+! 1. 先进行 σ 更新（使用当前 G(nt)，Woodbury 更新 Green 函数）
+! 2. 然后传播 G 和累积 UUL（使用更新后的 B(nt)）
+! 这确保 UUL 累积使用的 B(nt) 与规范场配置一致
         class(LocalSweep), intent(inout) :: this
         class(Propagator), intent(inout) :: PropU, PropD
         class(SquareLattice), intent(in) :: Latt
@@ -96,8 +101,16 @@ contains
         integer, intent(in) :: nt
         integer, intent(inout) :: iseed
 
-! 暂时禁用 σ 更新以测试纯传播
-! call sweep_sigma_dir(...)
+! σ 更新暂时禁用（Woodbury 公式需要与新传播方向匹配）
+! TODO: 修复 sigma_flip_rank2 以匹配新的传播公式
+!        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, &
+!            Bonds%group_ex_even, 'x', nt, Bonds%ex_src, Bonds%ex_dst, iseed, 'L_x_even')
+!        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, &
+!            Bonds%group_ex_odd, 'x', nt, Bonds%ex_src, Bonds%ex_dst, iseed, 'L_x_odd')
+!        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, &
+!            Bonds%group_ey_even, 'y', nt, Bonds%ey_src, Bonds%ey_dst, iseed, 'L_y_even')
+!        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, &
+!            Bonds%group_ey_odd, 'y', nt, Bonds%ey_src, Bonds%ey_dst, iseed, 'L_y_odd')
 
 ! 完整传播 + UUL 累积
         call left_step_after_sigma_post_mu(PropU, PropD, Latt, Bonds, Gauge, nt)
@@ -105,8 +118,12 @@ contains
     end subroutine propagate_left_step
 
     subroutine propagate_right_step(this, PropU, PropD, Latt, Bonds, Gauge, nt, iseed)
-! 右扫传播：G(nt+1) = B(nt+1) * G(nt) * B(nt+1)^{-1}
+! 右扫传播：G(nt) = B(nt)^{-1} * G(nt-1) * B(nt)
 ! 其中 B = B_gauge * exp(-μ)
+!
+! 关键顺序修正：
+! 1. 先进行 σ 更新（使用当前 G(nt-1)，Woodbury 更新 Green 函数）
+! 2. 然后传播 G 和累积 UUR（使用更新后的 B(nt)）
         class(LocalSweep), intent(inout) :: this
         class(Propagator), intent(inout) :: PropU, PropD
         class(SquareLattice), intent(in) :: Latt
@@ -115,8 +132,15 @@ contains
         integer, intent(in) :: nt
         integer, intent(inout) :: iseed
 
-! 暂时禁用 σ 更新以测试纯传播
-! call sweep_sigma_dir(...)
+! σ 更新暂时禁用
+!        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, &
+!            Bonds%group_ex_even, 'x', nt, Bonds%ex_src, Bonds%ex_dst, iseed, 'R_x_even')
+!        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, &
+!            Bonds%group_ex_odd, 'x', nt, Bonds%ex_src, Bonds%ex_dst, iseed, 'R_x_odd')
+!        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, &
+!            Bonds%group_ey_even, 'y', nt, Bonds%ey_src, Bonds%ey_dst, iseed, 'R_y_even')
+!        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, &
+!            Bonds%group_ey_odd, 'y', nt, Bonds%ey_src, Bonds%ey_dst, iseed, 'R_y_odd')
 
 ! 完整传播 + UUR 累积
         call right_step_after_sigma_post_mu(PropU, PropD, Latt, Bonds, Gauge, nt)
@@ -225,7 +249,7 @@ contains
 ! 汇总并输出接受率（MPI 均值）
         call write_accept_logs(this)
 
-! 若 worm 或 λ 接受，都必须重建段栈，确保与新的规范场一致（仿 AFM 逻辑）
+! 若 worm 或 λ 接受，都必须重建段栈，确保与新的规范场一致
         if (did_worm .or. did_lambda) then
             call this%pre(PropU, PropD, WrU, WrD, Latt, Bonds, Gauge)
         endif
