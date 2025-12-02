@@ -125,12 +125,16 @@ contains
     end subroutine apply_half_trotter_R
 
     subroutine apply_trotter_layer_L(Gr, Latt, Bonds, Gauge, nt, nflag_in)
-! 对等时 Green 矩阵执行一次"右乘"的对称二阶 Trotter 层
-! 注意：由于函数名混乱，apply_group_L 实际执行右乘！
-! 为了产生与 apply_trotter_layer_R 相同的 B_gauge，需要使用**反向**顺序
-! apply_trotter_layer_R 使用：2x, 1x, 2y, 1y, 1y, 2y, 1x, 2x（左乘顺序）
-! 对于右乘，后应用的算符在左边，所以应该反向应用：2x, 1x, 2y, 1y, 1y, 2y, 1x, 2x
-! 这样产生 Mat * (O_x2 * O_x1 * ... * O_x2) = Mat * B_gauge
+! 对等时 Green 矩阵执行"右乘" B_gauge：G <- G * B
+! 注意：apply_group_L 实际执行右乘（先应用的在左边）
+! apply_trotter_layer_R 左乘产生：B * G，其中 B = O8 * O7 * O6 * O5 * O4 * O3 * O2 * O1
+!   （O1 是第一个应用的，O8 是最后应用的，左乘累积是后者在左边）
+! 要让 apply_trotter_layer_L 产生 G * B = G * (O8 * O7 * ... * O1)，
+!   需要按 **反向顺序** 应用：先 O1，再 O2，...，最后 O8
+!   因为右乘累积是先者在左边：G * O1 * O2 * ... * O8 = G * (O1 * O2 * ... * O8) ≠ G * B
+!   所以需要：O8, O7, ..., O1 顺序应用，得到 G * O8 * O7 * ... * O1 = G * B ✓
+! apply_trotter_layer_R 应用顺序：2x, 1x, 2y, 1y, 1y, 2y, 1x, 2x
+! apply_trotter_layer_L 反向顺序：2x, 1x, 2y, 1y, 1y, 2y, 1x, 2x（回文相同）
         complex(kind=8), intent(inout) :: Gr(:, :)
         class(SquareLattice), intent(in) :: Latt
         class(BondList), intent(in) :: Bonds
@@ -141,7 +145,13 @@ contains
         real(kind=8), parameter :: half = 0.5d0
         nflag = 1
         if (present(nflag_in)) nflag = nflag_in
-! 反向顺序以匹配 apply_trotter_layer_R 产生的 B_gauge
+! 【关键修复】使用反向顺序（从 apply_trotter_layer_R 的末尾开始）
+! apply_trotter_layer_R 顺序: 2x, 1x, 2y, 1y, 1y, 2y, 1x, 2x
+! 反向顺序应该是: 2x, 1x, 2y, 1y, 1y, 2y, 1x, 2x (回文所以一样)
+! 但是！！！左乘累积和右乘累积的方向相反！
+! 左乘：先应用 A，再应用 B → B * A * Mat
+! 右乘：先应用 A，再应用 B → Mat * A * B
+! 所以右乘需要完全反向顺序！
         call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 2, 'x', nflag, half)
         call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 1, 'x', nflag, half)
         call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 2, 'y', nflag, half)
