@@ -1,0 +1,25 @@
+FC=mpifort
+FLAGS= -c -O3 -fdefault-real-8 -fdefault-double-8
+FLAGS_DEBUG= -c -O0 -g -fcheck=all -fbacktrace -ffpe-trap=invalid,zero,overflow
+SUFFIX=
+# 使用系统LAPACK/BLAS，如果没有MKL
+LF = -llapack -lblas
+HOME = /workspace/lib/package_of_matrix
+LIBS= $(HOME)/Modules/modules_90.a \
+      $(HOME)/MyEis/libeis.a \
+      $(HOME)/MyNag/libnag.a \
+      $(HOME)/MyLin/liblin.a \
+      $(HOME)/Ran/libran.a \
+      $(HOME)/LaPack/lapack.a
+
+all:
+	cp $(HOME)/Modules/*.mod . 2>/dev/null || true ;\
+	(make -f Compile  FC="$(FC)" LF="$(LF)" FLAGS="$(FLAGS)"  LIBS="$(LIBS)" SUFFIX="$(SUFFIX)") 
+
+debug:
+	cp $(HOME)/Modules/*.mod . 2>/dev/null || true ;\
+	(make -f Compile  FC="$(FC)" LF="$(LF)" FLAGS="$(FLAGS_DEBUG)"  LIBS="$(LIBS)" SUFFIX="$(SUFFIX)") 
+
+clean:
+	(make -f Compile  clean );\
+	rm -f *.mod
