@@ -223,6 +223,13 @@ contains
             enddo
         endif
 
+! 关键修复：在应用lambda投影之前，先保存Gr的副本，以确保段栈一致性
+! 如果lambda更新被拒绝，恢复副本；如果被接受，重建段栈
+        complex(kind=8), allocatable :: GrU_save(:, :), GrD_save(:, :)
+        allocate(GrU_save(Ndim, Ndim), GrD_save(Ndim, Ndim))
+        GrU_save = PropU%Gr
+        GrD_save = PropD%Gr
+
 ! 施加 λ 投影后再进行 λ 成对翻与观测
         call apply_lambda_both(PropU%Gr, Gauge)
         call apply_lambda_both(PropD%Gr, Gauge)
@@ -240,9 +247,12 @@ contains
         call this%Obs%acc_gauge(Gauge, Latt, Ltrot)
         call this%Obs%reduce_and_write()
 
-! 撤回 λ 投影，恢复传播基
-        call apply_lambda_both(PropU%Gr, Gauge)
-        call apply_lambda_both(PropD%Gr, Gauge)
+! 修复：如果lambda更新被拒绝，恢复保存的Gr副本以保持段栈一致性
+! 如果lambda更新被接受，也恢复保存的Gr副本，然后重建段栈（基于新的lambda）
+        PropU%Gr = GrU_save
+        PropD%Gr = GrD_save
+        deallocate(GrU_save, GrD_save)
+
 ! 汇总并输出接受率（MPI 均值）
         call write_accept_logs(this)
 
