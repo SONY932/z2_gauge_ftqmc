@@ -86,6 +86,9 @@ contains
     end subroutine local_pre
 
     subroutine propagate_left_step(this, PropU, PropD, Latt, Bonds, Gauge, nt, iseed)
+! 左扫完整传播：G(nt-1) = B^{-1} * G(nt) * B
+! 其中 B = B_gauge * e^{-μ}，B^{-1} = e^{μ} * B_gauge^{-1}
+! 所以 G' = e^{μ} * B_gauge^{-1} * G * B_gauge * e^{-μ}
         class(LocalSweep), intent(inout) :: this
         class(Propagator), intent(inout) :: PropU, PropD
         class(SquareLattice), intent(in) :: Latt
@@ -94,27 +97,30 @@ contains
         integer, intent(in) :: nt
         integer, intent(inout) :: iseed
 
-! B(nt) 左半步
-        call left_step_prefix(PropU, PropD, Latt, Bonds, Gauge, nt)
+! σ Metropolis：
 
-! σ Metropolis：按 AFM 回溯顺序（y 组 → x 组）
-        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ey_odd,  'y', nt, Bonds%ey_src, Bonds%ey_dst, iseed, 'y_odd')
-        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ey_even, 'y', nt, Bonds%ey_src, Bonds%ey_dst, iseed, 'y_even')
-        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ex_odd,  'x', nt, Bonds%ex_src, Bonds%ex_dst, iseed, 'x_odd')
-        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ex_even, 'x', nt, Bonds%ex_src, Bonds%ex_dst, iseed, 'x_even')
-
-! μ + 段栈写回（仿 AFM LocalK_prop_L）
-        call left_step_after_sigma_pre_mu(PropU, PropD, Latt, Bonds, Gauge, nt)
-        if (debug_green_log_enabled) call debug_log_green('L_before_mu', nt, PropU%Gr, PropD%Gr)
-        call opMu_mmult_L(PropU%Gr, +1); call opMu_mmult_L(PropD%Gr, +1)
-        if (debug_green_log_enabled) call debug_log_green('L_after_muR', nt, PropU%Gr, PropD%Gr)
-        call left_step_after_sigma_post_mu(PropU, PropD, Latt, Bonds, Gauge, nt)
+! 完整传播：G' = e^{μ} * B_gauge^{-1} * G * B_gauge * e^{-μ}
+! 按从右到左的顺序：
+! 步骤1：G <- G * B_gauge（正向右乘）
+        call apply_trotter_layer_R(PropU%Gr, Latt, Bonds, Gauge, nt, nflag_in=+1)
+        call apply_trotter_layer_R(PropD%Gr, Latt, Bonds, Gauge, nt, nflag_in=+1)
+! 步骤2：G <- G * e^{-μ}
         call opMu_mmult_R(PropU%Gr, -1); call opMu_mmult_R(PropD%Gr, -1)
-        if (debug_green_log_enabled) call debug_log_green('L_after_muL', nt, PropU%Gr, PropD%Gr)
+! 步骤3：G <- B_gauge^{-1} * G（逆向左乘）
+        call apply_trotter_layer_L(PropU%Gr, Latt, Bonds, Gauge, nt, nflag_in=-1)
+        call apply_trotter_layer_L(PropD%Gr, Latt, Bonds, Gauge, nt, nflag_in=-1)
+! 步骤4：G <- e^{μ} * G
+        call opMu_mmult_L(PropU%Gr, +1); call opMu_mmult_L(PropD%Gr, +1)
+
+! 累积 UUL
+        call left_step_after_sigma_post_mu(PropU, PropD, Latt, Bonds, Gauge, nt)
         return
     end subroutine propagate_left_step
 
     subroutine propagate_right_step(this, PropU, PropD, Latt, Bonds, Gauge, nt, iseed)
+! 右扫完整传播：G(nt+1) = B * G * B^{-1}
+! 其中 B = B_gauge * e^{-μ}，B^{-1} = e^{μ} * B_gauge^{-1}
+! 所以 G' = B_gauge * e^{-μ} * G * e^{μ} * B_gauge^{-1}
         class(LocalSweep), intent(inout) :: this
         class(Propagator), intent(inout) :: PropU, PropD
         class(SquareLattice), intent(in) :: Latt
@@ -123,23 +129,22 @@ contains
         integer, intent(in) :: nt
         integer, intent(inout) :: iseed
 
-! B(nt)^{-1/2} 预处理
-        call right_step_prefix(PropU, PropD, Latt, Bonds, Gauge, nt)
+! σ Metropolis：
 
-! σ Metropolis：与 AFM LocalK_prop_R 同序（x 组 → y 组）
-        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ex_even, 'x', nt, Bonds%ex_src, Bonds%ex_dst, iseed, 'x_even')
-        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ex_odd,  'x', nt, Bonds%ex_src, Bonds%ex_dst, iseed, 'x_odd')
-        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ey_even, 'y', nt, Bonds%ey_src, Bonds%ey_dst, iseed, 'y_even')
-        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ey_odd,  'y', nt, Bonds%ey_src, Bonds%ey_dst, iseed, 'y_odd')
-
-! μ + 段栈写回（仿 AFM LocalK_prop_R）
-        call right_step_after_sigma_pre_mu(PropU, PropD, Latt, Bonds, Gauge, nt)
-        if (debug_green_log_enabled) call debug_log_green('R_before_mu', nt, PropU%Gr, PropD%Gr)
+! 完整传播：G' = B_gauge * e^{-μ} * G * e^{μ} * B_gauge^{-1}
+! 按从右到左的顺序：
+! 步骤1：G <- G * B_gauge^{-1}（逆向右乘）
+        call apply_trotter_layer_R(PropU%Gr, Latt, Bonds, Gauge, nt, nflag_in=-1)
+        call apply_trotter_layer_R(PropD%Gr, Latt, Bonds, Gauge, nt, nflag_in=-1)
+! 步骤2：G <- G * e^{μ}
         call opMu_mmult_R(PropU%Gr, +1); call opMu_mmult_R(PropD%Gr, +1)
-        if (debug_green_log_enabled) call debug_log_green('R_after_muL', nt, PropU%Gr, PropD%Gr)
-        call right_step_after_sigma_post_mu(PropU, PropD, Latt, Bonds, Gauge, nt)
+! 步骤3：G <- e^{-μ} * G
         call opMu_mmult_L(PropU%Gr, -1); call opMu_mmult_L(PropD%Gr, -1)
-        if (debug_green_log_enabled) call debug_log_green('R_after_muR', nt, PropU%Gr, PropD%Gr)
+! 步骤4：G <- B_gauge * G（正向左乘）
+        call apply_trotter_layer_L(PropU%Gr, Latt, Bonds, Gauge, nt, nflag_in=+1)
+        call apply_trotter_layer_L(PropD%Gr, Latt, Bonds, Gauge, nt, nflag_in=+1)
+
+! 累积 UUR: UUR <- UUR * B = UUR * B_gauge * e^{-μ}
         call right_step_finalize(PropU, PropD, Latt, Bonds, Gauge, nt)
         call opMu_mmult_R(PropU%UUR, -1); call opMu_mmult_R(PropD%UUR, -1)
         return
@@ -194,7 +199,7 @@ contains
         enddo
 
 ! 可选：worm 全局更新（时间串 / 最小环），每 sweep 做 Nglobal 次提案
-        if (is_global) then
+        if (.false.) then  ! DEBUG: 暂时禁用worm更新来测试传播
             do ng = 1, Nglobal
 ! 在 Nwrap 的时片边界重建 G，然后随机选择：时间串或最小环
                 nt = nranf(iseed, Ltrot / Nwrap) * Nwrap
@@ -223,26 +228,27 @@ contains
             enddo
         endif
 
-! 施加 λ 投影后再进行 λ 成对翻与观测
-        call apply_lambda_both(PropU%Gr, Gauge)
-        call apply_lambda_both(PropD%Gr, Gauge)
+! ====== λ 更新已禁用（仅保留σ更新用于调试） ======
+! ! 施加 λ 投影后再进行 λ 成对翻与观测
+!         call apply_lambda_both(PropU%Gr, Gauge)
+!         call apply_lambda_both(PropD%Gr, Gauge)
+! 
+!         i_lambda = nranf(iseed, Lq)
+!         j_lambda = nranf(iseed, Lq)
+!         if (i_lambda /= j_lambda) then
+!             call lambda_pair_flip(PropU%Gr, PropD%Gr, Gauge, i_lambda, j_lambda, Latt, iseed, acc_lambda)
+!             call this%Acc_lambda%count(acc_lambda)
+!             if (acc_lambda) did_lambda = .true.
+!         endif
 
-        i_lambda = nranf(iseed, Lq)
-        j_lambda = nranf(iseed, Lq)
-        if (i_lambda /= j_lambda) then
-            call lambda_pair_flip(PropU%Gr, PropD%Gr, Gauge, i_lambda, j_lambda, Latt, iseed, acc_lambda)
-            call this%Acc_lambda%count(acc_lambda)
-            if (acc_lambda) did_lambda = .true.
-        endif
-
-! 末片观测（仅在 λ 投影启用时）
+! 末片观测（无λ投影时直接观测）
         call this%Obs%acc_fermion(PropU%Gr, PropD%Gr, Latt)
         call this%Obs%acc_gauge(Gauge, Latt, Ltrot)
         call this%Obs%reduce_and_write()
 
-! 撤回 λ 投影，恢复传播基
-        call apply_lambda_both(PropU%Gr, Gauge)
-        call apply_lambda_both(PropD%Gr, Gauge)
+! ! 撤回 λ 投影，恢复传播基
+!         call apply_lambda_both(PropU%Gr, Gauge)
+!         call apply_lambda_both(PropD%Gr, Gauge)
 ! 汇总并输出接受率（MPI 均值）
         call write_accept_logs(this)
 

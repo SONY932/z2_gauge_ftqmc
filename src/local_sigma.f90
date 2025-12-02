@@ -41,7 +41,7 @@ contains
 
     subroutine apply_trotter_layer_R(Gr, Latt, Bonds, Gauge, nt, nflag_in)
 ! 对等时 Green 矩阵执行一次"右乘"的对称二阶 Trotter 层
-! 关键修复：顺序应该与_L相反（对称性要求）
+! 当 nflag=-1 时（逆向），顺序需要反转以得到正确的 B^{-1}
         complex(kind=8), intent(inout) :: Gr(:, :)
         class(SquareLattice), intent(in) :: Latt
         class(BondList), intent(in) :: Bonds
@@ -52,20 +52,35 @@ contains
         real(kind=8), parameter :: half = 0.5d0
         nflag = 1
         if (present(nflag_in)) nflag = nflag_in
-        ! 对称Trotter的序列是回文，正反序相同
-        call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 2, 'x', nflag, half)
-        call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 1, 'x', nflag, half)
-        call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 2, 'y', nflag, half)
-        call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 1, 'y', nflag, half)
-        call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 1, 'y', nflag, half)
-        call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 2, 'y', nflag, half)
-        call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 1, 'x', nflag, half)
-        call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 2, 'x', nflag, half)
+        if (nflag == 1) then
+! 正向 G * B：标准顺序
+            call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 2, 'x', nflag, half)
+            call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 1, 'x', nflag, half)
+            call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 2, 'y', nflag, half)
+            call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 1, 'y', nflag, half)
+            call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 1, 'y', nflag, half)
+            call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 2, 'y', nflag, half)
+            call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 1, 'x', nflag, half)
+            call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 2, 'x', nflag, half)
+        else
+! 逆向 G * B^{-1}：反转顺序（B^{-1} = O_n^{-1} * ... * O_1^{-1}）
+            call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 2, 'x', nflag, half)
+            call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 1, 'x', nflag, half)
+            call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 2, 'y', nflag, half)
+            call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 1, 'y', nflag, half)
+            call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 1, 'y', nflag, half)
+            call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 2, 'y', nflag, half)
+            call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 1, 'x', nflag, half)
+            call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 2, 'x', nflag, half)
+        endif
         return
     end subroutine apply_trotter_layer_R
 
     subroutine apply_half_trotter_L(Gr, Latt, Bonds, Gauge, nt, nflag_in, reverse)
 ! 左乘半步Trotter：exp(±ε/2 K_gauge)，nflag_in控制符号
+! 顺序与 apply_trotter_layer_L 一致：
+!   前半(rev=false): x-even, x-odd, y-even, y-odd
+!   后半(rev=true):  y-odd, y-even, x-odd, x-even
         complex(kind=8), intent(inout) :: Gr(:, :)
         class(SquareLattice), intent(in) :: Latt
         class(BondList), intent(in) :: Bonds
@@ -81,11 +96,13 @@ contains
         rev = .false.
         if (present(reverse)) rev = reverse
         if (.not. rev) then
+! 前半：x-even(1), x-odd(2), y-even(1), y-odd(2)
             call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 1, 'x', nflag, half)
             call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 2, 'x', nflag, half)
             call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 1, 'y', nflag, half)
             call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 2, 'y', nflag, half)
         else
+! 后半：y-odd(2), y-even(1), x-odd(2), x-even(1)
             call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 2, 'y', nflag, half)
             call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 1, 'y', nflag, half)
             call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 2, 'x', nflag, half)
@@ -96,6 +113,9 @@ contains
 
     subroutine apply_half_trotter_R(Gr, Latt, Bonds, Gauge, nt, nflag_in, reverse)
 ! 右乘半步Trotter：exp(±ε/2 K_gauge)，nflag_in控制符号
+! 顺序与 apply_trotter_layer_R 一致：
+!   前半(rev=false): x-odd, x-even, y-odd, y-even
+!   后半(rev=true):  y-even, y-odd, x-even, x-odd
         complex(kind=8), intent(inout) :: Gr(:, :)
         class(SquareLattice), intent(in) :: Latt
         class(BondList), intent(in) :: Bonds
@@ -111,21 +131,24 @@ contains
         rev = .false.
         if (present(reverse)) rev = reverse
         if (.not. rev) then
-            call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 1, 'x', nflag, half)
+! 前半：x-odd(2), x-even(1), y-odd(2), y-even(1)
             call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 2, 'x', nflag, half)
-            call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 1, 'y', nflag, half)
+            call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 1, 'x', nflag, half)
             call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 2, 'y', nflag, half)
+            call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 1, 'y', nflag, half)
         else
-            call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 2, 'y', nflag, half)
+! 后半：y-even(1), y-odd(2), x-even(1), x-odd(2)
             call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 1, 'y', nflag, half)
-            call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 2, 'x', nflag, half)
+            call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 2, 'y', nflag, half)
             call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 1, 'x', nflag, half)
+            call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 2, 'x', nflag, half)
         endif
         return
     end subroutine apply_half_trotter_R
 
     subroutine apply_trotter_layer_L(Gr, Latt, Bonds, Gauge, nt, nflag_in)
 ! 对等时 Green 矩阵执行一次"左乘"的对称二阶 Trotter 层
+! 当 nflag=-1 时（逆向），顺序需要反转以得到正确的 B^{-1}
         complex(kind=8), intent(inout) :: Gr(:, :)
         class(SquareLattice), intent(in) :: Latt
         class(BondList), intent(in) :: Bonds
@@ -136,14 +159,27 @@ contains
         real(kind=8), parameter :: half = 0.5d0
         nflag = 1
         if (present(nflag_in)) nflag = nflag_in
-        call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 1, 'x', nflag, half)
-        call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 2, 'x', nflag, half)
-        call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 1, 'y', nflag, half)
-        call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 2, 'y', nflag, half)
-        call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 2, 'y', nflag, half)
-        call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 1, 'y', nflag, half)
-        call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 2, 'x', nflag, half)
-        call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 1, 'x', nflag, half)
+        if (nflag == 1) then
+! 正向 B * G：使用与 apply_trotter_layer_R 反转的顺序（因为左乘从右到左累积）
+            call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 2, 'x', nflag, half)
+            call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 1, 'x', nflag, half)
+            call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 2, 'y', nflag, half)
+            call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 1, 'y', nflag, half)
+            call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 1, 'y', nflag, half)
+            call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 2, 'y', nflag, half)
+            call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 1, 'x', nflag, half)
+            call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 2, 'x', nflag, half)
+        else
+! 逆向 B^{-1} * G：使用与正向反转的顺序（先应用最后一个因子的逆）
+            call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 2, 'x', nflag, half)
+            call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 1, 'x', nflag, half)
+            call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 2, 'y', nflag, half)
+            call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 1, 'y', nflag, half)
+            call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 1, 'y', nflag, half)
+            call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 2, 'y', nflag, half)
+            call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 1, 'x', nflag, half)
+            call apply_group_L(Gr, Latt, Bonds, Gauge, nt, 2, 'x', nflag, half)
+        endif
         if (debug_sigma_log_enabled) call debug_log_sigma('after_apply_trotter_L', nt, Gr)
         return
     end subroutine apply_trotter_layer_L

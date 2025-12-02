@@ -35,14 +35,14 @@ contains
                     bidx = Bonds%group_ex_even(k)
                     i = Bonds%ex_src(bidx); j = Bonds%ex_dst(bidx)
                     sigma = Gauge%sigma_x(i, nt)
-                    call Op%mmult_R_2x2(Mat, i, j, sigma, nflag)
+                    call Op%mmult_L_2x2(Mat, i, j, sigma, nflag)
                 enddo
             else
                 do k = 1, size(Bonds%group_ex_odd)
                     bidx = Bonds%group_ex_odd(k)
                     i = Bonds%ex_src(bidx); j = Bonds%ex_dst(bidx)
                     sigma = Gauge%sigma_x(i, nt)
-                    call Op%mmult_R_2x2(Mat, i, j, sigma, nflag)
+                    call Op%mmult_L_2x2(Mat, i, j, sigma, nflag)
                 enddo
             endif
         case ('y')
@@ -51,14 +51,14 @@ contains
                     bidx = Bonds%group_ey_even(k)
                     i = Bonds%ey_src(bidx); j = Bonds%ey_dst(bidx)
                     sigma = Gauge%sigma_y(i, nt)
-                    call Op%mmult_R_2x2(Mat, i, j, sigma, nflag)
+                    call Op%mmult_L_2x2(Mat, i, j, sigma, nflag)
                 enddo
             else
                 do k = 1, size(Bonds%group_ey_odd)
                     bidx = Bonds%group_ey_odd(k)
                     i = Bonds%ey_src(bidx); j = Bonds%ey_dst(bidx)
                     sigma = Gauge%sigma_y(i, nt)
-                    call Op%mmult_R_2x2(Mat, i, j, sigma, nflag)
+                    call Op%mmult_L_2x2(Mat, i, j, sigma, nflag)
                 enddo
             endif
         case default
@@ -97,7 +97,7 @@ contains
                         s = -s
                         call debug_log_operator_detail('pre', 'L_x_even', nt, group_no, k, i, j, sigma, nflag, c, s, Mat)
                     endif
-                    call Op%mmult_L_2x2(Mat, i, j, sigma, nflag)
+                    call Op%mmult_R_2x2(Mat, i, j, sigma, nflag)
                     if (nflag == -1) then
                         call debug_log_operator_detail('post', 'L_x_even', nt, group_no, k, i, j, sigma, nflag, c, s, Mat)
                         call debug_log_operator('L_x_even', nt, group_no, k, i, j, sigma, Mat)
@@ -114,7 +114,7 @@ contains
                         s = -s
                         call debug_log_operator_detail('pre', 'L_x_odd', nt, group_no, k, i, j, sigma, nflag, c, s, Mat)
                     endif
-                    call Op%mmult_L_2x2(Mat, i, j, sigma, nflag)
+                    call Op%mmult_R_2x2(Mat, i, j, sigma, nflag)
                     if (nflag == -1) then
                         call debug_log_operator_detail('post', 'L_x_odd', nt, group_no, k, i, j, sigma, nflag, c, s, Mat)
                         call debug_log_operator('L_x_odd', nt, group_no, k, i, j, sigma, Mat)
@@ -133,7 +133,7 @@ contains
                         s = -s
                         call debug_log_operator_detail('pre', 'L_y_even', nt, group_no, k, i, j, sigma, nflag, c, s, Mat)
                     endif
-                    call Op%mmult_L_2x2(Mat, i, j, sigma, nflag)
+                    call Op%mmult_R_2x2(Mat, i, j, sigma, nflag)
                     if (nflag == -1) then
                         call debug_log_operator_detail('post', 'L_y_even', nt, group_no, k, i, j, sigma, nflag, c, s, Mat)
                         call debug_log_operator('L_y_even', nt, group_no, k, i, j, sigma, Mat)
@@ -150,7 +150,7 @@ contains
                         s = -s
                         call debug_log_operator_detail('pre', 'L_y_odd', nt, group_no, k, i, j, sigma, nflag, c, s, Mat)
                     endif
-                    call Op%mmult_L_2x2(Mat, i, j, sigma, nflag)
+                    call Op%mmult_R_2x2(Mat, i, j, sigma, nflag)
                     if (nflag == -1) then
                         call debug_log_operator_detail('post', 'L_y_odd', nt, group_no, k, i, j, sigma, nflag, c, s, Mat)
                         call debug_log_operator('L_y_odd', nt, group_no, k, i, j, sigma, Mat)
