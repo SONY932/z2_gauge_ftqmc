@@ -94,24 +94,30 @@ contains
         integer, intent(in) :: nt
         integer, intent(inout) :: iseed
 
-! B(nt) 左半步
+! 【重要】仿照 CodeXun 的 LocalK_prop_L：
+! 顺序：传播 → σ更新 → UUL累积
+! 传播使用当前σ，σ更新后UUL累积使用更新后的σ
+
+! 完整传播（使用当前σ）
+! G <- exp(-μ) * B^{-1} * G * B * exp(+μ)，其中 B = half_forward * half_reverse
         call left_step_prefix(PropU, PropD, Latt, Bonds, Gauge, nt)
-
-! σ Metropolis：按 AFM 回溯顺序（y 组 → x 组）
-! 【调试】暂时禁用 σ 更新以测试纯传播
-!        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ey_odd,  'y', nt, Bonds%ey_src, Bonds%ey_dst, iseed, 'y_odd')
-!        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ey_even, 'y', nt, Bonds%ey_src, Bonds%ey_dst, iseed, 'y_even')
-!        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ex_odd,  'x', nt, Bonds%ex_src, Bonds%ex_dst, iseed, 'x_odd')
-!        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ex_even, 'x', nt, Bonds%ex_src, Bonds%ex_dst, iseed, 'x_even')
-
-! μ + 段栈写回（仿 AFM LocalK_prop_L）
         call left_step_after_sigma_pre_mu(PropU, PropD, Latt, Bonds, Gauge, nt)
         if (debug_green_log_enabled) call debug_log_green('L_before_mu', nt, PropU%Gr, PropD%Gr)
         call opMu_mmult_L(PropU%Gr, +1); call opMu_mmult_L(PropD%Gr, +1)
         if (debug_green_log_enabled) call debug_log_green('L_after_muR', nt, PropU%Gr, PropD%Gr)
-        call left_step_after_sigma_post_mu(PropU, PropD, Latt, Bonds, Gauge, nt)
+! 分离：先完成 G 的逆传播，再进行σ更新
+        call left_step_after_sigma_post_mu_G_only(PropU, PropD, Latt, Bonds, Gauge, nt)
         call opMu_mmult_R(PropU%Gr, -1); call opMu_mmult_R(PropD%Gr, -1)
         if (debug_green_log_enabled) call debug_log_green('L_after_muL', nt, PropU%Gr, PropD%Gr)
+
+! σ Metropolis：传播后进行
+        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ey_odd,  'y', nt, Bonds%ey_src, Bonds%ey_dst, iseed, 'y_odd')
+        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ey_even, 'y', nt, Bonds%ey_src, Bonds%ey_dst, iseed, 'y_even')
+        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ex_odd,  'x', nt, Bonds%ex_src, Bonds%ex_dst, iseed, 'x_odd')
+        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ex_even, 'x', nt, Bonds%ex_src, Bonds%ex_dst, iseed, 'x_even')
+
+! UUL累积（使用更新后的σ）
+        call left_step_after_sigma_post_mu_UUL_only(PropU, PropD, Latt, Bonds, Gauge, nt)
         return
     end subroutine propagate_left_step
 
@@ -124,17 +130,12 @@ contains
         integer, intent(in) :: nt
         integer, intent(inout) :: iseed
 
-! B(nt)^{-1/2} 预处理
+! 【重要】仿照 CodeXun 的 LocalK_prop_R：
+! 顺序：传播 → σ更新 → UUR累积
+
+! 完整传播（使用当前σ）
+! G <- exp(+μ) * B * G * B^{-1} * exp(-μ)，其中 B = half_forward * half_reverse
         call right_step_prefix(PropU, PropD, Latt, Bonds, Gauge, nt)
-
-! σ Metropolis：与 AFM LocalK_prop_R 同序（x 组 → y 组）
-! 【调试】暂时禁用 σ 更新以测试纯传播
-!        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ex_even, 'x', nt, Bonds%ex_src, Bonds%ex_dst, iseed, 'x_even')
-!        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ex_odd,  'x', nt, Bonds%ex_src, Bonds%ex_dst, iseed, 'x_odd')
-!        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ey_even, 'y', nt, Bonds%ey_src, Bonds%ey_dst, iseed, 'y_even')
-!        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ey_odd,  'y', nt, Bonds%ey_src, Bonds%ey_dst, iseed, 'y_odd')
-
-! μ + 段栈写回（仿 AFM LocalK_prop_R）
         call right_step_after_sigma_pre_mu(PropU, PropD, Latt, Bonds, Gauge, nt)
         if (debug_green_log_enabled) call debug_log_green('R_before_mu', nt, PropU%Gr, PropD%Gr)
         call opMu_mmult_R(PropU%Gr, +1); call opMu_mmult_R(PropD%Gr, +1)
@@ -142,6 +143,14 @@ contains
         call right_step_after_sigma_post_mu(PropU, PropD, Latt, Bonds, Gauge, nt)
         call opMu_mmult_L(PropU%Gr, -1); call opMu_mmult_L(PropD%Gr, -1)
         if (debug_green_log_enabled) call debug_log_green('R_after_muR', nt, PropU%Gr, PropD%Gr)
+
+! σ Metropolis：传播后进行
+        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ex_even, 'x', nt, Bonds%ex_src, Bonds%ex_dst, iseed, 'x_even')
+        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ex_odd,  'x', nt, Bonds%ex_src, Bonds%ex_dst, iseed, 'x_odd')
+        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ey_even, 'y', nt, Bonds%ey_src, Bonds%ey_dst, iseed, 'y_even')
+        call sweep_sigma_dir(this, PropU%Gr, PropD%Gr, Gauge, Latt, Bonds%group_ey_odd,  'y', nt, Bonds%ey_src, Bonds%ey_dst, iseed, 'y_odd')
+
+! UUR 累积（使用更新后的σ）
         call right_step_finalize(PropU, PropD, Latt, Bonds, Gauge, nt)
 ! 【重要】UUR <- B * UUR，其中 B = exp(+μ) * B_gauge，μ 符号为 +1
         call opMu_mmult_R(PropU%UUR, +1); call opMu_mmult_R(PropD%UUR, +1)

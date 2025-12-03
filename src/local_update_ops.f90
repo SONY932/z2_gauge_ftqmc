@@ -68,6 +68,34 @@ contains
         call apply_half_trotter_R(PropD%Gr, Latt, Bonds, Gauge, nt, nflag_in=-1, reverse=.true.)
     end subroutine left_step_after_sigma_post_mu
 
+    subroutine left_step_after_sigma_post_mu_G_only(PropU, PropD, Latt, Bonds, Gauge, nt)
+! 只处理 G：G <- B^{-1} * G
+        class(Propagator), intent(inout) :: PropU, PropD
+        class(SquareLattice), intent(in) :: Latt
+        class(BondList), intent(in) :: Bonds
+        class(GaugeConf), intent(in) :: Gauge
+        integer, intent(in) :: nt
+        call apply_half_trotter_R(PropU%Gr, Latt, Bonds, Gauge, nt, nflag_in=-1, reverse=.false.)
+        call apply_half_trotter_R(PropD%Gr, Latt, Bonds, Gauge, nt, nflag_in=-1, reverse=.false.)
+        call apply_half_trotter_R(PropU%Gr, Latt, Bonds, Gauge, nt, nflag_in=-1, reverse=.true.)
+        call apply_half_trotter_R(PropD%Gr, Latt, Bonds, Gauge, nt, nflag_in=-1, reverse=.true.)
+    end subroutine left_step_after_sigma_post_mu_G_only
+
+    subroutine left_step_after_sigma_post_mu_UUL_only(PropU, PropD, Latt, Bonds, Gauge, nt)
+! 只处理 UUL：UUL <- UUL * B（使用更新后的σ）
+        class(Propagator), intent(inout) :: PropU, PropD
+        class(SquareLattice), intent(in) :: Latt
+        class(BondList), intent(in) :: Bonds
+        class(GaugeConf), intent(in) :: Gauge
+        integer, intent(in) :: nt
+        call opMu_mmult_L(PropU%UUL, +1)
+        call opMu_mmult_L(PropD%UUL, +1)
+        call apply_half_trotter_L(PropU%UUL, Latt, Bonds, Gauge, nt, reverse=.false.)
+        call apply_half_trotter_L(PropD%UUL, Latt, Bonds, Gauge, nt, reverse=.false.)
+        call apply_half_trotter_L(PropU%UUL, Latt, Bonds, Gauge, nt, reverse=.true.)
+        call apply_half_trotter_L(PropD%UUL, Latt, Bonds, Gauge, nt, reverse=.true.)
+    end subroutine left_step_after_sigma_post_mu_UUL_only
+
     subroutine right_step_prefix(PropU, PropD, Latt, Bonds, Gauge, nt)
 ! 右扫：G <- B * G * B^{-1}，其中 B = half_forward * half_reverse（与左扫一致）
 ! 步骤 1：G <- half_reverse * G（左乘正向，nflag=+1）
