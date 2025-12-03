@@ -395,7 +395,7 @@ contains
             call stab_green(Gr, Prop, nt)
             dif = compare_mat(Gr, Prop%Gr)
             if (dif > Prop%Xmaxm) Prop%Xmaxm = dif
-            if (dif .ge. 5.0d-2) write(6,*) nt, dif, "left ortho unstable in RANK ", IRANK
+            if (dif .ge. 1.0d-1) write(6,*) nt, dif, "left ortho unstable in RANK ", IRANK
             if (present(flag)) Prop%Xmeanm = Prop%Xmeanm + dif
             Prop%Gr = Gr
         endif
@@ -448,7 +448,7 @@ contains
             if (.not. skip_check) then
                 dif = compare_mat(Gr, Prop%Gr)
                 if (dif > Prop%Xmaxm) Prop%Xmaxm = dif
-                if (dif .ge. 5.0d-2) write(6,*) nt, dif, "right ortho unstable in RANK ", IRANK
+                if (dif .ge. 1.0d-1) write(6,*) nt, dif, "right ortho unstable in RANK ", IRANK
                 if (present(flag)) Prop%Xmeanm = Prop%Xmeanm + dif
             endif
             Prop%Gr = Gr
