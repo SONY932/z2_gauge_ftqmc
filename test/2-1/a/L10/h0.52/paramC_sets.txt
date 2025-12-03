@@ -1,21 +1,10 @@
-0.5  1.0 0.52 0.0 0.3
+0.5  1.0 0.52 0.0 0.0
 10 10        560 28
 10 10        560
-5         7500  1
+5         75000  1
 .false.          0.0
 .false.          1000
 .true.           8
 1
 1
 .true.           .true.
-
-# RT, J, h, xi, mu
-# Nlx, Nly, Ltrot, Beta
-# NlxTherm, NlyTherm, LtrotTherm
-# Nwrap, Nbin, Nsweep
-# is_tau, Nthermal
-# is_warm, Nwarm
-# is_global, Nglobal
-# absolute
-# sector_charge(扇区电荷±1)
-# dtau_guard, zero_fix 守卫与扩展修正（可选行，缺省关闭）

@@ -40,8 +40,12 @@ contains
     end subroutine apply_lambda_both
 
     subroutine apply_trotter_layer_R(Gr, Latt, Bonds, Gauge, nt, nflag_in)
-! 对等时 Green 矩阵执行一次"右乘"的对称二阶 Trotter 层
-! 关键修复：顺序应该与_L相反（对称性要求）
+! 对等时 Green 矩阵执行一次"左乘"的完整 Trotter 层
+! 产生的 B 与 apply_trotter_layer_L 相同：B = B_forward * B_reverse
+! B_forward = G1x*G2x*G1y*G2y
+! B_reverse = G2y*G1y*G2x*G1x
+! apply_trotter_layer_L（右乘）调用 1x,2x,1y,2y,2y,1y,2x,1x -> A * B_forward * B_reverse
+! apply_trotter_layer_R（左乘）需要反序调用 1x,2x,1y,2y,2y,1y,2x,1x -> B_forward * B_reverse * A
         complex(kind=8), intent(inout) :: Gr(:, :)
         class(SquareLattice), intent(in) :: Latt
         class(BondList), intent(in) :: Bonds
@@ -52,15 +56,15 @@ contains
         real(kind=8), parameter :: half = 0.5d0
         nflag = 1
         if (present(nflag_in)) nflag = nflag_in
-        ! 对称Trotter的序列是回文，正反序相同
-        call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 2, 'x', nflag, half)
-        call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 1, 'x', nflag, half)
-        call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 2, 'y', nflag, half)
-        call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 1, 'y', nflag, half)
-        call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 1, 'y', nflag, half)
-        call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 2, 'y', nflag, half)
+! 调用顺序（反序）：1x,2x,1y,2y,2y,1y,2x,1x -> B_forward * B_reverse * A
         call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 1, 'x', nflag, half)
         call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 2, 'x', nflag, half)
+        call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 1, 'y', nflag, half)
+        call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 2, 'y', nflag, half)
+        call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 2, 'y', nflag, half)
+        call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 1, 'y', nflag, half)
+        call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 2, 'x', nflag, half)
+        call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 1, 'x', nflag, half)
         return
     end subroutine apply_trotter_layer_R
 
@@ -95,7 +99,10 @@ contains
     end subroutine apply_half_trotter_L
 
     subroutine apply_half_trotter_R(Gr, Latt, Bonds, Gauge, nt, nflag_in, reverse)
-! 右乘半步Trotter：exp(±ε/2 K_gauge)，nflag_in控制符号
+! 左乘半步Trotter：Gr <- exp(±ε/2 K_gauge) * Gr，nflag_in控制符号
+! 【关键】调用顺序与 apply_half_trotter_L 相反，以产生相同的抽象 B 矩阵
+! apply_half_trotter_L(false) 右乘产生 A * G1x*G2x*G1y*G2y（调用 1x,2x,1y,2y）
+! 要让 apply_half_trotter_R(false) 左乘产生 G1x*G2x*G1y*G2y * A，需要反序调用：2y,1y,2x,1x
         complex(kind=8), intent(inout) :: Gr(:, :)
         class(SquareLattice), intent(in) :: Latt
         class(BondList), intent(in) :: Bonds
@@ -111,15 +118,17 @@ contains
         rev = .false.
         if (present(reverse)) rev = reverse
         if (.not. rev) then
-            call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 1, 'x', nflag, half)
-            call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 2, 'x', nflag, half)
-            call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 1, 'y', nflag, half)
+! 反序调用：2y,1y,2x,1x -> 产生 G1x*G2x*G1y*G2y * A
             call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 2, 'y', nflag, half)
+            call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 1, 'y', nflag, half)
+            call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 2, 'x', nflag, half)
+            call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 1, 'x', nflag, half)
         else
-            call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 2, 'y', nflag, half)
-            call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 1, 'y', nflag, half)
-            call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 2, 'x', nflag, half)
+! 反序调用：1x,2x,1y,2y -> 产生 G2y*G1y*G2x*G1x * A
             call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 1, 'x', nflag, half)
+            call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 2, 'x', nflag, half)
+            call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 1, 'y', nflag, half)
+            call apply_group_R(Gr, Latt, Bonds, Gauge, nt, 2, 'y', nflag, half)
         endif
         return
     end subroutine apply_half_trotter_R

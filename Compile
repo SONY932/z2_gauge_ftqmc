@@ -14,11 +14,11 @@ OBJS = obj/calc_basic.o obj/lattice.o obj/process_matrix.o \
 .SUFFIXES: .f90 
 obj/%.o: src/%.f90
 	@mkdir -p obj
-	$(FC) $(FLAGS) -module obj -Iobj -c $< -o $@
+	$(FC) $(FLAGS) -J obj -Iobj -I. -c $< -o $@
 
 $(TARGET): $(OBJS)
 	@mkdir -p bin
-	$(FC) $(LF) -o $(TARGET) $(OBJS) $(LIBS)
+	$(FC) $(LF) -o $(TARGET) $(OBJS) $(LIBS) $(EXTRA_LIBS)
 
 clean:
 	rm -rf obj
