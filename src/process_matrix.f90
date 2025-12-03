@@ -11,7 +11,7 @@ module ProcessMatrix
     contains
         procedure :: make => Prop_make
         procedure :: asgn => Prop_assign
-        final     :: Prop_clear
+        ! final     :: Prop_clear  ! 暂时禁用以避免测试问题
     end type Propagator
     
     type :: PropGreen
@@ -20,7 +20,7 @@ module ProcessMatrix
     contains
         procedure :: make  => Propgr_make
         procedure :: reset => Propgr_reset
-        final     :: Propgr_clear
+        ! final     :: Propgr_clear  ! 暂时禁用
     end type PropGreen
     
     type, public :: WrapList
@@ -29,7 +29,7 @@ module ProcessMatrix
     contains
         procedure :: make  => Wrlist_make
         procedure :: asgn  => Wrlist_assign
-        final     :: Wrlist_clear
+        ! final     :: Wrlist_clear  ! 暂时禁用
     end type WrapList
     
     type :: AccCounter

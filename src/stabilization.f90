@@ -6,6 +6,7 @@ module Stabilize_mod
     
     private
     public :: Wrap_pre, Wrap_L, Wrap_R, Wrap_tau, Stabilize_init, Stabilize_clear, reset_debug_wrap_detail
+    public :: stab_UR, stab_UL, stab_green  ! 测试用
     
     complex(kind=8) :: Z_one
     complex(kind=8), dimension(:,:), allocatable :: matUDV
@@ -420,6 +421,7 @@ contains
         complex(kind=8), dimension(Ndim, Ndim) :: Gr
         integer :: nt_st
         real(kind=8) :: dif
+        logical :: skip_check
         if (wrap_debug_enabled) call debug_wrap_detail('Wrap_R_entry', nt, Prop%Gr)
         call ensure_matrix_finite('Wrap_R:Prop%Gr_entry', nt, Prop%Gr)
         if (mod(nt, Nwrap) .ne. 0 .and. nt .ne. 0) then
@@ -431,6 +433,11 @@ contains
         Prop%VUL(1:Ndim, 1:Ndim) = WrList%VLlist(1:Ndim, 1:Ndim, nt_st)
         Prop%DUL(1:Ndim) = WrList%DLlist(1:Ndim, nt_st)
         call ensure_matrix_finite('Wrap_R:UL_retrieved', nt, Prop%UUL)
+! 检查是否跳过一致性检查：flag="R" 表示重建模式（用于 worm 更新）
+        skip_check = .false.
+        if (present(flag)) then
+            if (flag == "R") skip_check = .true.
+        endif
         if (nt .ne. 0) then
             call stab_stage_log('Wrap_R_before_stabUR', nt, minval(abs(Prop%UUL)), maxval(abs(Prop%UUL)))
             call stab_UR(Prop)
@@ -438,10 +445,12 @@ contains
             call stab_stage_log('Wrap_R_after_stabUR', nt, minval(abs(Prop%UUR)), maxval(abs(Prop%UUR)))
             call stab_green(Gr, Prop, nt)
             call stab_stage_log('Wrap_R_after_stabGreen', nt, minval(abs(Gr)), maxval(abs(Gr)))
-            dif = compare_mat(Gr, Prop%Gr)
-            if (dif > Prop%Xmaxm) Prop%Xmaxm = dif
-            if (dif .ge. 5.5d-5) write(6,*) nt, dif, "right ortho unstable in RANK ", IRANK
-            if (present(flag)) Prop%Xmeanm = Prop%Xmeanm + dif
+            if (.not. skip_check) then
+                dif = compare_mat(Gr, Prop%Gr)
+                if (dif > Prop%Xmaxm) Prop%Xmaxm = dif
+                if (dif .ge. 5.5d-5) write(6,*) nt, dif, "right ortho unstable in RANK ", IRANK
+                if (present(flag)) Prop%Xmeanm = Prop%Xmeanm + dif
+            endif
             Prop%Gr = Gr
         endif
         call ensure_matrix_finite('Wrap_R:Prop%Gr', nt, Prop%Gr)

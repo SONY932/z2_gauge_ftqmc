@@ -16,7 +16,7 @@
  逆温度 Beta                   :   3.0000000000000000     
  虚时长度 Ltrot                :          60
  => Dtau = Beta / Ltrot      :   5.0000000000000003E-002
- 稳定化频率 Nwrap (输入/实际) :           5           5
+ 稳定化频率 Nwrap (输入/实际) :           1           1
  Nwrap 除数 nwrap_divider      :           1
  ortho_threshold (relative)   :   5.5000000000000002E-005
  worm_max_span                :           4
