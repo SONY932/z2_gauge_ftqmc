@@ -7,6 +7,28 @@ module LambdaPair_mod
     implicit none
 
 contains
+    logical function check_nan_in_row(Mat, row) result(has_nan)
+! 检查矩阵的第row行和列是否包含NaN
+        complex(kind=8), intent(in) :: Mat(:, :)
+        integer, intent(in) :: row
+        integer :: k
+        real(kind=8) :: val
+        has_nan = .false.
+        do k = 1, size(Mat, 2)
+            val = real(Mat(row, k)) + aimag(Mat(row, k))
+            if (val /= val) then  ! NaN check
+                has_nan = .true.
+                return
+            endif
+            val = real(Mat(k, row)) + aimag(Mat(k, row))
+            if (val /= val) then
+                has_nan = .true.
+                return
+            endif
+        enddo
+        return
+    end function check_nan_in_row
+
     subroutine lambda_pair_flip_v2(GrU, GrD, Gauge, i, j, Latt, iseed, acc)
 ! 【修复版】λ成对翻转，正确处理投影的撤回
 ! 关键点：撤回投影必须使用旧的λ值，而不是新的λ值
@@ -44,15 +66,18 @@ contains
         dS_Gauss = -2.d0 * gam * dble( Gauge%lambda(i) * s_i_0 * s_i_M + &
                                         Gauge%lambda(j) * s_j_0 * s_j_M )
         
-! 对于λ投影，费米子行列式比值是固定的
-! 当λ_i: +1 -> -1 时，投影算符P_i: +1 -> -1
-! det(P_new G P_new) / det(P_old G P_old) = det(D G D) / det(G) 
-! 其中D在位置i取-1，所以 det(D) = -1，det(D G D) = det(G)
-! 因此费米子行列式不变，Rf = 1
-! 
-! 实际上这个推导不完全正确...让我使用更简单的方法：
-! 直接检查Metropolis准则只考虑Gauss边界项
-        prob = exp(-dS_Gauss)
+! 数值保护：防止exp溢出
+! dS_Gauss > 700 时 exp(-dS_Gauss) ≈ 0，直接拒绝
+! dS_Gauss < -700 时 exp(-dS_Gauss) 溢出，直接接受
+        if (dS_Gauss > 700.d0) then
+            acc = .false.
+            return
+        endif
+        if (dS_Gauss < -700.d0) then
+            prob = 1.d0  ! 直接接受
+        else
+            prob = exp(-dS_Gauss)
+        endif
         thr = ranf(iseed)
         
         if (min(1.d0, prob) > thr) then
@@ -60,6 +85,13 @@ contains
 ! 正确的更新是：G_proj_new = D G_proj_old D
 ! 其中 D(k,k) = -1 if k=i or k=j, else 1
 ! 这意味着：对第i和j行列取负（除了(i,i)和(j,j)以及(i,j)和(j,i)）
+
+! 检查Green函数是否有效（防止传播NaN）
+            if (check_nan_in_row(GrU, i) .or. check_nan_in_row(GrU, j) .or. &
+                check_nan_in_row(GrD, i) .or. check_nan_in_row(GrD, j)) then
+                acc = .false.
+                return
+            endif
             
 ! 更新 GrU
             do k = 1, Ndim
