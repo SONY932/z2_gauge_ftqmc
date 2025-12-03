@@ -20,6 +20,6 @@
  Nwrap 除数 nwrap_divider      :           1
  ortho_threshold (relative)   :   5.5000000000000002E-005
  worm_max_span                :           4
- # Bins                       :          30
+ # Bins                       :          15
  来回扫的更新次数 Nsweep        :           1
  ==============================================
