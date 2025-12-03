@@ -108,7 +108,7 @@ contains
     
     real(kind=8) function delta_S_plaquette_flip(G, Latt, x, y, nt) result(dS)
 ! 计算同时翻转一个plaquette的4条边时的作用量变化
-! 空间项：中心plaquette不变，周围8个plaquettes改变符号
+! 空间项：中心plaquette不变，只有4个相邻plaquettes改变符号（上、下、左、右）
 ! 时间项：4条边各贡献时间耦合
         class(GaugeConf), intent(in) :: G
         class(SquareLattice), intent(in) :: Latt
@@ -128,15 +128,14 @@ contains
         i_ur = Latt%inv_n_list(xp1, yp1)
         
 ! 空间项：中心plaquette不变（4个-1相乘=1）
-! 周围8个plaquettes会改变符号，ΔS = +2K Σ p_周围
-        ! 左下
-        p = plaq_product(G, Latt, xm1, ym1, nt)
-        dS = dS + 2.d0 * J * dble(p)
+! 只有4个相邻plaquettes会改变符号（每个只有1条边被翻转）：
+! - P(x, y-1)：使用 σx(x,y)（下边的上边）
+! - P(x-1, y)：使用 σy(x,y)（左边的右边）
+! - P(x+1, y)：使用 σy(x+1,y)（右边的左边）
+! - P(x, y+1)：使用 σx(x,y+1)（上边的下边）
+! ΔS = +2K Σ p_相邻
         ! 下
         p = plaq_product(G, Latt, x, ym1, nt)
-        dS = dS + 2.d0 * J * dble(p)
-        ! 右下
-        p = plaq_product(G, Latt, xp1, ym1, nt)
         dS = dS + 2.d0 * J * dble(p)
         ! 左
         p = plaq_product(G, Latt, xm1, y, nt)
@@ -144,14 +143,8 @@ contains
         ! 右
         p = plaq_product(G, Latt, xp1, y, nt)
         dS = dS + 2.d0 * J * dble(p)
-        ! 左上
-        p = plaq_product(G, Latt, xm1, yp1, nt)
-        dS = dS + 2.d0 * J * dble(p)
         ! 上
         p = plaq_product(G, Latt, x, yp1, nt)
-        dS = dS + 2.d0 * J * dble(p)
-        ! 右上
-        p = plaq_product(G, Latt, xp1, yp1, nt)
         dS = dS + 2.d0 * J * dble(p)
         
 ! 时间项：4条边的时间耦合

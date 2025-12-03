@@ -146,9 +146,11 @@ contains
 ! 然后再顺次进行低秩费米子更新，计算 log_Rf_tot，并就地翻转 σ
 ! 先把 G 从 nt0 传播到 tau1
 ! 重要修复：当 nt0 = tau1 时，循环不执行，格林函数已经在正确位置
+! 右扫描传播公式：G(t+1) = B(t) * G(t) * B(t)^{-1}
+! 其中 B = exp(+μ) * B_gauge
         if (nt0 < tau1) then
             do t = nt0, tau1 - 1
-                call opMu_mmult_R(GUtmp, -1); call opMu_mmult_R(GDtmp, -1)
+! 步骤1：G <- B_gauge * G（左乘 B_gauge）
                 call apply_group_R(GUtmp, Latt, Bonds, Gauge, t, 1, 'x', +1, 0.5d0)
                 call apply_group_R(GDtmp, Latt, Bonds, Gauge, t, 1, 'x', +1, 0.5d0)
                 call apply_group_R(GUtmp, Latt, Bonds, Gauge, t, 2, 'x', +1, 0.5d0)
@@ -165,7 +167,27 @@ contains
                 call apply_group_R(GDtmp, Latt, Bonds, Gauge, t, 2, 'x', +1, 0.5d0)
                 call apply_group_R(GUtmp, Latt, Bonds, Gauge, t, 1, 'x', +1, 0.5d0)
                 call apply_group_R(GDtmp, Latt, Bonds, Gauge, t, 1, 'x', +1, 0.5d0)
+! 步骤2：G <- exp(+μ) * G
                 call opMu_mmult_R(GUtmp, +1); call opMu_mmult_R(GDtmp, +1)
+! 步骤3：G <- G * B_gauge^{-1}（右乘 B_gauge 的逆）
+                call apply_group_L(GUtmp, Latt, Bonds, Gauge, t, 1, 'x', -1, 0.5d0)
+                call apply_group_L(GDtmp, Latt, Bonds, Gauge, t, 1, 'x', -1, 0.5d0)
+                call apply_group_L(GUtmp, Latt, Bonds, Gauge, t, 2, 'x', -1, 0.5d0)
+                call apply_group_L(GDtmp, Latt, Bonds, Gauge, t, 2, 'x', -1, 0.5d0)
+                call apply_group_L(GUtmp, Latt, Bonds, Gauge, t, 1, 'y', -1, 0.5d0)
+                call apply_group_L(GDtmp, Latt, Bonds, Gauge, t, 1, 'y', -1, 0.5d0)
+                call apply_group_L(GUtmp, Latt, Bonds, Gauge, t, 2, 'y', -1, 0.5d0)
+                call apply_group_L(GDtmp, Latt, Bonds, Gauge, t, 2, 'y', -1, 0.5d0)
+                call apply_group_L(GUtmp, Latt, Bonds, Gauge, t, 2, 'y', -1, 0.5d0)
+                call apply_group_L(GDtmp, Latt, Bonds, Gauge, t, 2, 'y', -1, 0.5d0)
+                call apply_group_L(GUtmp, Latt, Bonds, Gauge, t, 1, 'y', -1, 0.5d0)
+                call apply_group_L(GDtmp, Latt, Bonds, Gauge, t, 1, 'y', -1, 0.5d0)
+                call apply_group_L(GUtmp, Latt, Bonds, Gauge, t, 2, 'x', -1, 0.5d0)
+                call apply_group_L(GDtmp, Latt, Bonds, Gauge, t, 2, 'x', -1, 0.5d0)
+                call apply_group_L(GUtmp, Latt, Bonds, Gauge, t, 1, 'x', -1, 0.5d0)
+                call apply_group_L(GDtmp, Latt, Bonds, Gauge, t, 1, 'x', -1, 0.5d0)
+! 步骤4：G <- G * exp(-μ)
+                call opMu_mmult_L(GUtmp, -1); call opMu_mmult_L(GDtmp, -1)
             enddo
         endif
 
@@ -216,8 +238,9 @@ contains
                 Gauge%sigma_y(i_src, t) = - Gauge%sigma_y(i_src, t)
             endif
 ! 若不是最后一个时片，推进到下一时片（使用更新后的 σ）
+! 右扫描传播公式：G(t+1) = B(t) * G(t) * B(t)^{-1}
             if (t < tau2) then
-                call opMu_mmult_R(GUtmp, -1); call opMu_mmult_R(GDtmp, -1)
+! 步骤1：G <- B_gauge * G（左乘 B_gauge）
                 call apply_group_R(GUtmp, Latt, Bonds, Gauge, t, 1, 'x', +1, 0.5d0)
                 call apply_group_R(GDtmp, Latt, Bonds, Gauge, t, 1, 'x', +1, 0.5d0)
                 call apply_group_R(GUtmp, Latt, Bonds, Gauge, t, 2, 'x', +1, 0.5d0)
@@ -234,7 +257,27 @@ contains
                 call apply_group_R(GDtmp, Latt, Bonds, Gauge, t, 2, 'x', +1, 0.5d0)
                 call apply_group_R(GUtmp, Latt, Bonds, Gauge, t, 1, 'x', +1, 0.5d0)
                 call apply_group_R(GDtmp, Latt, Bonds, Gauge, t, 1, 'x', +1, 0.5d0)
+! 步骤2：G <- exp(+μ) * G
                 call opMu_mmult_R(GUtmp, +1); call opMu_mmult_R(GDtmp, +1)
+! 步骤3：G <- G * B_gauge^{-1}（右乘 B_gauge 的逆）
+                call apply_group_L(GUtmp, Latt, Bonds, Gauge, t, 1, 'x', -1, 0.5d0)
+                call apply_group_L(GDtmp, Latt, Bonds, Gauge, t, 1, 'x', -1, 0.5d0)
+                call apply_group_L(GUtmp, Latt, Bonds, Gauge, t, 2, 'x', -1, 0.5d0)
+                call apply_group_L(GDtmp, Latt, Bonds, Gauge, t, 2, 'x', -1, 0.5d0)
+                call apply_group_L(GUtmp, Latt, Bonds, Gauge, t, 1, 'y', -1, 0.5d0)
+                call apply_group_L(GDtmp, Latt, Bonds, Gauge, t, 1, 'y', -1, 0.5d0)
+                call apply_group_L(GUtmp, Latt, Bonds, Gauge, t, 2, 'y', -1, 0.5d0)
+                call apply_group_L(GDtmp, Latt, Bonds, Gauge, t, 2, 'y', -1, 0.5d0)
+                call apply_group_L(GUtmp, Latt, Bonds, Gauge, t, 2, 'y', -1, 0.5d0)
+                call apply_group_L(GDtmp, Latt, Bonds, Gauge, t, 2, 'y', -1, 0.5d0)
+                call apply_group_L(GUtmp, Latt, Bonds, Gauge, t, 1, 'y', -1, 0.5d0)
+                call apply_group_L(GDtmp, Latt, Bonds, Gauge, t, 1, 'y', -1, 0.5d0)
+                call apply_group_L(GUtmp, Latt, Bonds, Gauge, t, 2, 'x', -1, 0.5d0)
+                call apply_group_L(GDtmp, Latt, Bonds, Gauge, t, 2, 'x', -1, 0.5d0)
+                call apply_group_L(GUtmp, Latt, Bonds, Gauge, t, 1, 'x', -1, 0.5d0)
+                call apply_group_L(GDtmp, Latt, Bonds, Gauge, t, 1, 'x', -1, 0.5d0)
+! 步骤4：G <- G * exp(-μ)
+                call opMu_mmult_L(GUtmp, -1); call opMu_mmult_L(GDtmp, -1)
             endif
         enddo
 
