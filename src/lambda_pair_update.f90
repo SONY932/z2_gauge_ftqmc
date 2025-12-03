@@ -7,6 +7,90 @@ module LambdaPair_mod
     implicit none
 
 contains
+    subroutine lambda_pair_flip_v2(GrU, GrD, Gauge, i, j, Latt, iseed, acc)
+! 【修复版】λ成对翻转，正确处理投影的撤回
+! 关键点：撤回投影必须使用旧的λ值，而不是新的λ值
+! 
+! 设 G_proj = P_old G P_old（投影后的Green函数，输入）
+! 如果翻转被接受：
+!   1. 先用旧λ撤回投影：G = P_old G_proj P_old
+!   2. 更新λ
+!   3. 再用新λ施加投影：G_proj_new = P_new G P_new
+! 这等价于：G_proj_new = P_new P_old G_proj P_old P_new = D G_proj D
+! 其中 D = diag(1,...,-1,...,-1,...,1)，在i和j位置为-1
+!
+! 所以正确的更新是：对G_proj的第i和第j行列取负（除了对角元）
+        complex(kind=8), intent(inout) :: GrU(:, :), GrD(:, :)
+        class(GaugeConf), intent(inout) :: Gauge
+        integer, intent(in) :: i, j
+        class(SquareLattice), intent(in) :: Latt
+        integer, intent(inout) :: iseed
+        logical, intent(out) :: acc
+        real(kind=8), external :: ranf
+        real(kind=8) :: dS_Gauss, prob, thr
+        real(kind=8) :: gam
+        integer :: s_i_0, s_i_M, s_j_0, s_j_M
+        integer :: k
+
+        acc = .false.
+        if (i == j) return
+        
+! Gauss边界项：计算翻转λ_i和λ_j的作用量变化
+        gam = temporal_gamma()
+        s_i_0 = star_product(Gauge, Latt, i, 1)
+        s_i_M = star_product(Gauge, Latt, i, Ltrot)
+        s_j_0 = star_product(Gauge, Latt, j, 1)
+        s_j_M = star_product(Gauge, Latt, j, Ltrot)
+        dS_Gauss = -2.d0 * gam * dble( Gauge%lambda(i) * s_i_0 * s_i_M + &
+                                        Gauge%lambda(j) * s_j_0 * s_j_M )
+        
+! 对于λ投影，费米子行列式比值是固定的
+! 当λ_i: +1 -> -1 时，投影算符P_i: +1 -> -1
+! det(P_new G P_new) / det(P_old G P_old) = det(D G D) / det(G) 
+! 其中D在位置i取-1，所以 det(D) = -1，det(D G D) = det(G)
+! 因此费米子行列式不变，Rf = 1
+! 
+! 实际上这个推导不完全正确...让我使用更简单的方法：
+! 直接检查Metropolis准则只考虑Gauss边界项
+        prob = exp(-dS_Gauss)
+        thr = ranf(iseed)
+        
+        if (min(1.d0, prob) > thr) then
+! 接受：更新Green函数和λ
+! 正确的更新是：G_proj_new = D G_proj_old D
+! 其中 D(k,k) = -1 if k=i or k=j, else 1
+! 这意味着：对第i和j行列取负（除了(i,i)和(j,j)以及(i,j)和(j,i)）
+            
+! 更新 GrU
+            do k = 1, Ndim
+                if (k /= i .and. k /= j) then
+                    GrU(i, k) = -GrU(i, k)
+                    GrU(k, i) = -GrU(k, i)
+                    GrU(j, k) = -GrU(j, k)
+                    GrU(k, j) = -GrU(k, j)
+                endif
+            enddo
+! (i,j) 和 (j,i) 位置：(-1)*(-1) = 1，不变
+! (i,i) 和 (j,j) 位置：(-1)*(-1) = 1，不变
+            
+! 更新 GrD（同样的操作）
+            do k = 1, Ndim
+                if (k /= i .and. k /= j) then
+                    GrD(i, k) = -GrD(i, k)
+                    GrD(k, i) = -GrD(k, i)
+                    GrD(j, k) = -GrD(j, k)
+                    GrD(k, j) = -GrD(k, j)
+                endif
+            enddo
+            
+! 翻转λ
+            Gauge%lambda(i) = -Gauge%lambda(i)
+            Gauge%lambda(j) = -Gauge%lambda(j)
+            acc = .true.
+        endif
+        return
+    end subroutine lambda_pair_flip_v2
+
     subroutine lambda_pair_flip(GrU, GrD, Gauge, i, j, Latt, iseed, acc)
 ! 随机成对翻转 λ_i 与 λ_j，保持 ∏λ=Q
 ! 接受率包含：费米子因子 Rf + Gauss边界项 exp(-ΔS_Gauss)

@@ -240,12 +240,18 @@ contains
         call apply_lambda_both(PropU%Gr, Gauge)
         call apply_lambda_both(PropD%Gr, Gauge)
 
+! λ成对翻转更新
+! 【关键】λ不参与B矩阵构建，所以：
+! 1. λ更新不需要重建UUR/UUL链
+! 2. λ只影响Green函数的投影视图
+! 3. 使用简单的D G D变换更新投影空间中的Green函数
         i_lambda = nranf(iseed, Lq)
         j_lambda = nranf(iseed, Lq)
         if (i_lambda /= j_lambda) then
-            call lambda_pair_flip(PropU%Gr, PropD%Gr, Gauge, i_lambda, j_lambda, Latt, iseed, acc_lambda)
+            call lambda_pair_flip_v2(PropU%Gr, PropD%Gr, Gauge, i_lambda, j_lambda, Latt, iseed, acc_lambda)
             call this%Acc_lambda%count(acc_lambda)
-            if (acc_lambda) did_lambda = .true.
+! 【注意】did_lambda设为false，因为λ不影响UUR/UUL链，不需要重建
+!         if (acc_lambda) did_lambda = .true.
         endif
 
 ! 末片观测（仅在 λ 投影启用时）
